@@ -11,22 +11,22 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "main": "./lib/index.es.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "package.json",
-    "lib"
+    "dist"
   ],
-  "module": "./lib/index.es.js",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
-      "import": "./lib/index.es.js",
-      "require": "./lib/index.cjs.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
     }
   },
   "scripts": {
-    "build:cjs": "esbuild --sourcemap --bundle --external:'react' --external:'react-dom' --external:'styled-components' --outfile=lib/index.cjs.js --format=cjs --platform=browser src/index.tsx",
-    "build:es": "esbuild --sourcemap --bundle --external:'react' --external:'react-dom' --external:'styled-components' --outfile=lib/index.es.js --format=esm --platform=browser src/index.tsx",
+    "build:cjs": "esbuild --sourcemap --bundle --external:'react' --external:'react-dom' --external:'styled-components' --outfile=dist/index.cjs.js --format=cjs --platform=browser src/index.tsx",
+    "build:es": "esbuild --sourcemap --bundle --external:'react' --external:'react-dom' --external:'styled-components' --outfile=dist/index.es.js --format=esm --platform=browser src/index.tsx",
     "build:types": "tsc --build --force",
     "build": "rm -fr ./lib && yarn build:cjs && yarn build:es && yarn build:types",
     "lint:eslint": "yarn eslint ./src --ext js,ts,tsx --max-warnings 0",

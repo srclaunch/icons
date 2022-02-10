@@ -399,7 +399,7 @@ var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
 })(DualLightIcons || {});
 
 // src/basic/Alert.tsx
-var import_react = __toESM(require("react"), 1);
+var import_react = __toESM(require("react"));
 var Alert = (0, import_react.memo)((props) => {
   return /* @__PURE__ */ import_react.default.createElement("svg", {
     id: "applab-icon-basic-alert",
@@ -418,7 +418,7 @@ var Alert = (0, import_react.memo)((props) => {
 });
 
 // src/basic/CaretDownArrow.tsx
-var import_react2 = __toESM(require("react"), 1);
+var import_react2 = __toESM(require("react"));
 var CaretDownArrow = (0, import_react2.memo)((props) => {
   return /* @__PURE__ */ import_react2.default.createElement("svg", {
     viewBox: "0 0 292.362 292.362",
@@ -431,7 +431,7 @@ var CaretDownArrow = (0, import_react2.memo)((props) => {
 });
 
 // src/basic/Checkmark.tsx
-var import_react3 = __toESM(require("react"), 1);
+var import_react3 = __toESM(require("react"));
 var Checkmark = (0, import_react3.memo)((props) => {
   return /* @__PURE__ */ import_react3.default.createElement("svg", {
     id: "applab-icon-basic-checkmark",
@@ -451,7 +451,7 @@ var Checkmark = (0, import_react3.memo)((props) => {
 });
 
 // src/basic/Checkmark2.tsx
-var import_react4 = __toESM(require("react"), 1);
+var import_react4 = __toESM(require("react"));
 var Checkmark2 = (0, import_react4.memo)((props) => {
   return /* @__PURE__ */ import_react4.default.createElement("svg", {
     viewBox: "0 0 442.533 442.533",
@@ -464,7 +464,7 @@ var Checkmark2 = (0, import_react4.memo)((props) => {
 });
 
 // src/basic/Close.tsx
-var import_react5 = __toESM(require("react"), 1);
+var import_react5 = __toESM(require("react"));
 var Close = (0, import_react5.memo)((props) => {
   return /* @__PURE__ */ import_react5.default.createElement("svg", {
     id: "applab-icon-basic-close",
@@ -480,7 +480,7 @@ var Close = (0, import_react5.memo)((props) => {
 });
 
 // src/basic/Exit.tsx
-var import_react6 = __toESM(require("react"), 1);
+var import_react6 = __toESM(require("react"));
 var Exit = (0, import_react6.memo)((props) => {
   return /* @__PURE__ */ import_react6.default.createElement("svg", {
     viewBox: "0 0 512 512",
@@ -495,7 +495,7 @@ var Exit = (0, import_react6.memo)((props) => {
 });
 
 // src/basic/FileUpload.tsx
-var import_react7 = __toESM(require("react"), 1);
+var import_react7 = __toESM(require("react"));
 var FileUpload = (0, import_react7.memo)((props) => {
   return /* @__PURE__ */ import_react7.default.createElement("svg", {
     viewBox: "-64 0 512 512",
@@ -506,7 +506,7 @@ var FileUpload = (0, import_react7.memo)((props) => {
 });
 
 // src/basic/GearCog.tsx
-var import_react8 = __toESM(require("react"), 1);
+var import_react8 = __toESM(require("react"));
 var GearCog = (0, import_react8.memo)((props) => {
   return /* @__PURE__ */ import_react8.default.createElement("svg", {
     viewBox: "0 0 512 512",
@@ -519,7 +519,7 @@ var GearCog = (0, import_react8.memo)((props) => {
 });
 
 // src/basic/Search.tsx
-var import_react9 = __toESM(require("react"), 1);
+var import_react9 = __toESM(require("react"));
 var Search = (0, import_react9.memo)((props) => {
   return /* @__PURE__ */ import_react9.default.createElement("svg", {
     viewBox: "0 0 30.239 30.239",
@@ -532,7 +532,7 @@ var Search = (0, import_react9.memo)((props) => {
 });
 
 // src/basic/TrashCan.tsx
-var import_react10 = __toESM(require("react"), 1);
+var import_react10 = __toESM(require("react"));
 var TrashCan = (0, import_react10.memo)((props) => {
   return /* @__PURE__ */ import_react10.default.createElement("svg", {
     id: "applab-icon-basic-trash-can",
@@ -545,7 +545,7 @@ var TrashCan = (0, import_react10.memo)((props) => {
 });
 
 // src/basic/Upload.tsx
-var import_react11 = __toESM(require("react"), 1);
+var import_react11 = __toESM(require("react"));
 var Upload = (0, import_react11.memo)((props) => {
   return /* @__PURE__ */ import_react11.default.createElement("svg", {
     version: "1.1",
@@ -565,7 +565,7 @@ var Upload = (0, import_react11.memo)((props) => {
 });
 
 // src/dual-light/Add.tsx
-var import_react12 = __toESM(require("react"), 1);
+var import_react12 = __toESM(require("react"));
 var Add = (0, import_react12.memo)((props) => {
   return /* @__PURE__ */ import_react12.default.createElement("svg", {
     width: "1em",
@@ -611,7 +611,7 @@ var Add = (0, import_react12.memo)((props) => {
 });
 
 // src/dual-light/AddCircle.tsx
-var import_react13 = __toESM(require("react"), 1);
+var import_react13 = __toESM(require("react"));
 var AddCircle = (0, import_react13.memo)((props) => {
   return /* @__PURE__ */ import_react13.default.createElement("svg", {
     width: 24,
@@ -657,7 +657,7 @@ var AddCircle = (0, import_react13.memo)((props) => {
 });
 
 // src/dual-light/Building.tsx
-var import_react14 = __toESM(require("react"), 1);
+var import_react14 = __toESM(require("react"));
 var Building = (0, import_react14.memo)((props) => {
   return /* @__PURE__ */ import_react14.default.createElement("svg", {
     width: "1em",
@@ -767,7 +767,7 @@ var Building = (0, import_react14.memo)((props) => {
 });
 
 // src/dual-light/ChevronDoubleForward.tsx
-var import_react15 = __toESM(require("react"), 1);
+var import_react15 = __toESM(require("react"));
 var ChevronDoubleForward = (0, import_react15.memo)((props) => {
   return /* @__PURE__ */ import_react15.default.createElement("svg", {
     width: "1em",
@@ -813,7 +813,7 @@ var ChevronDoubleForward = (0, import_react15.memo)((props) => {
 });
 
 // src/dual-light/Dashboard.tsx
-var import_react16 = __toESM(require("react"), 1);
+var import_react16 = __toESM(require("react"));
 var Dashboard = (0, import_react16.memo)((props) => {
   return /* @__PURE__ */ import_react16.default.createElement("svg", {
     width: "1em",
@@ -855,7 +855,7 @@ var Dashboard = (0, import_react16.memo)((props) => {
 });
 
 // src/dual-light/Document.tsx
-var import_react17 = __toESM(require("react"), 1);
+var import_react17 = __toESM(require("react"));
 var Document = (0, import_react17.memo)((props) => {
   return /* @__PURE__ */ import_react17.default.createElement("svg", {
     width: "1em",
@@ -931,7 +931,7 @@ var Document = (0, import_react17.memo)((props) => {
 });
 
 // src/dual-light/Gift.tsx
-var import_react18 = __toESM(require("react"), 1);
+var import_react18 = __toESM(require("react"));
 var Gift = (0, import_react18.memo)((props) => {
   return /* @__PURE__ */ import_react18.default.createElement("svg", {
     width: "1em",
@@ -990,7 +990,7 @@ var Gift = (0, import_react18.memo)((props) => {
 });
 
 // src/dual-light/Group.tsx
-var import_react19 = __toESM(require("react"), 1);
+var import_react19 = __toESM(require("react"));
 var Group = (0, import_react19.memo)((props) => {
   return /* @__PURE__ */ import_react19.default.createElement("svg", {
     width: "1em",
@@ -1066,7 +1066,7 @@ var Group = (0, import_react19.memo)((props) => {
 });
 
 // src/dual-light/Growth.tsx
-var import_react20 = __toESM(require("react"), 1);
+var import_react20 = __toESM(require("react"));
 var Growth = (0, import_react20.memo)((props) => {
   return /* @__PURE__ */ import_react20.default.createElement("svg", {
     width: "1em",
@@ -1110,7 +1110,7 @@ var Growth = (0, import_react20.memo)((props) => {
 });
 
 // src/dual-light/Home.tsx
-var import_react21 = __toESM(require("react"), 1);
+var import_react21 = __toESM(require("react"));
 var Home = (0, import_react21.memo)((props) => {
   return /* @__PURE__ */ import_react21.default.createElement("svg", {
     width: "1em",
@@ -1154,7 +1154,7 @@ var Home = (0, import_react21.memo)((props) => {
 });
 
 // src/dual-light/Inbox.tsx
-var import_react22 = __toESM(require("react"), 1);
+var import_react22 = __toESM(require("react"));
 var Inbox = (0, import_react22.memo)((props) => {
   return /* @__PURE__ */ import_react22.default.createElement("svg", {
     width: "24",
@@ -1375,7 +1375,7 @@ var Note = (0, import_react25.memo)((props) => {
 });
 
 // src/dual-light/Send.tsx
-var import_react26 = __toESM(require("react"), 1);
+var import_react26 = __toESM(require("react"));
 var Send = (0, import_react26.memo)((props) => {
   return /* @__PURE__ */ import_react26.default.createElement("svg", {
     width: "24",
@@ -1427,7 +1427,7 @@ var Send = (0, import_react26.memo)((props) => {
 });
 
 // src/dual-light/Star.tsx
-var import_react27 = __toESM(require("react"), 1);
+var import_react27 = __toESM(require("react"));
 var Star = (0, import_react27.memo)((props) => {
   return /* @__PURE__ */ import_react27.default.createElement("svg", {
     width: "24",
@@ -1462,7 +1462,7 @@ var Star = (0, import_react27.memo)((props) => {
 });
 
 // src/dual-light/Settings.tsx
-var import_react28 = __toESM(require("react"), 1);
+var import_react28 = __toESM(require("react"));
 var Settings = (0, import_react28.memo)((props) => {
   return /* @__PURE__ */ import_react28.default.createElement("svg", {
     width: "1em",
@@ -1506,7 +1506,7 @@ var Settings = (0, import_react28.memo)((props) => {
 });
 
 // src/dual-light/Tool.tsx
-var import_react29 = __toESM(require("react"), 1);
+var import_react29 = __toESM(require("react"));
 var Tool = (0, import_react29.memo)((props) => {
   return /* @__PURE__ */ import_react29.default.createElement("svg", {
     width: "1em",
@@ -1548,7 +1548,7 @@ var Tool = (0, import_react29.memo)((props) => {
 });
 
 // src/dual-light/Trash.tsx
-var import_react30 = __toESM(require("react"), 1);
+var import_react30 = __toESM(require("react"));
 var Trash = (0, import_react30.memo)((props) => {
   return /* @__PURE__ */ import_react30.default.createElement("svg", {
     width: "24",
@@ -1626,7 +1626,7 @@ var Trash = (0, import_react30.memo)((props) => {
 });
 
 // src/dual-light/Warning.tsx
-var import_react31 = __toESM(require("react"), 1);
+var import_react31 = __toESM(require("react"));
 var Warning = (0, import_react31.memo)((props) => {
   return /* @__PURE__ */ import_react31.default.createElement("svg", {
     width: "1em",
@@ -1731,7 +1731,7 @@ var Open = (0, import_react32.memo)((props) => {
 });
 
 // src/dual-light/Upload.tsx
-var import_react33 = __toESM(require("react"), 1);
+var import_react33 = __toESM(require("react"));
 var Upload2 = (0, import_react33.memo)((props) => {
   return /* @__PURE__ */ import_react33.default.createElement("svg", {
     width: "1em",
