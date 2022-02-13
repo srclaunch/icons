@@ -1,5 +1,3 @@
-import { BasicIcons } from './basic/index';
-import { DualLightIcons } from './dual-light/index';
 import { Alert } from './basic/Alert';
 import { CaretDownArrow } from './basic/CaretDownArrow';
 import { Checkmark } from './basic/Checkmark';
@@ -8,6 +6,7 @@ import { Close } from './basic/Close';
 import { Exit } from './basic/Exit';
 import { FileUpload } from './basic/FileUpload';
 import { GearCog } from './basic/GearCog';
+import { BasicIcons } from './basic/index';
 import { Search } from './basic/Search';
 import { TrashCan } from './basic/TrashCan';
 import { Upload as BasicUpload } from './basic/Upload';
@@ -22,17 +21,18 @@ import { Group } from './dual-light/Group';
 import { Growth } from './dual-light/Growth';
 import { Home } from './dual-light/Home';
 import { Inbox } from './dual-light/Inbox';
+import { DualLightIcons } from './dual-light/index';
 import { Message } from './dual-light/Message';
 import { Messages } from './dual-light/Messages';
 import { Note } from './dual-light/Note';
+import { Open } from './dual-light/Open';
 import { Send } from './dual-light/Send';
-import { Star } from './dual-light/Star';
 import { Settings } from './dual-light/Settings';
+import { Star } from './dual-light/Star';
 import { Tool } from './dual-light/Tool';
 import { Trash } from './dual-light/Trash';
-import { Warning } from './dual-light/Warning';
-import { Open } from './dual-light/Open';
 import { Upload } from './dual-light/Upload';
+import { Warning } from './dual-light/Warning';
 export function getIcon(name) {
     switch (name) {
         case BasicIcons.Alert:
@@ -105,5 +105,6 @@ export function getIcon(name) {
             return null;
     }
 }
-export { BasicIcons, DualLightIcons };
+export { BasicIcons } from './basic/index';
+export { DualLightIcons } from './dual-light/index';
 //# sourceMappingURL=index.js.map

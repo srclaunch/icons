@@ -34,370 +34,6 @@ __export(src_exports, {
   getIcon: () => getIcon
 });
 
-// src/basic/index.ts
-var BasicIcons = /* @__PURE__ */ ((BasicIcons2) => {
-  BasicIcons2["Airplane"] = "basic/Airplane.svg";
-  BasicIcons2["Alert"] = "basic/Alert.svg";
-  BasicIcons2["AlertQuestion"] = "basic/AlertQuestion.svg";
-  BasicIcons2["AnimalFootprint"] = "basic/AnimalFootprint.svg";
-  BasicIcons2["AppStore"] = "basic/AppStore.svg";
-  BasicIcons2["AppSubscription"] = "basic/AppSubscription.svg";
-  BasicIcons2["Bill"] = "basic/Bill.svg";
-  BasicIcons2["BillEnvelope"] = "basic/BillEnvelope.svg";
-  BasicIcons2["Books"] = "basic/Books.svg";
-  BasicIcons2["Bowling"] = "basic/Bowling.svg";
-  BasicIcons2["Briefcase"] = "basic/Briefcase.svg";
-  BasicIcons2["Calendar"] = "basic/Calendar.svg";
-  BasicIcons2["Car"] = "basic/Car.svg";
-  BasicIcons2["CardsView"] = "basic/CardsView.svg";
-  BasicIcons2["CaretDownArrow"] = "basic/CaretDownArrow.svg";
-  BasicIcons2["Checkmark"] = "basic/Checkmark.svg";
-  BasicIcons2["Checkmark2"] = "basic/Checkmark2.svg";
-  BasicIcons2["ChevronRight"] = "basic/ChevronRight.svg";
-  BasicIcons2["ChevronRight2"] = "basic/ChevronRight2.svg";
-  BasicIcons2["CircusTent"] = "basic/CircusTent.svg";
-  BasicIcons2["Close"] = "basic/Close.svg";
-  BasicIcons2["CreditCard"] = "basic/CreditCard.svg";
-  BasicIcons2["CreditCardCheck"] = "basic/CreditCardCheck.svg";
-  BasicIcons2["CreditCards"] = "basic/CreditCards.svg";
-  BasicIcons2["CupOfTea"] = "basic/CupOfTea.svg";
-  BasicIcons2["Dashboard"] = "basic/Dashboard.svg";
-  BasicIcons2["DollarInHand"] = "basic/DollarInHand.svg";
-  BasicIcons2["DollarRecurring"] = "basic/DollarRecurring.svg";
-  BasicIcons2["DollarRecurring2"] = "basic/DollarRecurring2.svg";
-  BasicIcons2["DollarRecurring3"] = "basic/DollarRecurring3.svg";
-  BasicIcons2["DollarRecurring4"] = "basic/DollarRecurring4.svg";
-  BasicIcons2["DollarTransfer"] = "basic/DollarTransfer.svg";
-  BasicIcons2["DramaArts"] = "basic/DramaArts.svg";
-  BasicIcons2["EatingUtensils"] = "basic/EatingUtensils.svg";
-  BasicIcons2["EventTicket"] = "basic/EventTicket.svg";
-  BasicIcons2["Exit"] = "basic/Exit.svg";
-  BasicIcons2["FileUpload"] = "basic/FileUpload.svg";
-  BasicIcons2["Flame"] = "basic/Flame.svg";
-  BasicIcons2["FuelPump"] = "basic/FuelPump.svg";
-  BasicIcons2["GearCog"] = "basic/GearCog.svg";
-  BasicIcons2["Gift"] = "basic/Gift.svg";
-  BasicIcons2["Golf"] = "basic/Golf.svg";
-  BasicIcons2["GraduationCap"] = "basic/GraduationCap.svg";
-  BasicIcons2["HamburgerMenu"] = "basic/HamburgerMenu.svg";
-  BasicIcons2["HandHoldingHeart"] = "basic/HandHoldingHeart.svg";
-  BasicIcons2["HandHoldingHeart2"] = "basic/HandHoldingHeart2.svg";
-  BasicIcons2["HandshakeHeart"] = "basic/HandshakeHeart.svg";
-  BasicIcons2["HealthCross"] = "basic/HealthCross.svg";
-  BasicIcons2["HeartHealth"] = "basic/HeartHealth.svg";
-  BasicIcons2["HeartHealth2"] = "basic/HeartHealth2.svg";
-  BasicIcons2["HelpBubble"] = "basic/HelpBubble.svg";
-  BasicIcons2["Home"] = "basic/Home.svg";
-  BasicIcons2["Institution"] = "basic/Institution.svg";
-  BasicIcons2["Investment"] = "basic/Investment.svg";
-  BasicIcons2["Island"] = "basic/Island.svg";
-  BasicIcons2["LightbulbElectricity"] = "basic/LightbulbElectricity.svg";
-  BasicIcons2["MoneyBag"] = "basic/MoneyBag.svg";
-  BasicIcons2["MoneyBag2"] = "basic/MoneyBag2.svg";
-  BasicIcons2["MoneyBallAndChain"] = "basic/MoneyBallAndChain.svg";
-  BasicIcons2["MoreButton"] = "basic/MoreButton.svg";
-  BasicIcons2["New"] = "basic/New.svg";
-  BasicIcons2["OnlineShopping"] = "basic/OnlineShopping.svg";
-  BasicIcons2["PaidBill"] = "basic/PaidBill.svg";
-  BasicIcons2["PeopleLiftWorld"] = "basic/PeopleLiftWorld.svg";
-  BasicIcons2["PersonalCare"] = "basic/PersonalCare.svg";
-  BasicIcons2["PieChart"] = "basic/PieChart.svg";
-  BasicIcons2["PieChart2"] = "basic/PieChart2.svg";
-  BasicIcons2["PiggyBank"] = "basic/PiggyBank.svg";
-  BasicIcons2["Pizza"] = "basic/Pizza.svg";
-  BasicIcons2["PlayStore"] = "basic/PlayStore.svg";
-  BasicIcons2["RightArrow"] = "basic/RightArrow.svg";
-  BasicIcons2["Safe"] = "basic/Safe.svg";
-  BasicIcons2["Search"] = "basic/Search.svg";
-  BasicIcons2["SearchMagnifyingGlass"] = "basic/SearchMagnifyingGlass.svg";
-  BasicIcons2["ServiceVan"] = "basic/ServiceVan.svg";
-  BasicIcons2["Shirt"] = "basic/Shirt.svg";
-  BasicIcons2["ShoppingBags"] = "basic/ShoppingBags.svg";
-  BasicIcons2["ShoppingBasket"] = "basic/ShoppingBasket.svg";
-  BasicIcons2["SmartPhone"] = "basic/SmartPhone.svg";
-  BasicIcons2["SortNumberAsc"] = "basic/SortNumberAsc.svg";
-  BasicIcons2["SortNumberDesc"] = "basic/SortNumberDesc.svg";
-  BasicIcons2["SortStringAsc"] = "basic/SortStringAsc.svg";
-  BasicIcons2["SortStringDesc"] = "basic/SortStringDesc.svg";
-  BasicIcons2["SortUpDown"] = "basic/SortUpDown.svg";
-  BasicIcons2["SpaFacial"] = "basic/SpaFacial.svg";
-  BasicIcons2["SpaFingernailPolish"] = "basic/SpaFingernailPolish.svg";
-  BasicIcons2["StoreFront"] = "basic/StoreFront.svg";
-  BasicIcons2["Swimming"] = "basic/Swimming.svg";
-  BasicIcons2["Target"] = "basic/Target.svg";
-  BasicIcons2["TrashCan"] = "basic/TrashCan.svg";
-  BasicIcons2["UmbrellaCheck"] = "basic/UmbrellaCheck.svg";
-  BasicIcons2["Upload"] = "basic/Upload.svg";
-  BasicIcons2["WaterSpigot"] = "basic/WaterSpigot.svg";
-  BasicIcons2["WeatherStorm"] = "basic/WeatherStorm.svg";
-  BasicIcons2["WineGlasses"] = "basic/WineGlasses.svg";
-  BasicIcons2["WorldWideWeb"] = "basic/WorldWideWeb.svg";
-  return BasicIcons2;
-})(BasicIcons || {});
-
-// src/dual-light/index.ts
-var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
-  DualLightIcons2["Activity"] = "dual-light/activity.svg";
-  DualLightIcons2["AddCircle"] = "dual-light/add_circled.svg";
-  DualLightIcons2["Add"] = "dual-light/add.svg";
-  DualLightIcons2["Alarm"] = "dual-light/alarm.svg";
-  DualLightIcons2["AlertCircle"] = "dual-light/alert_circled.svg";
-  DualLightIcons2["Anchor"] = "dual-light/anchor.svg";
-  DualLightIcons2["Android"] = "dual-light/android.svg";
-  DualLightIcons2["Apple"] = "dual-light/apple.svg";
-  DualLightIcons2["Archive"] = "dual-light/archive.svg";
-  DualLightIcons2["ArrowBackward"] = "dual-light/arrow_backward.svg";
-  DualLightIcons2["ArrowDown"] = "dual-light/arrow_down.svg";
-  DualLightIcons2["ArrowForward"] = "dual-light/arrow_forward.svg";
-  DualLightIcons2["ArrowUpDown"] = "dual-light/arrow_up_down.svg";
-  DualLightIcons2["ArrowUp"] = "dual-light/arrow_up.svg";
-  DualLightIcons2["AtSign"] = "dual-light/at_sign.svg";
-  DualLightIcons2["Attachment"] = "dual-light/attachment.svg";
-  DualLightIcons2["Badge"] = "dual-light/badge.svg";
-  DualLightIcons2["Bank"] = "dual-light/bank.svg";
-  DualLightIcons2["BarChart"] = "dual-light/bar_chart.svg";
-  DualLightIcons2["Basket"] = "dual-light/basket.svg";
-  DualLightIcons2["BatteryCharging"] = "dual-light/battery_charging.svg";
-  DualLightIcons2["BatteryFull"] = "dual-light/battery_full.svg";
-  DualLightIcons2["BatteryHalf"] = "dual-light/battery_half.svg";
-  DualLightIcons2["BatteryLow"] = "dual-light/battery_low.svg";
-  DualLightIcons2["Battery"] = "dual-light/battery.svg";
-  DualLightIcons2["BluetoothOff"] = "dual-light/bluetooth_off.svg";
-  DualLightIcons2["Bluetooth"] = "dual-light/bluetooth.svg";
-  DualLightIcons2["Bold"] = "dual-light/bold.svg";
-  DualLightIcons2["Book"] = "dual-light/book.svg";
-  DualLightIcons2["Bookmark"] = "dual-light/bookmark.svg";
-  DualLightIcons2["Box"] = "dual-light/box.svg";
-  DualLightIcons2["Briefcase"] = "dual-light/briefcase.svg";
-  DualLightIcons2["Brush"] = "dual-light/brush.svg";
-  DualLightIcons2["Building"] = "dual-light/building.svg";
-  DualLightIcons2["Bulb"] = "dual-light/bulb.svg";
-  DualLightIcons2["Calendar"] = "dual-light/calendar.svg";
-  DualLightIcons2["Camera"] = "dual-light/camera.svg";
-  DualLightIcons2["Cart"] = "dual-light/cart.svg";
-  DualLightIcons2["Cast"] = "dual-light/cast.svg";
-  DualLightIcons2["Category"] = "dual-light/category.svg";
-  DualLightIcons2["CenterAlign"] = "dual-light/center_align.svg";
-  DualLightIcons2["CheckAll"] = "dual-light/check_all.svg";
-  DualLightIcons2["CheckCircle"] = "dual-light/check_circled.svg";
-  DualLightIcons2["Check"] = "dual-light/check.svg";
-  DualLightIcons2["ChevronBackward"] = "dual-light/chevron_backward.svg";
-  DualLightIcons2["ChevronDoubleBackward"] = "dual-light/chevron_double_backward.svg";
-  DualLightIcons2["ChevronDoubleForward"] = "dual-light/chevron_double_forward.svg";
-  DualLightIcons2["ChevronDoubleDown"] = "dual-light/chevron_double_down.svg";
-  DualLightIcons2["ChevronDoubleUp"] = "dual-light/chevron_double_up.svg";
-  DualLightIcons2["ChevronDown"] = "dual-light/chevron_down.svg";
-  DualLightIcons2["ChevronForward"] = "dual-light/chevron_forward.svg";
-  DualLightIcons2["ChevronUp"] = "dual-light/chevron_up.svg";
-  DualLightIcons2["Chip"] = "dual-light/chip.svg";
-  DualLightIcons2["Chrome"] = "dual-light/chrome.svg";
-  DualLightIcons2["Clipboard"] = "dual-light/clipboard.svg";
-  DualLightIcons2["Clock"] = "dual-light/clock.svg";
-  DualLightIcons2["CloseCircle"] = "dual-light/close_circled.svg";
-  DualLightIcons2["Close"] = "dual-light/close.svg";
-  DualLightIcons2["CloudDownload"] = "dual-light/cloud_download.svg";
-  DualLightIcons2["CloudOff"] = "dual-light/cloud_off.svg";
-  DualLightIcons2["CloudUpload"] = "dual-light/cloud_upload.svg";
-  DualLightIcons2["Cloud"] = "dual-light/cloud.svg";
-  DualLightIcons2["Code"] = "dual-light/code.svg";
-  DualLightIcons2["Coffee"] = "dual-light/coffee.svg";
-  DualLightIcons2["Collapse"] = "dual-light/collapse.svg";
-  DualLightIcons2["ColorPalette"] = "dual-light/color_palette.svg";
-  DualLightIcons2["Command"] = "dual-light/command.svg";
-  DualLightIcons2["Compass"] = "dual-light/compass.svg";
-  DualLightIcons2["Crop"] = "dual-light/crop.svg";
-  DualLightIcons2["Crosshairs"] = "dual-light/crosshairs.svg";
-  DualLightIcons2["Cursor"] = "dual-light/cursor.svg";
-  DualLightIcons2["Dashboard"] = "dual-light/dashboard.svg";
-  DualLightIcons2["Database"] = "dual-light/database.svg";
-  DualLightIcons2["Design"] = "dual-light/design.svg";
-  DualLightIcons2["Diamond"] = "dual-light/diamond.svg";
-  DualLightIcons2["Document"] = "dual-light/document.svg";
-  DualLightIcons2["Dollar"] = "dual-light/dollar.svg";
-  DualLightIcons2["DonutChart"] = "dual-light/donut_chart.svg";
-  DualLightIcons2["Download"] = "dual-light/download.svg";
-  DualLightIcons2["Drop"] = "dual-light/drop.svg";
-  DualLightIcons2["Edit"] = "dual-light/edit.svg";
-  DualLightIcons2["EventAdd"] = "dual-light/event_add.svg";
-  DualLightIcons2["EventScheduled"] = "dual-light/event_scheduled.svg";
-  DualLightIcons2["Expand"] = "dual-light/expand.svg";
-  DualLightIcons2["Facebook"] = "dual-light/facebook.svg";
-  DualLightIcons2["FastBackward"] = "dual-light/fast_backward.svg";
-  DualLightIcons2["FastForward"] = "dual-light/fast_forward.svg";
-  DualLightIcons2["Figma"] = "dual-light/figma.svg";
-  DualLightIcons2["FileAdd"] = "dual-light/file_add.svg";
-  DualLightIcons2["File"] = "dual-light/file.svg";
-  DualLightIcons2["Files"] = "dual-light/files.svg";
-  DualLightIcons2["Film"] = "dual-light/film.svg";
-  DualLightIcons2["Filter"] = "dual-light/filter.svg";
-  DualLightIcons2["Fire"] = "dual-light/fire.svg";
-  DualLightIcons2["Flag"] = "dual-light/flag.svg";
-  DualLightIcons2["Flashlight"] = "dual-light/flashlight.svg";
-  DualLightIcons2["Flight"] = "dual-light/flight.svg";
-  DualLightIcons2["FolderAdd"] = "dual-light/folder_add.svg";
-  DualLightIcons2["Folder"] = "dual-light/folder.svg";
-  DualLightIcons2["Frown"] = "dual-light/frown.svg";
-  DualLightIcons2["Fuel"] = "dual-light/fuel.svg";
-  DualLightIcons2["Gamepad"] = "dual-light/gamepad.svg";
-  DualLightIcons2["Gift"] = "dual-light/gift.svg";
-  DualLightIcons2["Grid"] = "dual-light/grid.svg";
-  DualLightIcons2["Group"] = "dual-light/group.svg";
-  DualLightIcons2["Growth"] = "dual-light/growth.svg";
-  DualLightIcons2["HandCursor"] = "dual-light/hand_cursor.svg";
-  DualLightIcons2["Headphone"] = "dual-light/headphone.svg";
-  DualLightIcons2["Heart"] = "dual-light/heart.svg";
-  DualLightIcons2["Help"] = "dual-light/help.svg";
-  DualLightIcons2["Hide"] = "dual-light/hide.svg";
-  DualLightIcons2["Home"] = "dual-light/home.svg";
-  DualLightIcons2["Hourglass"] = "dual-light/hourglass.svg";
-  DualLightIcons2["Image"] = "dual-light/image.svg";
-  DualLightIcons2["Inbox"] = "dual-light/inbox.svg";
-  DualLightIcons2["Info"] = "dual-light/info.svg";
-  DualLightIcons2["Instagram"] = "dual-light/instagram.svg";
-  DualLightIcons2["Internet"] = "dual-light/internet.svg";
-  DualLightIcons2["Italics"] = "dual-light/italics.svg";
-  DualLightIcons2["Justify"] = "dual-light/justify.svg";
-  DualLightIcons2["Key"] = "dual-light/key.svg";
-  DualLightIcons2["Laptop"] = "dual-light/laptop.svg";
-  DualLightIcons2["Laugh"] = "dual-light/laugh.svg";
-  DualLightIcons2["Layers"] = "dual-light/layers.svg";
-  DualLightIcons2["Layout"] = "dual-light/layout.svg";
-  DualLightIcons2["Leaderboard"] = "dual-light/leaderboard.svg";
-  DualLightIcons2["LeftAlign"] = "dual-light/left_align.svg";
-  DualLightIcons2["LineChart"] = "dual-light/line_chart.svg";
-  DualLightIcons2["Link"] = "dual-light/link.svg";
-  DualLightIcons2["LinkedIn"] = "dual-light/linkedin.svg";
-  DualLightIcons2["List"] = "dual-light/list.svg";
-  DualLightIcons2["Live"] = "dual-light/live.svg";
-  DualLightIcons2["Loader"] = "dual-light/loader.svg";
-  DualLightIcons2["Location"] = "dual-light/location.svg";
-  DualLightIcons2["Lock"] = "dual-light/lock.svg";
-  DualLightIcons2["Login"] = "dual-light/login.svg";
-  DualLightIcons2["Logout"] = "dual-light/logout.svg";
-  DualLightIcons2["Mail"] = "dual-light/mail.svg";
-  DualLightIcons2["Map"] = "dual-light/map.svg";
-  DualLightIcons2["Meh"] = "dual-light/meh.svg";
-  DualLightIcons2["Menu"] = "dual-light/menu.svg";
-  DualLightIcons2["Message"] = "dual-light/message.svg";
-  DualLightIcons2["Messages"] = "dual-light/messages.svg";
-  DualLightIcons2["MicOff"] = "dual-light/mic_off.svg";
-  DualLightIcons2["Mic"] = "dual-light/mic.svg";
-  DualLightIcons2["Mobile"] = "dual-light/mobile.svg";
-  DualLightIcons2["Moon"] = "dual-light/moon.svg";
-  DualLightIcons2["MoreHorizontal"] = "dual-light/more_horizontal.svg";
-  DualLightIcons2["MoreVertical"] = "dual-light/more_vertical.svg";
-  DualLightIcons2["Mouse"] = "dual-light/mouse.svg";
-  DualLightIcons2["Music"] = "dual-light/music.svg";
-  DualLightIcons2["New"] = "dual-light/new.svg";
-  DualLightIcons2["Next"] = "dual-light/next.svg";
-  DualLightIcons2["Note"] = "dual-light/note.svg";
-  DualLightIcons2["Notes"] = "dual-light/notes.svg";
-  DualLightIcons2["NotificationOff"] = "dual-light/notification_off.svg";
-  DualLightIcons2["Notification"] = "dual-light/notification.svg";
-  DualLightIcons2["Open"] = "dual-light/open.svg";
-  DualLightIcons2["PainRoller"] = "dual-light/pain_roller.svg";
-  DualLightIcons2["Pause"] = "dual-light/pause.svg";
-  DualLightIcons2["Payment"] = "dual-light/payment.svg";
-  DualLightIcons2["Pen"] = "dual-light/pen.svg";
-  DualLightIcons2["Percent"] = "dual-light/percent.svg";
-  DualLightIcons2["Person"] = "dual-light/person.svg";
-  DualLightIcons2["PhoneCallIncoming"] = "dual-light/phone_call_incoming.svg";
-  DualLightIcons2["PhoneCallOutgoing"] = "dual-light/phone_call_outgoing.svg";
-  DualLightIcons2["PhoneCallRejected"] = "dual-light/phone_call_rejected.svg";
-  DualLightIcons2["Phone"] = "dual-light/phone.svg";
-  DualLightIcons2["Photos"] = "dual-light/photos.svg";
-  DualLightIcons2["PieChart"] = "dual-light/pie_chart.svg";
-  DualLightIcons2["Pin"] = "dual-light/pin.svg";
-  DualLightIcons2["Pinterest"] = "dual-light/pinterest.svg";
-  DualLightIcons2["PlayCircle"] = "dual-light/play_circled.svg";
-  DualLightIcons2["Play"] = "dual-light/play.svg";
-  DualLightIcons2["Playlist"] = "dual-light/playlist.svg";
-  DualLightIcons2["Power"] = "dual-light/power.svg";
-  DualLightIcons2["Presentation"] = "dual-light/presentation.svg";
-  DualLightIcons2["Previous"] = "dual-light/previous.svg";
-  DualLightIcons2["Printer"] = "dual-light/printer.svg";
-  DualLightIcons2["ProfileCircle"] = "dual-light/profile_circled.svg";
-  DualLightIcons2["Promotion"] = "dual-light/promotion.svg";
-  DualLightIcons2["Rain"] = "dual-light/rain.svg";
-  DualLightIcons2["Receipt"] = "dual-light/receipt.svg";
-  DualLightIcons2["Reload"] = "dual-light/reload.svg";
-  DualLightIcons2["Remove"] = "dual-light/remove.svg";
-  DualLightIcons2["Repeat"] = "dual-light/repeat.svg";
-  DualLightIcons2["RightAlign"] = "dual-light/right_align.svg";
-  DualLightIcons2["Rocket"] = "dual-light/rocket.svg";
-  DualLightIcons2["Ruler"] = "dual-light/ruler.svg";
-  DualLightIcons2["Sad"] = "dual-light/sad.svg";
-  DualLightIcons2["Save"] = "dual-light/save.svg";
-  DualLightIcons2["Scan"] = "dual-light/scan.svg";
-  DualLightIcons2["Schedule"] = "dual-light/schedule.svg";
-  DualLightIcons2["Scissors"] = "dual-light/scissors.svg";
-  DualLightIcons2["Search"] = "dual-light/search.svg";
-  DualLightIcons2["Send"] = "dual-light/send.svg";
-  DualLightIcons2["Settings"] = "dual-light/settings.svg";
-  DualLightIcons2["Share"] = "dual-light/share.svg";
-  DualLightIcons2["ShieldCheck"] = "dual-light/shield_check.svg";
-  DualLightIcons2["Shield"] = "dual-light/shield.svg";
-  DualLightIcons2["Ship"] = "dual-light/ship.svg";
-  DualLightIcons2["ShoppingBag"] = "dual-light/shopping_bag.svg";
-  DualLightIcons2["Show"] = "dual-light/show.svg";
-  DualLightIcons2["Shuffle"] = "dual-light/shuffle.svg";
-  DualLightIcons2["Size"] = "dual-light/size.svg";
-  DualLightIcons2["Slack"] = "dual-light/slack.svg";
-  DualLightIcons2["Smile"] = "dual-light/smile.svg";
-  DualLightIcons2["Snapchat"] = "dual-light/snapchat.svg";
-  DualLightIcons2["Snowflake"] = "dual-light/snowflake.svg";
-  DualLightIcons2["Sort"] = "dual-light/sort.svg";
-  DualLightIcons2["Spotify"] = "dual-light/spotify.svg";
-  DualLightIcons2["Star"] = "dual-light/star.svg";
-  DualLightIcons2["Stop"] = "dual-light/stop.svg";
-  DualLightIcons2["Store"] = "dual-light/store.svg";
-  DualLightIcons2["Sun"] = "dual-light/sun.svg";
-  DualLightIcons2["Sync"] = "dual-light/sync.svg";
-  DualLightIcons2["Tablet"] = "dual-light/tablet.svg";
-  DualLightIcons2["Tag"] = "dual-light/tag.svg";
-  DualLightIcons2["Target"] = "dual-light/target.svg";
-  DualLightIcons2["Thermomter"] = "dual-light/thermomter.svg";
-  DualLightIcons2["ThumbsDown"] = "dual-light/thumbs_down.svg";
-  DualLightIcons2["ThumbsUp"] = "dual-light/thumbs_up.svg";
-  DualLightIcons2["Ticket"] = "dual-light/ticket.svg";
-  DualLightIcons2["Timer"] = "dual-light/timer.svg";
-  DualLightIcons2["ToggleOff"] = "dual-light/toggle_off.svg";
-  DualLightIcons2["ToggleOn"] = "dual-light/toggle_on.svg";
-  DualLightIcons2["Tool"] = "dual-light/tool.svg";
-  DualLightIcons2["Train"] = "dual-light/train.svg";
-  DualLightIcons2["Trash"] = "dual-light/trash.svg";
-  DualLightIcons2["TrendingDown"] = "dual-light/trending_down.svg";
-  DualLightIcons2["TrendingUp"] = "dual-light/trending_up.svg";
-  DualLightIcons2["Trophy"] = "dual-light/trophy.svg";
-  DualLightIcons2["Truck"] = "dual-light/truck.svg";
-  DualLightIcons2["TV"] = "dual-light/tv.svg";
-  DualLightIcons2["Twitch"] = "dual-light/twitch.svg";
-  DualLightIcons2["Twitter"] = "dual-light/twitter.svg";
-  DualLightIcons2["Umbrella"] = "dual-light/umbrella.svg";
-  DualLightIcons2["Underline"] = "dual-light/underline.svg";
-  DualLightIcons2["Unlock"] = "dual-light/unlock.svg";
-  DualLightIcons2["Update"] = "dual-light/update.svg";
-  DualLightIcons2["Upload"] = "dual-light/upload.svg";
-  DualLightIcons2["Utensils"] = "dual-light/utensils.svg";
-  DualLightIcons2["VideoOff"] = "dual-light/video_off.svg";
-  DualLightIcons2["VideoRecorder"] = "dual-light/video_recorder.svg";
-  DualLightIcons2["VolumeHigh"] = "dual-light/volume_high.svg";
-  DualLightIcons2["VolumeOff"] = "dual-light/volume_off.svg";
-  DualLightIcons2["Volume"] = "dual-light/volume.svg";
-  DualLightIcons2["Wallet"] = "dual-light/wallet.svg";
-  DualLightIcons2["Warning"] = "dual-light/warning.svg";
-  DualLightIcons2["Watch"] = "dual-light/watch.svg";
-  DualLightIcons2["WifiOff"] = "dual-light/wifi_off.svg";
-  DualLightIcons2["Wifi"] = "dual-light/wifi.svg";
-  DualLightIcons2["Wind"] = "dual-light/wind.svg";
-  DualLightIcons2["Window"] = "dual-light/window.svg";
-  DualLightIcons2["YouTube"] = "dual-light/youtube.svg";
-  DualLightIcons2["Zap"] = "dual-light/zap.svg";
-  DualLightIcons2["ZoomIn"] = "dual-light/zoom_in.svg";
-  DualLightIcons2["ZoomOut"] = "dual-light/zoom_out.svg";
-  return DualLightIcons2;
-})(DualLightIcons || {});
-
 // src/basic/Alert.tsx
 var import_react = __toESM(require("react"));
 var Alert = (0, import_react.memo)((props) => {
@@ -517,6 +153,107 @@ var GearCog = (0, import_react8.memo)((props) => {
     d: "M489.514 296.695l-21.3-17.534c-14.59-12.011-14.564-34.335.001-46.322l21.299-17.534a39.878 39.878 0 009.218-50.882l-42.058-72.846A39.88 39.88 0 00408 74.119l-25.835 9.679c-17.696 6.628-37.016-4.551-40.117-23.161l-4.535-27.214A39.874 39.874 0 00298.058 0h-84.115a39.874 39.874 0 00-39.456 33.424l-4.536 27.213c-3.107 18.643-22.453 29.778-40.116 23.162L104 74.119a39.88 39.88 0 00-48.674 17.458l-42.057 72.845a39.875 39.875 0 009.218 50.882l21.299 17.534c14.592 12.012 14.563 34.334 0 46.322l-21.3 17.534a39.876 39.876 0 00-9.218 50.882l42.058 72.846c9.818 17.003 30.286 24.344 48.674 17.458l25.834-9.679c17.699-6.631 37.015 4.556 40.116 23.161l4.536 27.212A39.875 39.875 0 00213.942 512h84.115a39.873 39.873 0 0039.455-33.424l4.535-27.212c3.106-18.638 22.451-29.781 40.117-23.161L408 437.881a39.876 39.876 0 0048.674-17.458l42.059-72.847a39.878 39.878 0 00-9.219-50.881zm-67.481 103.728l-25.835-9.679c-41.299-15.471-86.37 10.63-93.605 54.043L298.058 472h-84.115l-4.536-27.213c-7.249-43.497-52.386-69.484-93.605-54.043l-25.835 9.679-42.057-72.846 21.299-17.534c34.049-28.03 33.978-80.114 0-108.086L47.91 184.423l42.058-72.846 25.834 9.679c41.3 15.47 86.37-10.63 93.605-54.043L213.942 40h84.115l4.535 27.213c7.25 43.502 52.389 69.481 93.605 54.043l25.835-9.679 42.067 72.836-.011.009-21.298 17.534c-34.048 28.028-33.98 80.113-.001 108.086l21.3 17.534zM256 157.333c-54.405 0-98.667 44.262-98.667 98.667s44.262 98.667 98.667 98.667 98.667-44.262 98.667-98.667-44.262-98.667-98.667-98.667zm0 157.334c-32.349 0-58.667-26.318-58.667-58.667s26.318-58.667 58.667-58.667 58.667 26.318 58.667 58.667-26.318 58.667-58.667 58.667z"
   }));
 });
+
+// src/basic/index.ts
+var BasicIcons = /* @__PURE__ */ ((BasicIcons2) => {
+  BasicIcons2["Airplane"] = "basic/Airplane.svg";
+  BasicIcons2["Alert"] = "basic/Alert.svg";
+  BasicIcons2["AlertQuestion"] = "basic/AlertQuestion.svg";
+  BasicIcons2["AnimalFootprint"] = "basic/AnimalFootprint.svg";
+  BasicIcons2["AppStore"] = "basic/AppStore.svg";
+  BasicIcons2["AppSubscription"] = "basic/AppSubscription.svg";
+  BasicIcons2["Bill"] = "basic/Bill.svg";
+  BasicIcons2["BillEnvelope"] = "basic/BillEnvelope.svg";
+  BasicIcons2["Books"] = "basic/Books.svg";
+  BasicIcons2["Bowling"] = "basic/Bowling.svg";
+  BasicIcons2["Briefcase"] = "basic/Briefcase.svg";
+  BasicIcons2["Calendar"] = "basic/Calendar.svg";
+  BasicIcons2["Car"] = "basic/Car.svg";
+  BasicIcons2["CardsView"] = "basic/CardsView.svg";
+  BasicIcons2["CaretDownArrow"] = "basic/CaretDownArrow.svg";
+  BasicIcons2["Checkmark"] = "basic/Checkmark.svg";
+  BasicIcons2["Checkmark2"] = "basic/Checkmark2.svg";
+  BasicIcons2["ChevronRight"] = "basic/ChevronRight.svg";
+  BasicIcons2["ChevronRight2"] = "basic/ChevronRight2.svg";
+  BasicIcons2["CircusTent"] = "basic/CircusTent.svg";
+  BasicIcons2["Close"] = "basic/Close.svg";
+  BasicIcons2["CreditCard"] = "basic/CreditCard.svg";
+  BasicIcons2["CreditCardCheck"] = "basic/CreditCardCheck.svg";
+  BasicIcons2["CreditCards"] = "basic/CreditCards.svg";
+  BasicIcons2["CupOfTea"] = "basic/CupOfTea.svg";
+  BasicIcons2["Dashboard"] = "basic/Dashboard.svg";
+  BasicIcons2["DollarInHand"] = "basic/DollarInHand.svg";
+  BasicIcons2["DollarRecurring"] = "basic/DollarRecurring.svg";
+  BasicIcons2["DollarRecurring2"] = "basic/DollarRecurring2.svg";
+  BasicIcons2["DollarRecurring3"] = "basic/DollarRecurring3.svg";
+  BasicIcons2["DollarRecurring4"] = "basic/DollarRecurring4.svg";
+  BasicIcons2["DollarTransfer"] = "basic/DollarTransfer.svg";
+  BasicIcons2["DramaArts"] = "basic/DramaArts.svg";
+  BasicIcons2["EatingUtensils"] = "basic/EatingUtensils.svg";
+  BasicIcons2["EventTicket"] = "basic/EventTicket.svg";
+  BasicIcons2["Exit"] = "basic/Exit.svg";
+  BasicIcons2["FileUpload"] = "basic/FileUpload.svg";
+  BasicIcons2["Flame"] = "basic/Flame.svg";
+  BasicIcons2["FuelPump"] = "basic/FuelPump.svg";
+  BasicIcons2["GearCog"] = "basic/GearCog.svg";
+  BasicIcons2["Gift"] = "basic/Gift.svg";
+  BasicIcons2["Golf"] = "basic/Golf.svg";
+  BasicIcons2["GraduationCap"] = "basic/GraduationCap.svg";
+  BasicIcons2["HamburgerMenu"] = "basic/HamburgerMenu.svg";
+  BasicIcons2["HandHoldingHeart"] = "basic/HandHoldingHeart.svg";
+  BasicIcons2["HandHoldingHeart2"] = "basic/HandHoldingHeart2.svg";
+  BasicIcons2["HandshakeHeart"] = "basic/HandshakeHeart.svg";
+  BasicIcons2["HealthCross"] = "basic/HealthCross.svg";
+  BasicIcons2["HeartHealth"] = "basic/HeartHealth.svg";
+  BasicIcons2["HeartHealth2"] = "basic/HeartHealth2.svg";
+  BasicIcons2["HelpBubble"] = "basic/HelpBubble.svg";
+  BasicIcons2["Home"] = "basic/Home.svg";
+  BasicIcons2["Institution"] = "basic/Institution.svg";
+  BasicIcons2["Investment"] = "basic/Investment.svg";
+  BasicIcons2["Island"] = "basic/Island.svg";
+  BasicIcons2["LightbulbElectricity"] = "basic/LightbulbElectricity.svg";
+  BasicIcons2["MoneyBag"] = "basic/MoneyBag.svg";
+  BasicIcons2["MoneyBag2"] = "basic/MoneyBag2.svg";
+  BasicIcons2["MoneyBallAndChain"] = "basic/MoneyBallAndChain.svg";
+  BasicIcons2["MoreButton"] = "basic/MoreButton.svg";
+  BasicIcons2["New"] = "basic/New.svg";
+  BasicIcons2["OnlineShopping"] = "basic/OnlineShopping.svg";
+  BasicIcons2["PaidBill"] = "basic/PaidBill.svg";
+  BasicIcons2["PeopleLiftWorld"] = "basic/PeopleLiftWorld.svg";
+  BasicIcons2["PersonalCare"] = "basic/PersonalCare.svg";
+  BasicIcons2["PieChart"] = "basic/PieChart.svg";
+  BasicIcons2["PieChart2"] = "basic/PieChart2.svg";
+  BasicIcons2["PiggyBank"] = "basic/PiggyBank.svg";
+  BasicIcons2["Pizza"] = "basic/Pizza.svg";
+  BasicIcons2["PlayStore"] = "basic/PlayStore.svg";
+  BasicIcons2["RightArrow"] = "basic/RightArrow.svg";
+  BasicIcons2["Safe"] = "basic/Safe.svg";
+  BasicIcons2["Search"] = "basic/Search.svg";
+  BasicIcons2["SearchMagnifyingGlass"] = "basic/SearchMagnifyingGlass.svg";
+  BasicIcons2["ServiceVan"] = "basic/ServiceVan.svg";
+  BasicIcons2["Shirt"] = "basic/Shirt.svg";
+  BasicIcons2["ShoppingBags"] = "basic/ShoppingBags.svg";
+  BasicIcons2["ShoppingBasket"] = "basic/ShoppingBasket.svg";
+  BasicIcons2["SmartPhone"] = "basic/SmartPhone.svg";
+  BasicIcons2["SortNumberAsc"] = "basic/SortNumberAsc.svg";
+  BasicIcons2["SortNumberDesc"] = "basic/SortNumberDesc.svg";
+  BasicIcons2["SortStringAsc"] = "basic/SortStringAsc.svg";
+  BasicIcons2["SortStringDesc"] = "basic/SortStringDesc.svg";
+  BasicIcons2["SortUpDown"] = "basic/SortUpDown.svg";
+  BasicIcons2["SpaFacial"] = "basic/SpaFacial.svg";
+  BasicIcons2["SpaFingernailPolish"] = "basic/SpaFingernailPolish.svg";
+  BasicIcons2["StoreFront"] = "basic/StoreFront.svg";
+  BasicIcons2["Swimming"] = "basic/Swimming.svg";
+  BasicIcons2["Target"] = "basic/Target.svg";
+  BasicIcons2["TrashCan"] = "basic/TrashCan.svg";
+  BasicIcons2["UmbrellaCheck"] = "basic/UmbrellaCheck.svg";
+  BasicIcons2["Upload"] = "basic/Upload.svg";
+  BasicIcons2["WaterSpigot"] = "basic/WaterSpigot.svg";
+  BasicIcons2["WeatherStorm"] = "basic/WeatherStorm.svg";
+  BasicIcons2["WineGlasses"] = "basic/WineGlasses.svg";
+  BasicIcons2["WorldWideWeb"] = "basic/WorldWideWeb.svg";
+  return BasicIcons2;
+})(BasicIcons || {});
 
 // src/basic/Search.tsx
 var import_react9 = __toESM(require("react"));
@@ -1195,6 +932,269 @@ var Inbox = (0, import_react22.memo)((props) => {
   }))));
 });
 
+// src/dual-light/index.ts
+var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
+  DualLightIcons2["Activity"] = "dual-light/activity.svg";
+  DualLightIcons2["AddCircle"] = "dual-light/add_circled.svg";
+  DualLightIcons2["Add"] = "dual-light/add.svg";
+  DualLightIcons2["Alarm"] = "dual-light/alarm.svg";
+  DualLightIcons2["AlertCircle"] = "dual-light/alert_circled.svg";
+  DualLightIcons2["Anchor"] = "dual-light/anchor.svg";
+  DualLightIcons2["Android"] = "dual-light/android.svg";
+  DualLightIcons2["Apple"] = "dual-light/apple.svg";
+  DualLightIcons2["Archive"] = "dual-light/archive.svg";
+  DualLightIcons2["ArrowBackward"] = "dual-light/arrow_backward.svg";
+  DualLightIcons2["ArrowDown"] = "dual-light/arrow_down.svg";
+  DualLightIcons2["ArrowForward"] = "dual-light/arrow_forward.svg";
+  DualLightIcons2["ArrowUpDown"] = "dual-light/arrow_up_down.svg";
+  DualLightIcons2["ArrowUp"] = "dual-light/arrow_up.svg";
+  DualLightIcons2["AtSign"] = "dual-light/at_sign.svg";
+  DualLightIcons2["Attachment"] = "dual-light/attachment.svg";
+  DualLightIcons2["Badge"] = "dual-light/badge.svg";
+  DualLightIcons2["Bank"] = "dual-light/bank.svg";
+  DualLightIcons2["BarChart"] = "dual-light/bar_chart.svg";
+  DualLightIcons2["Basket"] = "dual-light/basket.svg";
+  DualLightIcons2["BatteryCharging"] = "dual-light/battery_charging.svg";
+  DualLightIcons2["BatteryFull"] = "dual-light/battery_full.svg";
+  DualLightIcons2["BatteryHalf"] = "dual-light/battery_half.svg";
+  DualLightIcons2["BatteryLow"] = "dual-light/battery_low.svg";
+  DualLightIcons2["Battery"] = "dual-light/battery.svg";
+  DualLightIcons2["BluetoothOff"] = "dual-light/bluetooth_off.svg";
+  DualLightIcons2["Bluetooth"] = "dual-light/bluetooth.svg";
+  DualLightIcons2["Bold"] = "dual-light/bold.svg";
+  DualLightIcons2["Book"] = "dual-light/book.svg";
+  DualLightIcons2["Bookmark"] = "dual-light/bookmark.svg";
+  DualLightIcons2["Box"] = "dual-light/box.svg";
+  DualLightIcons2["Briefcase"] = "dual-light/briefcase.svg";
+  DualLightIcons2["Brush"] = "dual-light/brush.svg";
+  DualLightIcons2["Building"] = "dual-light/building.svg";
+  DualLightIcons2["Bulb"] = "dual-light/bulb.svg";
+  DualLightIcons2["Calendar"] = "dual-light/calendar.svg";
+  DualLightIcons2["Camera"] = "dual-light/camera.svg";
+  DualLightIcons2["Cart"] = "dual-light/cart.svg";
+  DualLightIcons2["Cast"] = "dual-light/cast.svg";
+  DualLightIcons2["Category"] = "dual-light/category.svg";
+  DualLightIcons2["CenterAlign"] = "dual-light/center_align.svg";
+  DualLightIcons2["CheckAll"] = "dual-light/check_all.svg";
+  DualLightIcons2["CheckCircle"] = "dual-light/check_circled.svg";
+  DualLightIcons2["Check"] = "dual-light/check.svg";
+  DualLightIcons2["ChevronBackward"] = "dual-light/chevron_backward.svg";
+  DualLightIcons2["ChevronDoubleBackward"] = "dual-light/chevron_double_backward.svg";
+  DualLightIcons2["ChevronDoubleForward"] = "dual-light/chevron_double_forward.svg";
+  DualLightIcons2["ChevronDoubleDown"] = "dual-light/chevron_double_down.svg";
+  DualLightIcons2["ChevronDoubleUp"] = "dual-light/chevron_double_up.svg";
+  DualLightIcons2["ChevronDown"] = "dual-light/chevron_down.svg";
+  DualLightIcons2["ChevronForward"] = "dual-light/chevron_forward.svg";
+  DualLightIcons2["ChevronUp"] = "dual-light/chevron_up.svg";
+  DualLightIcons2["Chip"] = "dual-light/chip.svg";
+  DualLightIcons2["Chrome"] = "dual-light/chrome.svg";
+  DualLightIcons2["Clipboard"] = "dual-light/clipboard.svg";
+  DualLightIcons2["Clock"] = "dual-light/clock.svg";
+  DualLightIcons2["CloseCircle"] = "dual-light/close_circled.svg";
+  DualLightIcons2["Close"] = "dual-light/close.svg";
+  DualLightIcons2["CloudDownload"] = "dual-light/cloud_download.svg";
+  DualLightIcons2["CloudOff"] = "dual-light/cloud_off.svg";
+  DualLightIcons2["CloudUpload"] = "dual-light/cloud_upload.svg";
+  DualLightIcons2["Cloud"] = "dual-light/cloud.svg";
+  DualLightIcons2["Code"] = "dual-light/code.svg";
+  DualLightIcons2["Coffee"] = "dual-light/coffee.svg";
+  DualLightIcons2["Collapse"] = "dual-light/collapse.svg";
+  DualLightIcons2["ColorPalette"] = "dual-light/color_palette.svg";
+  DualLightIcons2["Command"] = "dual-light/command.svg";
+  DualLightIcons2["Compass"] = "dual-light/compass.svg";
+  DualLightIcons2["Crop"] = "dual-light/crop.svg";
+  DualLightIcons2["Crosshairs"] = "dual-light/crosshairs.svg";
+  DualLightIcons2["Cursor"] = "dual-light/cursor.svg";
+  DualLightIcons2["Dashboard"] = "dual-light/dashboard.svg";
+  DualLightIcons2["Database"] = "dual-light/database.svg";
+  DualLightIcons2["Design"] = "dual-light/design.svg";
+  DualLightIcons2["Diamond"] = "dual-light/diamond.svg";
+  DualLightIcons2["Document"] = "dual-light/document.svg";
+  DualLightIcons2["Dollar"] = "dual-light/dollar.svg";
+  DualLightIcons2["DonutChart"] = "dual-light/donut_chart.svg";
+  DualLightIcons2["Download"] = "dual-light/download.svg";
+  DualLightIcons2["Drop"] = "dual-light/drop.svg";
+  DualLightIcons2["Edit"] = "dual-light/edit.svg";
+  DualLightIcons2["EventAdd"] = "dual-light/event_add.svg";
+  DualLightIcons2["EventScheduled"] = "dual-light/event_scheduled.svg";
+  DualLightIcons2["Expand"] = "dual-light/expand.svg";
+  DualLightIcons2["Facebook"] = "dual-light/facebook.svg";
+  DualLightIcons2["FastBackward"] = "dual-light/fast_backward.svg";
+  DualLightIcons2["FastForward"] = "dual-light/fast_forward.svg";
+  DualLightIcons2["Figma"] = "dual-light/figma.svg";
+  DualLightIcons2["FileAdd"] = "dual-light/file_add.svg";
+  DualLightIcons2["File"] = "dual-light/file.svg";
+  DualLightIcons2["Files"] = "dual-light/files.svg";
+  DualLightIcons2["Film"] = "dual-light/film.svg";
+  DualLightIcons2["Filter"] = "dual-light/filter.svg";
+  DualLightIcons2["Fire"] = "dual-light/fire.svg";
+  DualLightIcons2["Flag"] = "dual-light/flag.svg";
+  DualLightIcons2["Flashlight"] = "dual-light/flashlight.svg";
+  DualLightIcons2["Flight"] = "dual-light/flight.svg";
+  DualLightIcons2["FolderAdd"] = "dual-light/folder_add.svg";
+  DualLightIcons2["Folder"] = "dual-light/folder.svg";
+  DualLightIcons2["Frown"] = "dual-light/frown.svg";
+  DualLightIcons2["Fuel"] = "dual-light/fuel.svg";
+  DualLightIcons2["Gamepad"] = "dual-light/gamepad.svg";
+  DualLightIcons2["Gift"] = "dual-light/gift.svg";
+  DualLightIcons2["Grid"] = "dual-light/grid.svg";
+  DualLightIcons2["Group"] = "dual-light/group.svg";
+  DualLightIcons2["Growth"] = "dual-light/growth.svg";
+  DualLightIcons2["HandCursor"] = "dual-light/hand_cursor.svg";
+  DualLightIcons2["Headphone"] = "dual-light/headphone.svg";
+  DualLightIcons2["Heart"] = "dual-light/heart.svg";
+  DualLightIcons2["Help"] = "dual-light/help.svg";
+  DualLightIcons2["Hide"] = "dual-light/hide.svg";
+  DualLightIcons2["Home"] = "dual-light/home.svg";
+  DualLightIcons2["Hourglass"] = "dual-light/hourglass.svg";
+  DualLightIcons2["Image"] = "dual-light/image.svg";
+  DualLightIcons2["Inbox"] = "dual-light/inbox.svg";
+  DualLightIcons2["Info"] = "dual-light/info.svg";
+  DualLightIcons2["Instagram"] = "dual-light/instagram.svg";
+  DualLightIcons2["Internet"] = "dual-light/internet.svg";
+  DualLightIcons2["Italics"] = "dual-light/italics.svg";
+  DualLightIcons2["Justify"] = "dual-light/justify.svg";
+  DualLightIcons2["Key"] = "dual-light/key.svg";
+  DualLightIcons2["Laptop"] = "dual-light/laptop.svg";
+  DualLightIcons2["Laugh"] = "dual-light/laugh.svg";
+  DualLightIcons2["Layers"] = "dual-light/layers.svg";
+  DualLightIcons2["Layout"] = "dual-light/layout.svg";
+  DualLightIcons2["Leaderboard"] = "dual-light/leaderboard.svg";
+  DualLightIcons2["LeftAlign"] = "dual-light/left_align.svg";
+  DualLightIcons2["LineChart"] = "dual-light/line_chart.svg";
+  DualLightIcons2["Link"] = "dual-light/link.svg";
+  DualLightIcons2["LinkedIn"] = "dual-light/linkedin.svg";
+  DualLightIcons2["List"] = "dual-light/list.svg";
+  DualLightIcons2["Live"] = "dual-light/live.svg";
+  DualLightIcons2["Loader"] = "dual-light/loader.svg";
+  DualLightIcons2["Location"] = "dual-light/location.svg";
+  DualLightIcons2["Lock"] = "dual-light/lock.svg";
+  DualLightIcons2["Login"] = "dual-light/login.svg";
+  DualLightIcons2["Logout"] = "dual-light/logout.svg";
+  DualLightIcons2["Mail"] = "dual-light/mail.svg";
+  DualLightIcons2["Map"] = "dual-light/map.svg";
+  DualLightIcons2["Meh"] = "dual-light/meh.svg";
+  DualLightIcons2["Menu"] = "dual-light/menu.svg";
+  DualLightIcons2["Message"] = "dual-light/message.svg";
+  DualLightIcons2["Messages"] = "dual-light/messages.svg";
+  DualLightIcons2["MicOff"] = "dual-light/mic_off.svg";
+  DualLightIcons2["Mic"] = "dual-light/mic.svg";
+  DualLightIcons2["Mobile"] = "dual-light/mobile.svg";
+  DualLightIcons2["Moon"] = "dual-light/moon.svg";
+  DualLightIcons2["MoreHorizontal"] = "dual-light/more_horizontal.svg";
+  DualLightIcons2["MoreVertical"] = "dual-light/more_vertical.svg";
+  DualLightIcons2["Mouse"] = "dual-light/mouse.svg";
+  DualLightIcons2["Music"] = "dual-light/music.svg";
+  DualLightIcons2["New"] = "dual-light/new.svg";
+  DualLightIcons2["Next"] = "dual-light/next.svg";
+  DualLightIcons2["Note"] = "dual-light/note.svg";
+  DualLightIcons2["Notes"] = "dual-light/notes.svg";
+  DualLightIcons2["NotificationOff"] = "dual-light/notification_off.svg";
+  DualLightIcons2["Notification"] = "dual-light/notification.svg";
+  DualLightIcons2["Open"] = "dual-light/open.svg";
+  DualLightIcons2["PainRoller"] = "dual-light/pain_roller.svg";
+  DualLightIcons2["Pause"] = "dual-light/pause.svg";
+  DualLightIcons2["Payment"] = "dual-light/payment.svg";
+  DualLightIcons2["Pen"] = "dual-light/pen.svg";
+  DualLightIcons2["Percent"] = "dual-light/percent.svg";
+  DualLightIcons2["Person"] = "dual-light/person.svg";
+  DualLightIcons2["PhoneCallIncoming"] = "dual-light/phone_call_incoming.svg";
+  DualLightIcons2["PhoneCallOutgoing"] = "dual-light/phone_call_outgoing.svg";
+  DualLightIcons2["PhoneCallRejected"] = "dual-light/phone_call_rejected.svg";
+  DualLightIcons2["Phone"] = "dual-light/phone.svg";
+  DualLightIcons2["Photos"] = "dual-light/photos.svg";
+  DualLightIcons2["PieChart"] = "dual-light/pie_chart.svg";
+  DualLightIcons2["Pin"] = "dual-light/pin.svg";
+  DualLightIcons2["Pinterest"] = "dual-light/pinterest.svg";
+  DualLightIcons2["PlayCircle"] = "dual-light/play_circled.svg";
+  DualLightIcons2["Play"] = "dual-light/play.svg";
+  DualLightIcons2["Playlist"] = "dual-light/playlist.svg";
+  DualLightIcons2["Power"] = "dual-light/power.svg";
+  DualLightIcons2["Presentation"] = "dual-light/presentation.svg";
+  DualLightIcons2["Previous"] = "dual-light/previous.svg";
+  DualLightIcons2["Printer"] = "dual-light/printer.svg";
+  DualLightIcons2["ProfileCircle"] = "dual-light/profile_circled.svg";
+  DualLightIcons2["Promotion"] = "dual-light/promotion.svg";
+  DualLightIcons2["Rain"] = "dual-light/rain.svg";
+  DualLightIcons2["Receipt"] = "dual-light/receipt.svg";
+  DualLightIcons2["Reload"] = "dual-light/reload.svg";
+  DualLightIcons2["Remove"] = "dual-light/remove.svg";
+  DualLightIcons2["Repeat"] = "dual-light/repeat.svg";
+  DualLightIcons2["RightAlign"] = "dual-light/right_align.svg";
+  DualLightIcons2["Rocket"] = "dual-light/rocket.svg";
+  DualLightIcons2["Ruler"] = "dual-light/ruler.svg";
+  DualLightIcons2["Sad"] = "dual-light/sad.svg";
+  DualLightIcons2["Save"] = "dual-light/save.svg";
+  DualLightIcons2["Scan"] = "dual-light/scan.svg";
+  DualLightIcons2["Schedule"] = "dual-light/schedule.svg";
+  DualLightIcons2["Scissors"] = "dual-light/scissors.svg";
+  DualLightIcons2["Search"] = "dual-light/search.svg";
+  DualLightIcons2["Send"] = "dual-light/send.svg";
+  DualLightIcons2["Settings"] = "dual-light/settings.svg";
+  DualLightIcons2["Share"] = "dual-light/share.svg";
+  DualLightIcons2["ShieldCheck"] = "dual-light/shield_check.svg";
+  DualLightIcons2["Shield"] = "dual-light/shield.svg";
+  DualLightIcons2["Ship"] = "dual-light/ship.svg";
+  DualLightIcons2["ShoppingBag"] = "dual-light/shopping_bag.svg";
+  DualLightIcons2["Show"] = "dual-light/show.svg";
+  DualLightIcons2["Shuffle"] = "dual-light/shuffle.svg";
+  DualLightIcons2["Size"] = "dual-light/size.svg";
+  DualLightIcons2["Slack"] = "dual-light/slack.svg";
+  DualLightIcons2["Smile"] = "dual-light/smile.svg";
+  DualLightIcons2["Snapchat"] = "dual-light/snapchat.svg";
+  DualLightIcons2["Snowflake"] = "dual-light/snowflake.svg";
+  DualLightIcons2["Sort"] = "dual-light/sort.svg";
+  DualLightIcons2["Spotify"] = "dual-light/spotify.svg";
+  DualLightIcons2["Star"] = "dual-light/star.svg";
+  DualLightIcons2["Stop"] = "dual-light/stop.svg";
+  DualLightIcons2["Store"] = "dual-light/store.svg";
+  DualLightIcons2["Sun"] = "dual-light/sun.svg";
+  DualLightIcons2["Sync"] = "dual-light/sync.svg";
+  DualLightIcons2["Tablet"] = "dual-light/tablet.svg";
+  DualLightIcons2["Tag"] = "dual-light/tag.svg";
+  DualLightIcons2["Target"] = "dual-light/target.svg";
+  DualLightIcons2["Thermomter"] = "dual-light/thermomter.svg";
+  DualLightIcons2["ThumbsDown"] = "dual-light/thumbs_down.svg";
+  DualLightIcons2["ThumbsUp"] = "dual-light/thumbs_up.svg";
+  DualLightIcons2["Ticket"] = "dual-light/ticket.svg";
+  DualLightIcons2["Timer"] = "dual-light/timer.svg";
+  DualLightIcons2["ToggleOff"] = "dual-light/toggle_off.svg";
+  DualLightIcons2["ToggleOn"] = "dual-light/toggle_on.svg";
+  DualLightIcons2["Tool"] = "dual-light/tool.svg";
+  DualLightIcons2["Train"] = "dual-light/train.svg";
+  DualLightIcons2["Trash"] = "dual-light/trash.svg";
+  DualLightIcons2["TrendingDown"] = "dual-light/trending_down.svg";
+  DualLightIcons2["TrendingUp"] = "dual-light/trending_up.svg";
+  DualLightIcons2["Trophy"] = "dual-light/trophy.svg";
+  DualLightIcons2["Truck"] = "dual-light/truck.svg";
+  DualLightIcons2["TV"] = "dual-light/tv.svg";
+  DualLightIcons2["Twitch"] = "dual-light/twitch.svg";
+  DualLightIcons2["Twitter"] = "dual-light/twitter.svg";
+  DualLightIcons2["Umbrella"] = "dual-light/umbrella.svg";
+  DualLightIcons2["Underline"] = "dual-light/underline.svg";
+  DualLightIcons2["Unlock"] = "dual-light/unlock.svg";
+  DualLightIcons2["Update"] = "dual-light/update.svg";
+  DualLightIcons2["Upload"] = "dual-light/upload.svg";
+  DualLightIcons2["Utensils"] = "dual-light/utensils.svg";
+  DualLightIcons2["VideoOff"] = "dual-light/video_off.svg";
+  DualLightIcons2["VideoRecorder"] = "dual-light/video_recorder.svg";
+  DualLightIcons2["VolumeHigh"] = "dual-light/volume_high.svg";
+  DualLightIcons2["VolumeOff"] = "dual-light/volume_off.svg";
+  DualLightIcons2["Volume"] = "dual-light/volume.svg";
+  DualLightIcons2["Wallet"] = "dual-light/wallet.svg";
+  DualLightIcons2["Warning"] = "dual-light/warning.svg";
+  DualLightIcons2["Watch"] = "dual-light/watch.svg";
+  DualLightIcons2["WifiOff"] = "dual-light/wifi_off.svg";
+  DualLightIcons2["Wifi"] = "dual-light/wifi.svg";
+  DualLightIcons2["Wind"] = "dual-light/wind.svg";
+  DualLightIcons2["Window"] = "dual-light/window.svg";
+  DualLightIcons2["YouTube"] = "dual-light/youtube.svg";
+  DualLightIcons2["Zap"] = "dual-light/zap.svg";
+  DualLightIcons2["ZoomIn"] = "dual-light/zoom_in.svg";
+  DualLightIcons2["ZoomOut"] = "dual-light/zoom_out.svg";
+  return DualLightIcons2;
+})(DualLightIcons || {});
+
 // src/dual-light/Message.tsx
 var import_react23 = require("react");
 var Message = (0, import_react23.memo)((props) => {
@@ -1260,8 +1260,8 @@ var Message = (0, import_react23.memo)((props) => {
 var import_react24 = require("react");
 var Messages = (0, import_react24.memo)((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
-    width: "24",
-    height: "24",
+    width: "1em",
+    height: "1em",
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1319,8 +1319,8 @@ var Messages = (0, import_react24.memo)((props) => {
 var import_react25 = require("react");
 var Note = (0, import_react25.memo)((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
-    width: "24",
-    height: "24",
+    width: "1em",
+    height: "1em",
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1374,61 +1374,53 @@ var Note = (0, import_react25.memo)((props) => {
   }))));
 });
 
-// src/dual-light/Send.tsx
-var import_react26 = __toESM(require("react"));
-var Send = (0, import_react26.memo)((props) => {
-  return /* @__PURE__ */ import_react26.default.createElement("svg", {
+// src/dual-light/Open.tsx
+var import_react26 = require("react");
+var Open = (0, import_react26.memo)((props) => {
+  return /* @__PURE__ */ React.createElement("svg", {
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, /* @__PURE__ */ import_react26.default.createElement("g", {
-    "clip-path": "url(#clip0)"
-  }, /* @__PURE__ */ import_react26.default.createElement("path", {
+  }, /* @__PURE__ */ React.createElement("path", {
+    d: "M19 9C19 9.55229 19.4477 10 20 10C20.5523 10 21 9.55229 21 9V5C21 3.89543 20.1046 3 19 3H15C14.4477 3 14 3.44772 14 4C14 4.55228 14.4477 5 15 5L17.5858 5L11.2929 11.2929C10.9024 11.6834 10.9024 12.3166 11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19 6.41421V9Z",
+    fill: "url(#paint0_linear)"
+  }), /* @__PURE__ */ React.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
-    d: "M2.1928 6.57843C1.36183 4.08552 3.91013 1.80468 6.29603 2.90587L20.0983 9.27616C22.422 10.3487 22.422 13.6514 20.0983 14.7239L6.29603 21.0941C3.91013 22.1953 1.36184 19.9145 2.19281 17.4216L3.68377 12.9487C3.88904 12.3329 3.88904 11.6672 3.68377 11.0514L2.1928 6.57843Z",
-    fill: "url(#paint0_linear)"
-  }), /* @__PURE__ */ import_react26.default.createElement("path", {
-    d: "M3.66677 13L3.68387 12.9487C3.88913 12.3329 3.88913 11.6672 3.68387 11.0514L3.66675 11H14.0001C14.5524 11 15.0001 11.4477 15.0001 12C15.0001 12.5523 14.5524 13 14.0001 13H3.66677Z",
+    d: "M3 6C3 4.34315 4.34315 3 6 3H11C11.5523 3 12 3.44772 12 4C12 4.55228 11.5523 5 11 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V13C19 12.4477 19.4477 12 20 12C20.5523 12 21 12.4477 21 13V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6Z",
     fill: "url(#paint1_linear)"
-  })), /* @__PURE__ */ import_react26.default.createElement("defs", null, /* @__PURE__ */ import_react26.default.createElement("linearGradient", {
+  }), /* @__PURE__ */ React.createElement("defs", null, /* @__PURE__ */ React.createElement("linearGradient", {
     id: "paint0_linear",
-    x1: "13",
-    y1: "0",
-    x2: "13",
-    y2: "24",
-    gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react26.default.createElement("stop", {
-    stopColor: "white"
-  }), /* @__PURE__ */ import_react26.default.createElement("stop", {
-    offset: "1",
-    stopColor: "#D1DAEE"
-  })), /* @__PURE__ */ import_react26.default.createElement("linearGradient", {
-    id: "paint1_linear",
-    x1: "9.33342",
-    y1: "11",
-    x2: "9.33342",
+    x1: "16",
+    y1: "3",
+    x2: "16",
     y2: "13",
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react26.default.createElement("stop", {
+  }, /* @__PURE__ */ React.createElement("stop", {
+    stopColor: "white"
+  }), /* @__PURE__ */ React.createElement("stop", {
+    offset: "1",
+    stopColor: "#D1DAEE"
+  })), /* @__PURE__ */ React.createElement("linearGradient", {
+    id: "paint1_linear",
+    x1: "12",
+    y1: "3",
+    x2: "12",
+    y2: "21",
+    gradientUnits: "userSpaceOnUse"
+  }, /* @__PURE__ */ React.createElement("stop", {
     stopColor: "#6073D8"
-  }), /* @__PURE__ */ import_react26.default.createElement("stop", {
+  }), /* @__PURE__ */ React.createElement("stop", {
     offset: "1",
     stopColor: "#5C5ACA"
-  })), /* @__PURE__ */ import_react26.default.createElement("clipPath", {
-    id: "clip0"
-  }, /* @__PURE__ */ import_react26.default.createElement("rect", {
-    width: "24",
-    height: "24",
-    fill: "white"
   }))));
 });
 
-// src/dual-light/Star.tsx
+// src/dual-light/Send.tsx
 var import_react27 = __toESM(require("react"));
-var Star = (0, import_react27.memo)((props) => {
+var Send = (0, import_react27.memo)((props) => {
   return /* @__PURE__ */ import_react27.default.createElement("svg", {
     width: "24",
     height: "24",
@@ -1438,20 +1430,37 @@ var Star = (0, import_react27.memo)((props) => {
   }, /* @__PURE__ */ import_react27.default.createElement("g", {
     "clip-path": "url(#clip0)"
   }, /* @__PURE__ */ import_react27.default.createElement("path", {
-    d: "M10.1109 3.43478C10.7335 1.64366 13.2665 1.64366 13.8891 3.43478L14.8347 6.15493C15.1093 6.94508 15.8467 7.48082 16.683 7.49786L19.5622 7.55653C21.4581 7.59517 22.2409 10.0043 20.7298 11.1499L18.4349 12.8897C17.7683 13.3951 17.4867 14.2619 17.7289 15.0626L18.5628 17.819C19.112 19.634 17.0627 21.1229 15.5062 20.0398L13.1424 18.3949C12.4557 17.9171 11.5443 17.9171 10.8576 18.3949L8.49383 20.0398C6.93734 21.1229 4.88805 19.634 5.43715 17.819L6.27107 15.0626C6.51331 14.2619 6.23165 13.3951 5.56506 12.8897L3.27022 11.1499C1.75915 10.0043 2.54191 7.59517 4.43776 7.55653L7.31697 7.49786C8.15331 7.48082 8.89069 6.94508 9.16535 6.15494L10.1109 3.43478Z",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M2.1928 6.57843C1.36183 4.08552 3.91013 1.80468 6.29603 2.90587L20.0983 9.27616C22.422 10.3487 22.422 13.6514 20.0983 14.7239L6.29603 21.0941C3.91013 22.1953 1.36184 19.9145 2.19281 17.4216L3.68377 12.9487C3.88904 12.3329 3.88904 11.6672 3.68377 11.0514L2.1928 6.57843Z",
     fill: "url(#paint0_linear)"
+  }), /* @__PURE__ */ import_react27.default.createElement("path", {
+    d: "M3.66677 13L3.68387 12.9487C3.88913 12.3329 3.88913 11.6672 3.68387 11.0514L3.66675 11H14.0001C14.5524 11 15.0001 11.4477 15.0001 12C15.0001 12.5523 14.5524 13 14.0001 13H3.66677Z",
+    fill: "url(#paint1_linear)"
   })), /* @__PURE__ */ import_react27.default.createElement("defs", null, /* @__PURE__ */ import_react27.default.createElement("linearGradient", {
     id: "paint0_linear",
-    x1: "12",
-    y1: "-2",
-    x2: "12",
-    y2: "26",
+    x1: "13",
+    y1: "0",
+    x2: "13",
+    y2: "24",
     gradientUnits: "userSpaceOnUse"
   }, /* @__PURE__ */ import_react27.default.createElement("stop", {
     stopColor: "white"
   }), /* @__PURE__ */ import_react27.default.createElement("stop", {
     offset: "1",
     stopColor: "#D1DAEE"
+  })), /* @__PURE__ */ import_react27.default.createElement("linearGradient", {
+    id: "paint1_linear",
+    x1: "9.33342",
+    y1: "11",
+    x2: "9.33342",
+    y2: "13",
+    gradientUnits: "userSpaceOnUse"
+  }, /* @__PURE__ */ import_react27.default.createElement("stop", {
+    stopColor: "#6073D8"
+  }), /* @__PURE__ */ import_react27.default.createElement("stop", {
+    offset: "1",
+    stopColor: "#5C5ACA"
   })), /* @__PURE__ */ import_react27.default.createElement("clipPath", {
     id: "clip0"
   }, /* @__PURE__ */ import_react27.default.createElement("rect", {
@@ -1505,271 +1514,262 @@ var Settings = (0, import_react28.memo)((props) => {
   }))));
 });
 
-// src/dual-light/Tool.tsx
+// src/dual-light/Star.tsx
 var import_react29 = __toESM(require("react"));
-var Tool = (0, import_react29.memo)((props) => {
+var Star = (0, import_react29.memo)((props) => {
   return /* @__PURE__ */ import_react29.default.createElement("svg", {
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /* @__PURE__ */ import_react29.default.createElement("g", {
+    "clip-path": "url(#clip0)"
+  }, /* @__PURE__ */ import_react29.default.createElement("path", {
+    d: "M10.1109 3.43478C10.7335 1.64366 13.2665 1.64366 13.8891 3.43478L14.8347 6.15493C15.1093 6.94508 15.8467 7.48082 16.683 7.49786L19.5622 7.55653C21.4581 7.59517 22.2409 10.0043 20.7298 11.1499L18.4349 12.8897C17.7683 13.3951 17.4867 14.2619 17.7289 15.0626L18.5628 17.819C19.112 19.634 17.0627 21.1229 15.5062 20.0398L13.1424 18.3949C12.4557 17.9171 11.5443 17.9171 10.8576 18.3949L8.49383 20.0398C6.93734 21.1229 4.88805 19.634 5.43715 17.819L6.27107 15.0626C6.51331 14.2619 6.23165 13.3951 5.56506 12.8897L3.27022 11.1499C1.75915 10.0043 2.54191 7.59517 4.43776 7.55653L7.31697 7.49786C8.15331 7.48082 8.89069 6.94508 9.16535 6.15494L10.1109 3.43478Z",
+    fill: "url(#paint0_linear)"
+  })), /* @__PURE__ */ import_react29.default.createElement("defs", null, /* @__PURE__ */ import_react29.default.createElement("linearGradient", {
+    id: "paint0_linear",
+    x1: "12",
+    y1: "-2",
+    x2: "12",
+    y2: "26",
+    gradientUnits: "userSpaceOnUse"
+  }, /* @__PURE__ */ import_react29.default.createElement("stop", {
+    stopColor: "white"
+  }), /* @__PURE__ */ import_react29.default.createElement("stop", {
+    offset: "1",
+    stopColor: "#D1DAEE"
+  })), /* @__PURE__ */ import_react29.default.createElement("clipPath", {
+    id: "clip0"
+  }, /* @__PURE__ */ import_react29.default.createElement("rect", {
+    width: "24",
+    height: "24",
+    fill: "white"
+  }))));
+});
+
+// src/dual-light/Tool.tsx
+var import_react30 = __toESM(require("react"));
+var Tool = (0, import_react30.memo)((props) => {
+  return /* @__PURE__ */ import_react30.default.createElement("svg", {
     width: "1em",
     height: "1em",
     viewBox: "0 0 24 24",
     fill: "none",
     ...props
-  }, /* @__PURE__ */ import_react29.default.createElement("path", {
+  }, /* @__PURE__ */ import_react30.default.createElement("path", {
     d: "M10.999 10.158l2.828 2.829-7.07 7.07a2 2 0 01-2.83-2.828L11 10.16z",
     fill: "url(#prefix__paint0_linear)"
-  }), /* @__PURE__ */ import_react29.default.createElement("path", {
+  }), /* @__PURE__ */ import_react30.default.createElement("path", {
     d: "M16.829 4.328c.488-.488.338-1.31-.337-1.453a6 6 0 104.618 4.618c-.143-.675-.965-.824-1.453-.336L18.07 8.744a2 2 0 11-2.829-2.829l1.588-1.587z",
     fill: "url(#prefix__paint1_linear)"
-  }), /* @__PURE__ */ import_react29.default.createElement("defs", null, /* @__PURE__ */ import_react29.default.createElement("linearGradient", {
+  }), /* @__PURE__ */ import_react30.default.createElement("defs", null, /* @__PURE__ */ import_react30.default.createElement("linearGradient", {
     id: "prefix__paint0_linear",
     x1: 8.585,
     y1: 10.158,
     x2: 8.585,
     y2: 20.643,
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react29.default.createElement("stop", {
+  }, /* @__PURE__ */ import_react30.default.createElement("stop", {
     stopColor: "#6073D8"
-  }), /* @__PURE__ */ import_react29.default.createElement("stop", {
+  }), /* @__PURE__ */ import_react30.default.createElement("stop", {
     offset: 1,
     stopColor: "#5C5ACA"
-  })), /* @__PURE__ */ import_react29.default.createElement("linearGradient", {
+  })), /* @__PURE__ */ import_react30.default.createElement("linearGradient", {
     id: "prefix__paint1_linear",
     x1: 15.242,
     y1: 2.744,
     x2: 15.242,
     y2: 14.744,
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react29.default.createElement("stop", {
+  }, /* @__PURE__ */ import_react30.default.createElement("stop", {
     stopColor: "#fff"
-  }), /* @__PURE__ */ import_react29.default.createElement("stop", {
+  }), /* @__PURE__ */ import_react30.default.createElement("stop", {
     offset: 1,
     stopColor: "#D1DAEE"
   }))));
 });
 
 // src/dual-light/Trash.tsx
-var import_react30 = __toESM(require("react"));
-var Trash = (0, import_react30.memo)((props) => {
-  return /* @__PURE__ */ import_react30.default.createElement("svg", {
+var import_react31 = __toESM(require("react"));
+var Trash = (0, import_react31.memo)((props) => {
+  return /* @__PURE__ */ import_react31.default.createElement("svg", {
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, /* @__PURE__ */ import_react30.default.createElement("path", {
+  }, /* @__PURE__ */ import_react31.default.createElement("path", {
     d: "M4 7H20V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7Z",
     fill: "url(#paint0_linear)"
-  }), /* @__PURE__ */ import_react30.default.createElement("path", {
+  }), /* @__PURE__ */ import_react31.default.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
     d: "M9 10C9.55228 10 10 10.4477 10 11V18C10 18.5523 9.55228 19 9 19C8.44772 19 8 18.5523 8 18V11C8 10.4477 8.44772 10 9 10Z",
     fill: "url(#paint1_linear)"
-  }), /* @__PURE__ */ import_react30.default.createElement("path", {
+  }), /* @__PURE__ */ import_react31.default.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
     d: "M15 10C15.5523 10 16 10.4477 16 11V18C16 18.5523 15.5523 19 15 19C14.4477 19 14 18.5523 14 18V11C14 10.4477 14.4477 10 15 10Z",
     fill: "url(#paint2_linear)"
-  }), /* @__PURE__ */ import_react30.default.createElement("path", {
+  }), /* @__PURE__ */ import_react31.default.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
     d: "M7 5C7 3.34315 8.34315 2 10 2H14C15.6569 2 17 3.34315 17 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6C2 5.44772 2.44772 5 3 5H7ZM10 4H14C14.5523 4 15 4.44772 15 5H9C9 4.44772 9.44772 4 10 4Z",
     fill: "url(#paint3_linear)"
-  }), /* @__PURE__ */ import_react30.default.createElement("defs", null, /* @__PURE__ */ import_react30.default.createElement("linearGradient", {
+  }), /* @__PURE__ */ import_react31.default.createElement("defs", null, /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
     id: "paint0_linear",
     x1: "12",
     y1: "7",
     x2: "12",
     y2: "22",
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react30.default.createElement("stop", {
+  }, /* @__PURE__ */ import_react31.default.createElement("stop", {
     stopColor: "white"
-  }), /* @__PURE__ */ import_react30.default.createElement("stop", {
+  }), /* @__PURE__ */ import_react31.default.createElement("stop", {
     offset: "1",
     stopColor: "#D1DAEE"
-  })), /* @__PURE__ */ import_react30.default.createElement("linearGradient", {
+  })), /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
     id: "paint1_linear",
     x1: "9",
     y1: "10",
     x2: "9",
     y2: "19",
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react30.default.createElement("stop", {
+  }, /* @__PURE__ */ import_react31.default.createElement("stop", {
     stopColor: "#6073D8"
-  }), /* @__PURE__ */ import_react30.default.createElement("stop", {
+  }), /* @__PURE__ */ import_react31.default.createElement("stop", {
     offset: "1",
     stopColor: "#5C5ACA"
-  })), /* @__PURE__ */ import_react30.default.createElement("linearGradient", {
+  })), /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
     id: "paint2_linear",
     x1: "15",
     y1: "10",
     x2: "15",
     y2: "19",
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react30.default.createElement("stop", {
+  }, /* @__PURE__ */ import_react31.default.createElement("stop", {
     stopColor: "#6073D8"
-  }), /* @__PURE__ */ import_react30.default.createElement("stop", {
+  }), /* @__PURE__ */ import_react31.default.createElement("stop", {
     offset: "1",
     stopColor: "#5C5ACA"
-  })), /* @__PURE__ */ import_react30.default.createElement("linearGradient", {
+  })), /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
     id: "paint3_linear",
     x1: "12",
     y1: "2",
     x2: "12",
     y2: "7",
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react30.default.createElement("stop", {
-    stopColor: "#6073D8"
-  }), /* @__PURE__ */ import_react30.default.createElement("stop", {
-    offset: "1",
-    stopColor: "#5C5ACA"
-  }))));
-});
-
-// src/dual-light/Warning.tsx
-var import_react31 = __toESM(require("react"));
-var Warning = (0, import_react31.memo)((props) => {
-  return /* @__PURE__ */ import_react31.default.createElement("svg", {
-    width: "1em",
-    height: "1em",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    ...props
-  }, /* @__PURE__ */ import_react31.default.createElement("path", {
-    d: "M9.394 4.574c1.15-2.02 4.062-2.02 5.213 0l6.805 11.94c1.14 2-.305 4.486-2.607 4.486H5.195c-2.302 0-3.746-2.485-2.606-4.485L9.394 4.574z",
-    fill: "url(#prefix__paint0_linear)"
-  }), /* @__PURE__ */ import_react31.default.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M12 14a1 1 0 001-1V8a1 1 0 10-2 0v5a1 1 0 001 1z",
-    fill: "url(#prefix__paint1_linear)"
-  }), /* @__PURE__ */ import_react31.default.createElement("circle", {
-    cx: 12,
-    cy: 17,
-    r: 1,
-    fill: "url(#prefix__paint2_linear)"
-  }), /* @__PURE__ */ import_react31.default.createElement("defs", null, /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
-    id: "prefix__paint0_linear",
-    x1: 12,
-    y1: 0,
-    x2: 12,
-    y2: 21,
-    gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react31.default.createElement("stop", {
-    stopColor: "#fff"
-  }), /* @__PURE__ */ import_react31.default.createElement("stop", {
-    offset: 1,
-    stopColor: "#D1DAEE"
-  })), /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
-    id: "prefix__paint1_linear",
-    x1: 12,
-    y1: 14,
-    x2: 12,
-    y2: 7,
-    gradientUnits: "userSpaceOnUse"
   }, /* @__PURE__ */ import_react31.default.createElement("stop", {
     stopColor: "#6073D8"
   }), /* @__PURE__ */ import_react31.default.createElement("stop", {
-    offset: 1,
-    stopColor: "#5C5ACA"
-  })), /* @__PURE__ */ import_react31.default.createElement("linearGradient", {
-    id: "prefix__paint2_linear",
-    x1: 12,
-    y1: 16,
-    x2: 12,
-    y2: 18,
-    gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react31.default.createElement("stop", {
-    stopColor: "#6073D8"
-  }), /* @__PURE__ */ import_react31.default.createElement("stop", {
-    offset: 1,
-    stopColor: "#5C5ACA"
-  }))));
-});
-
-// src/dual-light/Open.tsx
-var import_react32 = require("react");
-var Open = (0, import_react32.memo)((props) => {
-  return /* @__PURE__ */ React.createElement("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /* @__PURE__ */ React.createElement("path", {
-    d: "M19 9C19 9.55229 19.4477 10 20 10C20.5523 10 21 9.55229 21 9V5C21 3.89543 20.1046 3 19 3H15C14.4477 3 14 3.44772 14 4C14 4.55228 14.4477 5 15 5L17.5858 5L11.2929 11.2929C10.9024 11.6834 10.9024 12.3166 11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19 6.41421V9Z",
-    fill: "url(#paint0_linear)"
-  }), /* @__PURE__ */ React.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M3 6C3 4.34315 4.34315 3 6 3H11C11.5523 3 12 3.44772 12 4C12 4.55228 11.5523 5 11 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V13C19 12.4477 19.4477 12 20 12C20.5523 12 21 12.4477 21 13V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6Z",
-    fill: "url(#paint1_linear)"
-  }), /* @__PURE__ */ React.createElement("defs", null, /* @__PURE__ */ React.createElement("linearGradient", {
-    id: "paint0_linear",
-    x1: "16",
-    y1: "3",
-    x2: "16",
-    y2: "13",
-    gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ React.createElement("stop", {
-    stopColor: "white"
-  }), /* @__PURE__ */ React.createElement("stop", {
-    offset: "1",
-    stopColor: "#D1DAEE"
-  })), /* @__PURE__ */ React.createElement("linearGradient", {
-    id: "paint1_linear",
-    x1: "12",
-    y1: "3",
-    x2: "12",
-    y2: "21",
-    gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ React.createElement("stop", {
-    stopColor: "#6073D8"
-  }), /* @__PURE__ */ React.createElement("stop", {
     offset: "1",
     stopColor: "#5C5ACA"
   }))));
 });
 
 // src/dual-light/Upload.tsx
-var import_react33 = __toESM(require("react"));
-var Upload2 = (0, import_react33.memo)((props) => {
-  return /* @__PURE__ */ import_react33.default.createElement("svg", {
+var import_react32 = __toESM(require("react"));
+var Upload2 = (0, import_react32.memo)((props) => {
+  return /* @__PURE__ */ import_react32.default.createElement("svg", {
     width: "1em",
     height: "1em",
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, /* @__PURE__ */ import_react33.default.createElement("path", {
+  }, /* @__PURE__ */ import_react32.default.createElement("path", {
     d: "M17.2071 9.2905C17.5976 9.68103 17.5976 10.3142 17.2071 10.7047C16.8166 11.0952 16.1834 11.0952 15.7929 10.7047L13.0019 7.91377V15C13.0019 15.5523 12.5542 16 12.0019 16C11.4496 16 11.0019 15.5523 11.0019 15V7.91368L8.20894 10.7067C7.81841 11.0972 7.18525 11.0972 6.79472 10.7067C6.4042 10.3161 6.4042 9.68298 6.79472 9.29245L11.2948 4.79241C11.4823 4.60487 11.7367 4.49951 12.0019 4.49951C12.2671 4.49951 12.5214 4.60487 12.709 4.79241L17.2071 9.2905Z",
     fill: "url(#paint0_linear)"
-  }), /* @__PURE__ */ import_react33.default.createElement("path", {
+  }), /* @__PURE__ */ import_react32.default.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
     d: "M4 14C4.55228 14 5 14.4477 5 15V17C5 17.5523 5.44772 18 6 18H18C18.5523 18 19 17.5523 19 17V15C19 14.4477 19.4477 14 20 14C20.5523 14 21 14.4477 21 15V17C21 18.6569 19.6569 20 18 20H6C4.34315 20 3 18.6569 3 17V15C3 14.4477 3.44772 14 4 14Z",
     fill: "url(#paint1_linear)"
-  }), /* @__PURE__ */ import_react33.default.createElement("defs", null, /* @__PURE__ */ import_react33.default.createElement("linearGradient", {
+  }), /* @__PURE__ */ import_react32.default.createElement("defs", null, /* @__PURE__ */ import_react32.default.createElement("linearGradient", {
     id: "paint0_linear",
     x1: "12.0009",
     y1: "4.49951",
     x2: "12.0009",
     y2: "16",
     gradientUnits: "userSpaceOnUse"
-  }, /* @__PURE__ */ import_react33.default.createElement("stop", {
+  }, /* @__PURE__ */ import_react32.default.createElement("stop", {
     stopColor: "white"
-  }), /* @__PURE__ */ import_react33.default.createElement("stop", {
+  }), /* @__PURE__ */ import_react32.default.createElement("stop", {
     offset: "1",
     stopColor: "#D1DAEE"
-  })), /* @__PURE__ */ import_react33.default.createElement("linearGradient", {
+  })), /* @__PURE__ */ import_react32.default.createElement("linearGradient", {
     id: "paint1_linear",
     x1: "12",
     y1: "14",
     x2: "12",
     y2: "20",
     gradientUnits: "userSpaceOnUse"
+  }, /* @__PURE__ */ import_react32.default.createElement("stop", {
+    stopColor: "#6073D8"
+  }), /* @__PURE__ */ import_react32.default.createElement("stop", {
+    offset: "1",
+    stopColor: "#5C5ACA"
+  }))));
+});
+
+// src/dual-light/Warning.tsx
+var import_react33 = __toESM(require("react"));
+var Warning = (0, import_react33.memo)((props) => {
+  return /* @__PURE__ */ import_react33.default.createElement("svg", {
+    width: "1em",
+    height: "1em",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    ...props
+  }, /* @__PURE__ */ import_react33.default.createElement("path", {
+    d: "M9.394 4.574c1.15-2.02 4.062-2.02 5.213 0l6.805 11.94c1.14 2-.305 4.486-2.607 4.486H5.195c-2.302 0-3.746-2.485-2.606-4.485L9.394 4.574z",
+    fill: "url(#prefix__paint0_linear)"
+  }), /* @__PURE__ */ import_react33.default.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 14a1 1 0 001-1V8a1 1 0 10-2 0v5a1 1 0 001 1z",
+    fill: "url(#prefix__paint1_linear)"
+  }), /* @__PURE__ */ import_react33.default.createElement("circle", {
+    cx: 12,
+    cy: 17,
+    r: 1,
+    fill: "url(#prefix__paint2_linear)"
+  }), /* @__PURE__ */ import_react33.default.createElement("defs", null, /* @__PURE__ */ import_react33.default.createElement("linearGradient", {
+    id: "prefix__paint0_linear",
+    x1: 12,
+    y1: 0,
+    x2: 12,
+    y2: 21,
+    gradientUnits: "userSpaceOnUse"
+  }, /* @__PURE__ */ import_react33.default.createElement("stop", {
+    stopColor: "#fff"
+  }), /* @__PURE__ */ import_react33.default.createElement("stop", {
+    offset: 1,
+    stopColor: "#D1DAEE"
+  })), /* @__PURE__ */ import_react33.default.createElement("linearGradient", {
+    id: "prefix__paint1_linear",
+    x1: 12,
+    y1: 14,
+    x2: 12,
+    y2: 7,
+    gradientUnits: "userSpaceOnUse"
   }, /* @__PURE__ */ import_react33.default.createElement("stop", {
     stopColor: "#6073D8"
   }), /* @__PURE__ */ import_react33.default.createElement("stop", {
-    offset: "1",
+    offset: 1,
+    stopColor: "#5C5ACA"
+  })), /* @__PURE__ */ import_react33.default.createElement("linearGradient", {
+    id: "prefix__paint2_linear",
+    x1: 12,
+    y1: 16,
+    x2: 12,
+    y2: 18,
+    gradientUnits: "userSpaceOnUse"
+  }, /* @__PURE__ */ import_react33.default.createElement("stop", {
+    stopColor: "#6073D8"
+  }), /* @__PURE__ */ import_react33.default.createElement("stop", {
+    offset: 1,
     stopColor: "#5C5ACA"
   }))));
 });
