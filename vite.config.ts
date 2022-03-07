@@ -15,19 +15,18 @@ export default defineConfig({
     outDir: './dist',
     rollupOptions: {
       // Externalize deps that shouldn't be bundled
-      external: ['react', 'react-dom', 'styled-components'],
+      external: ['react', 'react-dom'],
       output: {
         // Global vars to use in UMD build for externalized deps
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
-          'styled-components': 'styled',
         },
       },
     },
   },
   optimizeDeps: {
-    exclude: ['react', 'react-dom', 'styled-components'],
+    exclude: ['react', 'react-dom'],
     include: [],
   },
   define: {
@@ -39,21 +38,7 @@ export default defineConfig({
     // jsxFragment: 'Fragment',
     // jsxInject: `import React from 'react'`,
   },
-  plugins: [
-    react({
-      babel: {
-        plugins: [
-          [
-            'babel-plugin-styled-components',
-            {
-              displayName: true,
-              fileName: false,
-            },
-          ],
-        ],
-      },
-    }),
-  ],
+  plugins: [react()],
 });
 
 /*
