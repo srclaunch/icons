@@ -1,4 +1,4 @@
-import React, { memo, ReactElement, SVGProps } from 'react';
+import { memo, ReactElement, SVGProps } from 'react';
 
 export const Home = memo((props: SVGProps<SVGSVGElement>): ReactElement => {
   return (

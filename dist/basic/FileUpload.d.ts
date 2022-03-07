@@ -1,3 +1,3 @@
-import React, { ReactElement, SVGProps } from 'react';
-export declare const FileUpload: React.MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => ReactElement>;
+import { ReactElement, SVGProps } from 'react';
+export declare const FileUpload: import("react").MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => ReactElement>;
 //# sourceMappingURL=FileUpload.d.ts.map

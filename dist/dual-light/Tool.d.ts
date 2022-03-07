@@ -1,3 +1,3 @@
-import React, { ReactElement, SVGProps } from 'react';
-export declare const Tool: React.MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => ReactElement>;
+import { ReactElement, SVGProps } from 'react';
+export declare const Tool: import("react").MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => ReactElement>;
 //# sourceMappingURL=Tool.d.ts.map

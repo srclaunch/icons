@@ -1,1 +1,1 @@
-{"version":3,"file":"Exit.d.ts","sourceRoot":"","sources":["../../src/basic/Exit.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,EAAQ,YAAY,EAAE,QAAQ,EAAE,MAAM,OAAO,CAAC;AAE5D,eAAO,MAAM,IAAI,oCAAgB,SAAS,aAAa,CAAC,KAAG,YAAY,CAOrE,CAAC"}
+{"version":3,"file":"Exit.d.ts","sourceRoot":"","sources":["../../src/basic/Exit.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAQ,YAAY,EAAE,QAAQ,EAAE,MAAM,OAAO,CAAC;AAErD,eAAO,MAAM,IAAI,8CAAgB,SAAS,aAAa,CAAC,KAAG,YAAY,CAOrE,CAAC"}

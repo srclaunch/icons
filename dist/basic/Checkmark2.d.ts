@@ -1,3 +1,3 @@
-import React, { ReactElement, SVGProps } from 'react';
-export declare const Checkmark2: React.MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => ReactElement>;
+import { ReactElement, SVGProps } from 'react';
+export declare const Checkmark2: import("react").MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => ReactElement>;
 //# sourceMappingURL=Checkmark2.d.ts.map
