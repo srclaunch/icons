@@ -2,7 +2,7 @@ import { memo, ReactElement, SVGProps } from 'react';
 
 export const Building = memo((props: SVGProps<SVGSVGElement>): ReactElement => {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
+    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" {...props}>
       <path
         d="M14 8h3a3 3 0 013 3v11h-6V8z"
         fill="url(#prefix__paint0_linear)"

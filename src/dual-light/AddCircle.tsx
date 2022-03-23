@@ -3,7 +3,7 @@ import { memo, ReactElement, SVGProps } from 'react';
 export const AddCircle = memo(
   (props: SVGProps<SVGSVGElement>): ReactElement => {
     return (
-      <svg width={24} height={24} fill="none">
+      <svg  height="100%" width="100%" fill="none">
         <circle cx={12} cy={12} r={10} fill="url(#prefix__paint0_linear)" />
         <path
           d="M13 8a1 1 0 10-2 0v3H8a1 1 0 100 2h3v3a1 1 0 102 0v-3h3a1 1 0 100-2h-3V8z"

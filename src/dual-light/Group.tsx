@@ -2,7 +2,7 @@ import { memo, SVGProps, ReactElement } from 'react';
 
 export const Group = memo((props: SVGProps<SVGSVGElement>): ReactElement => {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
+    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" {...props}>
       <circle cx={14} cy={7} r={4} fill="url(#prefix__paint0_linear)" />
       <path
         d="M12 13a6 6 0 00-6 6 2 2 0 002 2h12a2 2 0 002-2v-1a5 5 0 00-5-5h-5z"

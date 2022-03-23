@@ -2,7 +2,7 @@ import { memo, ReactElement, SVGProps } from 'react';
 
 export const Warning = memo((props: SVGProps<SVGSVGElement>): ReactElement => {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
+    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" {...props}>
       <path
         d="M9.394 4.574c1.15-2.02 4.062-2.02 5.213 0l6.805 11.94c1.14 2-.305 4.486-2.607 4.486H5.195c-2.302 0-3.746-2.485-2.606-4.485L9.394 4.574z"
         fill="url(#prefix__paint0_linear)"

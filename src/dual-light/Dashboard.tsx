@@ -3,7 +3,7 @@ import { memo, SVGProps, ReactElement } from 'react';
 export const Dashboard = memo(
   (props: SVGProps<SVGSVGElement>): ReactElement => {
     return (
-      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" {...props}>
+      <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" {...props}>
         <path
           d="M12 3C6.477 3 2 7.477 2 13c0 2.344.807 4.5 2.158 6.205.18.227.457.351.747.351h14.19c.29 0 .568-.124.747-.35A9.957 9.957 0 0022 13c0-5.523-4.477-10-10-10z"
           fill="url(#prefix__paint0_linear)"
