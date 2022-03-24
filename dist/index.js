@@ -359,7 +359,7 @@ var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
   return DualLightIcons2;
 })(DualLightIcons || {});
 async function getIcon(name) {
-  return await import(`./${name}`);
+  return await import(`./${name}.js`);
 }
 export { BasicIcons, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map

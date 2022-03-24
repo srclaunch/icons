@@ -37,7 +37,7 @@ import { DualLightIcons } from './dual-light/index';
 export type Icon = DualLightIcons | BasicIcons;
 
 export async function getIcon(name: Icon) {
-  return await import(`./${name}`);
+  return await import(`./${name}.js`);
 }
 
   // switch (name) {
