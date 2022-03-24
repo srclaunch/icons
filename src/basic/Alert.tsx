@@ -7,6 +7,7 @@ export const Alert = memo(
         id="applab-icon-basic-alert"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        {...props}
         xmlnsXlink="http://www.w3.org/1999/xlink"
         x="0px"
         y="0px"

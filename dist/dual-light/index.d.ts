@@ -258,5 +258,4 @@ export declare enum DualLightIcons {
     'ZoomIn' = "dual-light/zoom_in.svg",
     'ZoomOut' = "dual-light/zoom_out.svg"
 }
-export default DualLightIcons;
 //# sourceMappingURL=index.d.ts.map

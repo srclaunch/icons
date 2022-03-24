@@ -96,5 +96,4 @@ export declare enum BasicIcons {
     'WineGlasses' = "basic/WineGlasses.svg",
     'WorldWideWeb' = "basic/WorldWideWeb.svg"
 }
-export default BasicIcons;
 //# sourceMappingURL=index.d.ts.map

@@ -1,5 +1,5 @@
-const base = require("@srclaunch/dx/.prettierrc.js");
+import base from '@srclaunch/dx/.prettierrc';
 
-module.exports = {
-  ...base
+export default {
+  ...base,
 };

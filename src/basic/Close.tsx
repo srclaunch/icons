@@ -10,6 +10,7 @@ export const Close = memo(
         viewBox="0 0 492 492"
         xmlSpace="preserve"
         xmlns="http://www.w3.org/2000/svg"
+        {...props}
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
         <path
