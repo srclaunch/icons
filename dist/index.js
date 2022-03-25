@@ -18980,9 +18980,10 @@ var DualLight = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
 }, Symbol.toStringTag, { value: "Module" }));
 function getIcon(name) {
   var _a;
+  console.log("name", name);
   const icons = __spreadValues(__spreadValues({}, Basic), DualLight);
   console.log("icons", icons);
-  const matchedIcon = [...Object.entries(icons)].find(([key, value]) => key === name);
+  const matchedIcon = [...Object.entries(__spreadValues(__spreadValues({}, BasicIcons), DualLightIcons))].find(([key, value]) => value === name);
   console.log("matchedIcon", matchedIcon);
   console.log("Basic", Basic);
   console.log("name", (_a = Basic[name]) != null ? _a : DualLight[name]);
