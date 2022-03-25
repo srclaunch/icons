@@ -2,27 +2,26 @@ import { Exception } from '@srclaunch/exceptions';
 import { ElementType } from 'react';
 import { BasicIcons, DualLightIcons } from '..';
 import { IconGrid } from './components/IconGrid';
-import { Component, ComponentLibrary } from './types/component';
+import { Icon, IconLibrary } from './types/icon';
 
 const getComponents =  async (iconSet: Record<string, string>) => {
   const entries =   [...Object.entries(iconSet), ...Object.entries(BasicIcons)];
  
-  let comps: Component[] = [];
+  let comps: Icon[] = [];
   for (const entry in   entries) {
 
-    // @ts-ignore
     const [name, icon] = entries[entry];
 
-    const component = await import(`../iconsets/${icon}.tsx`) as Component;
-    // @ts-ignore
-    const routeComponent = component[name] as ElementType;
+    const iconComponent = await import(`../iconsets/${icon}.tsx`) as Icon;
+   
+    const routeComponent = iconComponent[name] as ElementType;
 
     comps = [...comps, {
       name,
       title: name,
       path: `/${icon}`,
       // @ts-ignore
-      component: routeComponent,
+      icon: routeComponent,
       examples: [{
         title: 'Basic',
         // properties: {}
@@ -71,20 +70,20 @@ const dualLightIcons =  await getComponents(DualLightIcons);
 const exp =  {
   name: 'AppLab Icons',
   description: 'A library of icons for AppLab applications',
-  components: [
+  icons: [
     {
       title: 'Basic',
       description: 'Basic filled icons',
       path: '/basic',
-      components: basicIcons
+      icons: basicIcons
     },
     {
       title: 'Dual Light',
       description: 'Blue-ish dual tone icon set',
       path: '/dual-light',
-      components: dualLightIcons,
+      icons: dualLightIcons,
     },
   ],
-} as ComponentLibrary;
+} as IconLibrary;
 
 export default exp;

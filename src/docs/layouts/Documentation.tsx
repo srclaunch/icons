@@ -23,7 +23,7 @@ import { Container, Alignment,
   Title, Spacer } from '@srclaunch/ui';
 
 
-import componentLibrary from '../component-library';
+import iconLibrary from '../icon-library';
 {
   /* <Workspace>
           <WorkspaceFooter>
@@ -78,7 +78,7 @@ export const Documentation = memo(
             right: Amount.Default,
           }}
         >
-          <Title>{componentLibrary.name}</Title>
+          <Title>{iconLibrary.name}</Title>
 
           <Spacer />
 
@@ -92,8 +92,7 @@ export const Documentation = memo(
           >
             <NavigationMenu
               menu={[
-                // @ts-ignore
-                ...(componentLibrary.components?.map(component => {
+                ...(iconLibrary.icons?.map(component => {
                   return {
                     label: component.title,
                     to: component.path,

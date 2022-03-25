@@ -22,27 +22,27 @@ import {
   Workspace,
 } from '@srclaunch/ui';
 import { Documentation } from '../layouts/Documentation';
-import componentLibrary from '../component-library';
+import iconLibrary from '../icon-library';
 import { getRoutes } from '../routes';
 
-import { Component } from '../types/component';
+import { Icon } from '../types/icon';
 
-export const ComponentCategoryPage = memo((): ReactElement => {
+export const Iconset = memo((): ReactElement => {
   const location = useLocation();
-  const [routes, setRoutes ] = useState<Component[]>([]);
+  const [routes, setRoutes ] = useState<Icon[]>([]);
 
   useEffect(() => {
-    getRouteComponents();
+    getRouteIcons();
    }, [])
    
-  const getRouteComponents = async () => {
-    const r = await getRoutes(componentLibrary.components);
+  const getRouteIcons = async () => {
+    const r = await getRoutes(iconLibrary.icons);
     setRoutes(r);
   }
 
   const matchedRoute = routes.find(
     route => route.path === location.pathname,
-  ) as Component;
+  ) as Icon;
 
   const getBreadcrumbItems = (): { label?: string; path?: string }[] => {
     let constructedPath = '';
@@ -108,7 +108,7 @@ export const ComponentCategoryPage = memo((): ReactElement => {
       }}
       layout={Documentation}
       padding={{ all: Amount.Most }}
-      title={`${matchedRoute?.title} - ${componentLibrary.name}`}
+      title={`${matchedRoute?.title} - ${iconLibrary.name}`}
     >
       <Container
         background={{ color: BackgroundColors.Lightest }}
@@ -133,11 +133,11 @@ export const ComponentCategoryPage = memo((): ReactElement => {
           }}
         />
 
-        {matchedRoute?.components && (
+        {matchedRoute?.icons && (
           <>
             <Heading margin={{ bottom: Amount.Less }}>Icons</Heading>
             <UnorderedList
-              items={matchedRoute?.components.map((component: Component) => (
+              items={matchedRoute?.icons.map((component: Icon) => (
                 <NavigationLink to={component.path} label={component.title} />
               ))}
             />

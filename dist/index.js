@@ -18980,7 +18980,8 @@ var DualLight = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
 }, Symbol.toStringTag, { value: "Module" }));
 function getIcon(name) {
   var _a;
+  console.log("name", Basic == null ? void 0 : Basic[name]);
   return (_a = Basic == null ? void 0 : Basic[name]) != null ? _a : DualLight == null ? void 0 : DualLight[name];
 }
-export { BasicIcons, DualLightIcons, getIcon };
+export { Basic, BasicIcons, DualLight, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map

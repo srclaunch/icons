@@ -28,28 +28,28 @@ import {
   Workspace,
 } from '@srclaunch/ui';
 import { Documentation } from '../layouts/Documentation';
-import componentLibrary from '../component-library';
+import iconLibrary from '../icon-library';
 import { getRoutes } from '../routes';
 
-import { Component } from '../types/component';
+import { Icon } from '../types/icon';
 
-export const ComponentPage = memo((): ReactElement => {
+export const IconPage = memo((): ReactElement => {
   const location = useLocation();
-  const [routes, setRoutes ] = useState<Component[]>([]);
+  const [routes, setRoutes ] = useState<Icon[]>([]);
  
   useEffect(() => {
-    getRouteComponents();
+    getRouteIcons();
    }, []);
    
-  const getRouteComponents = async () => {
-    const r = await getRoutes(componentLibrary.components);
+  const getRouteIcons = async () => {
+    const r = await getRoutes(iconLibrary.icons);
     setRoutes(r);
   };
 
 
   const matchedRoute = routes?.find(
     route => route.path === location.pathname,
-  ) as Component;
+  ) as Icon;
 
 
   const getBreadcrumbItems = (): { label?: string; path?: string }[] => {
@@ -116,7 +116,7 @@ export const ComponentPage = memo((): ReactElement => {
       }}
       layout={Documentation}
       padding={{ all: Amount.Most }}
-      title={`${matchedRoute?.title} - ${componentLibrary.name}`}
+      title={`${matchedRoute?.title} - ${iconLibrary.name}`}
     >
       <Container
         alignment={{ horizontal: AlignHorizontal.Stretch }}
@@ -144,18 +144,18 @@ export const ComponentPage = memo((): ReactElement => {
           }}
         />
 
-        {matchedRoute?.components && (
+        {matchedRoute?.icons && (
           <Container
             margin={{
               bottom: Amount.All,
             }}
           >
-            <Heading textSize={TextSize.Larger}>Components</Heading>
+            <Heading textSize={TextSize.Larger}>Icons</Heading>
 
             <LineBreak size={{ height: Sizes.Smaller }} />
 
             <UnorderedList
-              items={matchedRoute?.components.map((component: Component) => (
+              items={matchedRoute?.icons.map((component: Icon) => (
                 <NavigationLink to={component.path} label={component.title} />
               ))}
             />
@@ -200,9 +200,9 @@ export const ComponentPage = memo((): ReactElement => {
                     <LineBreak size={{ height: Sizes.Smaller }} />
 
          
-                    {matchedRoute.component && (
+                    {matchedRoute.icon && (
                       <Container
-                        className="component-example-preview"
+                        className="icon-example-preview"
                         key={key}
                         size={{
                           minHeight: 260,
@@ -216,7 +216,7 @@ export const ComponentPage = memo((): ReactElement => {
                           }}
                           background={{ color: BackgroundColors.Lighter }}
                           borderRadius={{ all: Amount.Least }}
-                          className="component-example-container"
+                          className="icon-example-container"
                           depth={Depth.Higher}
                           margin={{ bottom: Amount.Default }}
                           padding={{ all: Amount.All }}
@@ -229,7 +229,7 @@ export const ComponentPage = memo((): ReactElement => {
                             vertical: AlignVertical.Center,
                           }} 
                           size={{ height: Sizes.Default, width: Sizes.Default }}>
-                            <matchedRoute.component {...properties} />
+                            <matchedRoute.icon {...properties} />
                           </Container>
                         </Container>
 

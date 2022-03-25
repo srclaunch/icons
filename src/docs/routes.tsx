@@ -3,45 +3,45 @@ import { memo, ReactElement, useEffect, useState } from 'react';
 
 import { Introduction } from './pages/Introduction';
 import { PageNotFound } from './pages/PageNotFound';
-import { Component } from './types/component';
-import { ComponentCategoryPage } from './pages/ComponentCategory';
-import { ComponentPage } from './pages/Component';
+import { Icon } from './types/icon';
+import { Iconset } from './pages/Iconset';
+import { IconPage } from './pages/Icon';
 import { RouterView } from '@srclaunch/ui';
-import componentLibrary from './component-library';
+import iconLibrary from './icon-library';
 
-export const getRoutes = async (components?: Component[]): Promise<Component[]> => {
-  if (!components || components.length === 0) {
+export const getRoutes = async (icons?: Icon[]): Promise<Icon[]> => {
+  if (!icons || icons.length === 0) {
     return [];
   }
 
-  let routes: Component[] = [];
+  let routes: Icon[] = [];
 
-  for (const component of components) {
+  for (const icon of icons) {
     routes = [
       ...routes,
       {
-        ...component,
+        ...icon,
       },
     ];
 
-    if (component.components) {
-      routes = [...routes, ...await getRoutes(component.components)];
+    if (icon.icons) {
+      routes = [...routes, ...await getRoutes(icon.icons)];
     }
   }
 
   return routes;
 };
 
-export const ComponentLibraryPage = memo( ({ children }): ReactElement => {
-  const [routes, setRoutes] = useState<Component[]>([])
+export const IconLibraryPage = memo( ({ children }): ReactElement => {
+  const [routes, setRoutes] = useState<Icon[]>([])
 
-  const getRouteComponents = async () => {
-    const r = await getRoutes(componentLibrary.components);
+  const getRouteIcons = async () => {
+    const r = await getRoutes(iconLibrary.icons);
     setRoutes(r);
   }
 
   useEffect(() => {
-    getRouteComponents()
+    getRouteIcons()
   }, [])
 
   return (
@@ -49,7 +49,7 @@ export const ComponentLibraryPage = memo( ({ children }): ReactElement => {
       routes={[
         ...routes.map(route => ({
           path: route.path,
-          component: route.component ? ComponentPage : ComponentCategoryPage,
+          component: route.icon ? IconPage : Iconset,
         })),
         {
           component: PageNotFound,
@@ -63,7 +63,7 @@ export const ComponentLibraryPage = memo( ({ children }): ReactElement => {
 
 export default [
   {
-    component: ComponentLibraryPage,
+    component: IconLibraryPage,
     path: '*',
   },
   {

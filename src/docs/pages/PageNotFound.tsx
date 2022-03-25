@@ -9,13 +9,13 @@ import {   AlignHorizontal,
 // import NotAuthenticated from '../layouts/NotAuthenticated';
 // import styled from 'styled-components';
 import { Documentation } from '../layouts/Documentation';
-import componentLibrary from '../component-library';
+import iconLibrary from '../icon-library';
 export const PageNotFound = memo((): ReactElement => {
   return (
     <Page
       layout={Documentation}
       padding={{ all: Amount.Most }}
-      title={`Page not found - ${componentLibrary.name}`}
+      title={`Page not found - ${iconLibrary.name}`}
     >
       <Container
         alignment={{

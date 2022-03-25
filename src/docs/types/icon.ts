@@ -1,8 +1,8 @@
 import { ElementType } from 'react';
 
-export type Component = {
-  component?: ElementType;
-  components?: Component[];
+export type Icon = {
+  icon?: ElementType;
+  icons?: Icon[];
   description?: string;
   examples?: [
     {
@@ -23,8 +23,8 @@ export type Component = {
   title: string;
 };
 
-export type ComponentLibrary = {
+export type IconLibrary = {
   name: string;
   description?: string;
-  components?: Component[];
+  icons?: Icon[];
 };
