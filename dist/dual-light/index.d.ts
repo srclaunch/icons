@@ -48,7 +48,7 @@ export { ChevronDoubleRight } from './ChevronDoubleRight';
 export { ChevronDoubleDown } from './ChevronDoubleDown';
 export { ChevronDoubleUp } from './ChevronDoubleUp';
 export { ChevronDown } from './ChevronDown';
-export { ChevronForward } from './ChevronForward';
+export { ChevronRight } from './ChevronRight';
 export { ChevronUp } from './ChevronUp';
 export { Chip } from './Chip';
 export { Chrome } from './Chrome';
@@ -267,7 +267,7 @@ export declare enum DualLightIcons {
     'Apple' = "dual-light/Apple",
     'Archive' = "dual-light/Archive",
     'ArrowLeft' = "dual-light/ArrowLeft",
-    'ArrowDown' = "dual-light/arrow_down",
+    'ArrowDown' = "dual-light/ArrowDown",
     'ArrowRight' = "dual-light/ArrowRight",
     'ArrowUpDown' = "dual-light/ArrowUpDown",
     'ArrowUp' = "dual-light/ArrowUp",
@@ -476,7 +476,7 @@ export declare enum DualLightIcons {
     'Tablet' = "dual-light/Tablet",
     'Tag' = "dual-light/Tag",
     'Target' = "dual-light/Target",
-    'Thermomter' = "dual-light/Thermomter",
+    'Thermometer' = "dual-light/Thermometer",
     'ThumbsDown' = "dual-light/ThumbsDown",
     'ThumbsUp' = "dual-light/ThumbsUp",
     'Ticket' = "dual-light/Ticket",

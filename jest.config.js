@@ -1,4 +1,4 @@
-import base from '@srclaunch/dx/jest.config';
+import base from '@srclaunch/dx/jest.config.js';
 
 export default {
   ...base,

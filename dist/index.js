@@ -517,7 +517,7 @@ const Checkmark2 = memo((props) => {
     })
   }));
 });
-const ChevronRight = memo((props) => {
+const ChevronRight$1 = memo((props) => {
   return /* @__PURE__ */ jsx("svg", __spreadProps(__spreadValues({
     id: "applab-icon-basic-chevron-right",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2182,7 +2182,7 @@ var index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
   CaretDownArrow,
   Checkmark,
   Checkmark2,
-  ChevronRight,
+  ChevronRight: ChevronRight$1,
   ChevronRight2,
   CircusTent,
   Close: Close$1,
@@ -5293,7 +5293,7 @@ const ChevronDown = memo((props) => {
     })]
   }));
 });
-const ChevronForward = memo((props) => {
+const ChevronRight = memo((props) => {
   return /* @__PURE__ */ jsxs("svg", __spreadProps(__spreadValues({
     width: "100%",
     height: "100%",
@@ -18466,7 +18466,7 @@ var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
   DualLightIcons2["Apple"] = "dual-light/Apple";
   DualLightIcons2["Archive"] = "dual-light/Archive";
   DualLightIcons2["ArrowLeft"] = "dual-light/ArrowLeft";
-  DualLightIcons2["ArrowDown"] = "dual-light/arrow_down";
+  DualLightIcons2["ArrowDown"] = "dual-light/ArrowDown";
   DualLightIcons2["ArrowRight"] = "dual-light/ArrowRight";
   DualLightIcons2["ArrowUpDown"] = "dual-light/ArrowUpDown";
   DualLightIcons2["ArrowUp"] = "dual-light/ArrowUp";
@@ -18675,7 +18675,7 @@ var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
   DualLightIcons2["Tablet"] = "dual-light/Tablet";
   DualLightIcons2["Tag"] = "dual-light/Tag";
   DualLightIcons2["Target"] = "dual-light/Target";
-  DualLightIcons2["Thermomter"] = "dual-light/Thermomter";
+  DualLightIcons2["Thermometer"] = "dual-light/Thermometer";
   DualLightIcons2["ThumbsDown"] = "dual-light/ThumbsDown";
   DualLightIcons2["ThumbsUp"] = "dual-light/ThumbsUp";
   DualLightIcons2["Ticket"] = "dual-light/Ticket";
@@ -18769,7 +18769,7 @@ var index = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty(
   ChevronDoubleDown,
   ChevronDoubleUp,
   ChevronDown,
-  ChevronForward,
+  ChevronRight,
   ChevronUp,
   Chip,
   Chrome,
@@ -18989,5 +18989,5 @@ function __variableDynamicImportRuntime0__(path) {
 async function getIcon(name) {
   return __variableDynamicImportRuntime0__(`.${""}/$${name}.js`);
 }
-export { index$1 as BasicIcons, index as DualLightIcons, getIcon };
+export { index$1 as Basic, BasicIcons, index as DualLight, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map
