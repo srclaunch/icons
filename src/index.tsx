@@ -10,10 +10,19 @@ export { Basic };
 
 export { BasicIcons, DualLightIcons };
 
-export function getIcon(name: string): Icon {
+export function getIcon(name: keyof typeof BasicIcons | keyof typeof DualLightIcons): Icon {
+  const icons = {
+    ...Basic,
+    ...DualLight,
+  }
+  console.log('icons', icons);
+
+  const matchedIcon = [...Object.entries(icons)].find(([key, value]) => key === name);
+  console.log('matchedIcon', matchedIcon)
+
   console.log('Basic', Basic);
   // @ts-ignore
-  console.log('name', Basic?.[name] ?? DualLight?.[name]);
+  console.log('name', Basic[name] ?? DualLight[name]);
   // @ts-ignore
-  return Basic?.[name] ?? DualLight?.[name];
+  return matchedIcon ? matchedIcon[1] : (DualLight as any)[name];
 }
