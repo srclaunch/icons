@@ -10,9 +10,10 @@ export { Basic };
 
 export { BasicIcons, DualLightIcons };
 
-export function getIcon(name: keyof typeof Basic | keyof typeof DualLight): Icon {
+export function getIcon(name: string): Icon {
+  console.log('Basic', Basic);
   // @ts-ignore
-  console.log('name', Basic?.[name]);
+  console.log('name', Basic?.[name] ?? DualLight?.[name]);
   // @ts-ignore
   return Basic?.[name] ?? DualLight?.[name];
 }

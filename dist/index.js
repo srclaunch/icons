@@ -18979,9 +18979,10 @@ var DualLight = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
   ZoomOut
 }, Symbol.toStringTag, { value: "Module" }));
 function getIcon(name) {
-  var _a;
-  console.log("name", Basic == null ? void 0 : Basic[name]);
-  return (_a = Basic == null ? void 0 : Basic[name]) != null ? _a : DualLight == null ? void 0 : DualLight[name];
+  var _a, _b;
+  console.log("Basic", Basic);
+  console.log("name", (_a = Basic == null ? void 0 : Basic[name]) != null ? _a : DualLight == null ? void 0 : DualLight[name]);
+  return (_b = Basic == null ? void 0 : Basic[name]) != null ? _b : DualLight == null ? void 0 : DualLight[name];
 }
 export { Basic, BasicIcons, DualLight, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map

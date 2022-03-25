@@ -6,5 +6,5 @@ export declare type Icon = BasicIcons | DualLightIcons;
 export { DualLight };
 export { Basic };
 export { BasicIcons, DualLightIcons };
-export declare function getIcon(name: keyof typeof Basic | keyof typeof DualLight): Icon;
+export declare function getIcon(name: string): Icon;
 //# sourceMappingURL=index.d.ts.map
