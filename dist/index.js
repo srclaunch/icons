@@ -17,6 +17,18 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
 import require$$0, { memo } from "react";
 var jsxRuntime = { exports: {} };
 var reactJsxRuntime_production_min = {};
@@ -18980,12 +18992,23 @@ var DualLight = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
 }, Symbol.toStringTag, { value: "Module" }));
 function getIcon(name) {
   console.log("name", name);
-  const icons = __spreadValues(__spreadValues({}, Basic), DualLight);
+  const _a = Basic, {
+    BasicIcons: notUsedBasic
+  } = _a, otherBasicIcons = __objRest(_a, [
+    "BasicIcons"
+  ]);
+  const _b = DualLight, {
+    DualLightIcons: notUsedDualLight
+  } = _b, otherDualLightIcons = __objRest(_b, [
+    "DualLightIcons"
+  ]);
+  const icons = __spreadValues(__spreadValues({}, otherBasicIcons), otherDualLightIcons);
   console.log("icons", icons);
   const matchedIcon = [...Object.entries(__spreadValues(__spreadValues({}, BasicIcons), DualLightIcons))].find(([key, value]) => value === name);
   console.log("matchedIcon", matchedIcon);
   console.log("Basic", Basic);
-  return matchedIcon ? matchedIcon[1] : DualLight[name];
+  const icon = icons[matchedIcon[0]];
+  return icon;
 }
 export { Basic, BasicIcons, DualLight, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map
