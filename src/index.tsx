@@ -10,7 +10,7 @@ export { Basic };
 
 export { BasicIcons, DualLightIcons };
 
-export function getIcon(name:  BasicIcons | DualLightIcons): Icon {
+export function getIcon(name:  BasicIcons | DualLightIcons): Icon | null {
   console.log('name', name);
   const { BasicIcons: notUsedBasic, ...otherBasicIcons } = Basic;
   const { DualLightIcons: notUsedDualLight, ...otherDualLightIcons } = DualLight;
@@ -27,8 +27,13 @@ export function getIcon(name:  BasicIcons | DualLightIcons): Icon {
 
   console.log('Basic', Basic);
 
+  if (matchedIcon && matchedIcon[0]) {
   // @ts-ignore
   const icon = icons[matchedIcon[0]];
 
   return icon;
+  }
+
+
+  return null;
 }

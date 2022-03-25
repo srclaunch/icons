@@ -19007,8 +19007,11 @@ function getIcon(name) {
   const matchedIcon = [...Object.entries(__spreadValues(__spreadValues({}, BasicIcons), DualLightIcons))].find(([key, value]) => value === name);
   console.log("matchedIcon", matchedIcon);
   console.log("Basic", Basic);
-  const icon = icons[matchedIcon[0]];
-  return icon;
+  if (matchedIcon && matchedIcon[0]) {
+    const icon = icons[matchedIcon[0]];
+    return icon;
+  }
+  return null;
 }
 export { Basic, BasicIcons, DualLight, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map
