@@ -1,6 +1,6 @@
 import { memo, ReactElement, SVGProps } from 'react';
 
-export const ChevronDoubleForward = memo(
+export const ChevronDoubleRight = memo(
   (props: SVGProps<SVGSVGElement>): ReactElement => {
     return (
       <svg

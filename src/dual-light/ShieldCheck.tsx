@@ -1,5 +1,5 @@
 import { memo, ReactElement, SVGProps } from 'react';
-export const ShieldClock = memo(
+export const ShieldCheck = memo(
   (props: SVGProps<SVGSVGElement>): ReactElement<SVGElement> => {
     return (
       <svg

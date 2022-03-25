@@ -1,5 +1,5 @@
 import { memo, ReactElement, SVGProps } from 'react';
-export const Rocker = memo(
+export const Rocket = memo(
   (props: SVGProps<SVGSVGElement>): ReactElement<SVGElement> => {
     return (
       <svg
