@@ -41,6 +41,7 @@ export default defineConfig(({ command, mode }) => {
             // 'react-router',
             // 'react-router-dom',
             'styled-components',
+            './src/iconsets/**/*'
           ],
           output: {
             // Global vars to use in UMD build for externalized deps
@@ -90,7 +91,7 @@ export default defineConfig(({ command, mode }) => {
   } else if (command === 'serve') {
     return {
       server: {
-        port: 3010,
+        port: 3011,
       },
       sourcemap: true,
       rollupOptions: {

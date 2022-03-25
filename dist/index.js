@@ -2162,7 +2162,7 @@ var BasicIcons = /* @__PURE__ */ ((BasicIcons2) => {
   BasicIcons2["WorldWideWeb"] = "basic/WorldWideWeb";
   return BasicIcons2;
 })(BasicIcons || {});
-var index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var Basic = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   BasicIcons,
   Airplane,
@@ -18716,7 +18716,7 @@ var DualLightIcons = /* @__PURE__ */ ((DualLightIcons2) => {
   DualLightIcons2["ZoomOut"] = "dual-light/ZoomOut";
   return DualLightIcons2;
 })(DualLightIcons || {});
-var index = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var DualLight = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   DualLightIcons,
   Activity,
@@ -18978,16 +18978,9 @@ var index = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty(
   ZoomIn,
   ZoomOut
 }, Symbol.toStringTag, { value: "Module" }));
-function __variableDynamicImportRuntime0__(path) {
-  switch (path) {
-    default:
-      return new Promise(function(resolve, reject) {
-        (typeof queueMicrotask === "function" ? queueMicrotask : setTimeout)(reject.bind(null, new Error("Unknown variable dynamic import: " + path)));
-      });
-  }
-}
 function getIcon(name) {
-  return __variableDynamicImportRuntime0__(`./iconsets/${name}.js`);
+  var _a;
+  return (_a = Basic == null ? void 0 : Basic[name]) != null ? _a : DualLight == null ? void 0 : DualLight[name];
 }
-export { index$1 as Basic, BasicIcons, index as DualLight, DualLightIcons, getIcon };
+export { BasicIcons, DualLightIcons, getIcon };
 //# sourceMappingURL=index.js.map
