@@ -13,7 +13,7 @@ const getComponents =  async (iconSet: Record<string, string>) => {
     // @ts-ignore
     const [name, icon] = entries[entry];
 
-    const component = await import(`..${''}/${icon}`) as Component;
+    const component = await import(`../iconsets/${icon}.tsx`) as Component;
     // @ts-ignore
     const routeComponent = component[name] as ElementType;
 
@@ -63,7 +63,9 @@ const getComponents =  async (iconSet: Record<string, string>) => {
   // return compos;
 // };
 
+// @ts-ignore
 const basicIcons =  await getComponents(BasicIcons);
+// @ts-ignore
 const dualLightIcons =  await getComponents(DualLightIcons);
 
 const exp =  {

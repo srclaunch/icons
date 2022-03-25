@@ -18986,7 +18986,7 @@ function __variableDynamicImportRuntime0__(path) {
       });
   }
 }
-async function getIcon(name) {
+function getIcon(name) {
   return __variableDynamicImportRuntime0__(`./iconsets/${name}.js`);
 }
 export { index$1 as Basic, BasicIcons, index as DualLight, DualLightIcons, getIcon };
