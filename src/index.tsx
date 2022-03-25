@@ -22,8 +22,6 @@ export function getIcon(name:  BasicIcons | DualLightIcons): Icon {
   console.log('matchedIcon', matchedIcon)
 
   console.log('Basic', Basic);
-  // @ts-ignore
-  console.log('name', Basic[name] ?? DualLight[name]);
-  // @ts-ignore
+
   return matchedIcon ? matchedIcon[1] : (DualLight as any)[name];
 }
