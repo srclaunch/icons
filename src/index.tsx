@@ -17,10 +17,11 @@ export function getIcon(name:  BasicIcons | DualLightIcons): Icon | null {
     ...otherBasicIcons,
     ...otherDualLightIcons,
   }
+  console.log('icons', icons)
   const matchedIcon = [...Object.entries({...BasicIcons, ...DualLightIcons})].find(([key, value]) => value === name);
 
   if (matchedIcon && matchedIcon[0]) {
-  // @ts-ignore
+    // @ts-ignore
     return icons[matchedIcon[0]];    
   }
 

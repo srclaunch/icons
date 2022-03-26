@@ -6,13 +6,13 @@ export const ServiceVan = memo(
         id="applab-icon-basic-service-van"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        {...props}
         xmlnsXlink="http://www.w3.org/1999/xlink"
         x="0px"
         y="0px"
         viewBox="0 0 226.334 226.334"
         enableBackground="new 0 0 226.334 226.334"
         xmlSpace="preserve"
+        {...props}
       >
         <path
           d="M221.334,127.223h-1V70.251c0-7.98-6.492-14.472-14.473-14.472H100.167H65.704c-0.055,0-0.11,0.001-0.166,0.003
