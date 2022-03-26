@@ -12,14 +12,16 @@ export { BasicIcons, DualLightIcons };
 
 export function getIcon(name:  BasicIcons | DualLightIcons): Icon | null {
   const { BasicIcons: notUsedBasic, ...otherBasicIcons } = Basic;
+  console.log('otherBasicIcons', otherBasicIcons)
   const { DualLightIcons: notUsedDualLight, ...otherDualLightIcons } = DualLight;
+  console.log('otherDualLightIcons', otherDualLightIcons)
   const icons = {
     ...otherBasicIcons,
     ...otherDualLightIcons,
   }
   console.log('icons', icons)
   const matchedIcon = [...Object.entries({...BasicIcons, ...DualLightIcons})].find(([key, value]) => value === name);
-
+  console.log('matchedIcon', matchedIcon)
   if (matchedIcon && matchedIcon[0]) {
     // @ts-ignore
     return icons[matchedIcon[0]];    

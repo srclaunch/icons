@@ -18996,14 +18996,17 @@ function getIcon(name) {
   } = _a, otherBasicIcons = __objRest(_a, [
     "BasicIcons"
   ]);
+  console.log("otherBasicIcons", otherBasicIcons);
   const _b = DualLight, {
     DualLightIcons: notUsedDualLight
   } = _b, otherDualLightIcons = __objRest(_b, [
     "DualLightIcons"
   ]);
+  console.log("otherDualLightIcons", otherDualLightIcons);
   const icons = __spreadValues(__spreadValues({}, otherBasicIcons), otherDualLightIcons);
   console.log("icons", icons);
   const matchedIcon = [...Object.entries(__spreadValues(__spreadValues({}, BasicIcons), DualLightIcons))].find(([key, value]) => value === name);
+  console.log("matchedIcon", matchedIcon);
   if (matchedIcon && matchedIcon[0]) {
     return icons[matchedIcon[0]];
   }
