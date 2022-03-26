@@ -17,7 +17,7 @@ export function getIcon(name:  BasicIcons | DualLightIcons): Icon | null {
 
   if (matchedIcon && matchedIcon[0]) {
     // @ts-ignore
-    return name.includes ? otherBasicIcons[matchedIcon[0]] : otherDualLightIcons[matchedIcon[0]];   
+    return name.includes('basic/') ? otherBasicIcons[matchedIcon[0]] : otherDualLightIcons[matchedIcon[0]];   
   }
 
   return null;

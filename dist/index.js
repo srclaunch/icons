@@ -19003,7 +19003,7 @@ function getIcon(name) {
   ]);
   const matchedIcon = [...Object.entries(name.includes("basic/") ? __spreadValues({}, BasicIcons) : __spreadValues({}, DualLightIcons))].find(([key, value]) => value === name);
   if (matchedIcon && matchedIcon[0]) {
-    return name.includes ? otherBasicIcons[matchedIcon[0]] : otherDualLightIcons[matchedIcon[0]];
+    return name.includes("basic/") ? otherBasicIcons[matchedIcon[0]] : otherDualLightIcons[matchedIcon[0]];
   }
   return null;
 }
