@@ -20,7 +20,8 @@ export function getIcon(name:  BasicIcons | DualLightIcons): Icon | null {
     ...otherDualLightIcons,
   }
   console.log('icons', icons)
-  const matchedIcon = [...Object.entries({...BasicIcons, ...DualLightIcons})].find(([key, value]) => value === name);
+
+  const matchedIcon = [...Object.entries(name.includes('basic/') ? {...BasicIcons, } : { ...DualLightIcons})].find(([key, value]) => value === name);
   console.log('matchedIcon', matchedIcon)
   if (matchedIcon && matchedIcon[0]) {
     // @ts-ignore
