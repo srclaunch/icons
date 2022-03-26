@@ -18991,7 +18991,6 @@ var DualLight = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
   ZoomOut
 }, Symbol.toStringTag, { value: "Module" }));
 function getIcon(name) {
-  console.log("name", name);
   const _a = Basic, {
     BasicIcons: notUsedBasic
   } = _a, otherBasicIcons = __objRest(_a, [
@@ -19003,13 +19002,9 @@ function getIcon(name) {
     "DualLightIcons"
   ]);
   const icons = __spreadValues(__spreadValues({}, otherBasicIcons), otherDualLightIcons);
-  console.log("icons", icons);
   const matchedIcon = [...Object.entries(__spreadValues(__spreadValues({}, BasicIcons), DualLightIcons))].find(([key, value]) => value === name);
-  console.log("matchedIcon", matchedIcon);
-  console.log("Basic", Basic);
   if (matchedIcon && matchedIcon[0]) {
-    const icon = icons[matchedIcon[0]];
-    return icon;
+    return icons[matchedIcon[0]];
   }
   return null;
 }

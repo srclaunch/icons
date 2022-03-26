@@ -1,4 +1,4 @@
-import base from '@srclaunch/dx/.stylelintrc.ui.js';
+import base from '@srclaunch/dx/.stylelintrc.ui';
 
 export default {
   ...base
