@@ -1,39 +1,6 @@
-var react = {exports: {}};
+import { memo } from 'react';
 
-var react_production_min = {};
-
-/**
- * @license React
- * react.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-var l=Symbol.for("react.element"),n=Symbol.for("react.portal"),p=Symbol.for("react.fragment"),q=Symbol.for("react.strict_mode"),r=Symbol.for("react.profiler"),t=Symbol.for("react.provider"),u=Symbol.for("react.context"),v=Symbol.for("react.forward_ref"),w=Symbol.for("react.suspense"),x=Symbol.for("react.memo"),y=Symbol.for("react.lazy"),z=Symbol.iterator;function A(a){if(null===a||"object"!==typeof a)return null;a=z&&a[z]||a["@@iterator"];return "function"===typeof a?a:null}
-var B={isMounted:function(){return !1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},C=Object.assign,D={};function E(a,b,e){this.props=a;this.context=b;this.refs=D;this.updater=e||B;}E.prototype.isReactComponent={};
-E.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");this.updater.enqueueSetState(this,a,b,"setState");};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate");};function F(){}F.prototype=E.prototype;function G(a,b,e){this.props=a;this.context=b;this.refs=D;this.updater=e||B;}var H=G.prototype=new F;
-H.constructor=G;C(H,E.prototype);H.isPureReactComponent=!0;var I=Array.isArray,J=Object.prototype.hasOwnProperty,K={current:null},L={key:!0,ref:!0,__self:!0,__source:!0};
-function M(a,b,e){var d,c={},k=null,h=null;if(null!=b)for(d in void 0!==b.ref&&(h=b.ref),void 0!==b.key&&(k=""+b.key),b)J.call(b,d)&&!L.hasOwnProperty(d)&&(c[d]=b[d]);var g=arguments.length-2;if(1===g)c.children=e;else if(1<g){for(var f=Array(g),m=0;m<g;m++)f[m]=arguments[m+2];c.children=f;}if(a&&a.defaultProps)for(d in g=a.defaultProps,g)void 0===c[d]&&(c[d]=g[d]);return {$$typeof:l,type:a,key:k,ref:h,props:c,_owner:K.current}}
-function N(a,b){return {$$typeof:l,type:a.type,key:b,ref:a.ref,props:a.props,_owner:a._owner}}function O(a){return "object"===typeof a&&null!==a&&a.$$typeof===l}function escape(a){var b={"=":"=0",":":"=2"};return "$"+a.replace(/[=:]/g,function(a){return b[a]})}var P=/\/+/g;function Q(a,b){return "object"===typeof a&&null!==a&&null!=a.key?escape(""+a.key):b.toString(36)}
-function R(a,b,e,d,c){var k=typeof a;if("undefined"===k||"boolean"===k)a=null;var h=!1;if(null===a)h=!0;else switch(k){case "string":case "number":h=!0;break;case "object":switch(a.$$typeof){case l:case n:h=!0;}}if(h)return h=a,c=c(h),a=""===d?"."+Q(h,0):d,I(c)?(e="",null!=a&&(e=a.replace(P,"$&/")+"/"),R(c,b,e,"",function(a){return a})):null!=c&&(O(c)&&(c=N(c,e+(!c.key||h&&h.key===c.key?"":(""+c.key).replace(P,"$&/")+"/")+a)),b.push(c)),1;h=0;d=""===d?".":d+":";if(I(a))for(var g=0;g<a.length;g++){k=
-a[g];var f=d+Q(k,g);h+=R(k,b,e,f,c);}else if(f=A(a),"function"===typeof f)for(a=f.call(a),g=0;!(k=a.next()).done;)k=k.value,f=d+Q(k,g++),h+=R(k,b,e,f,c);else if("object"===k)throw b=String(a),Error("Objects are not valid as a React child (found: "+("[object Object]"===b?"object with keys {"+Object.keys(a).join(", ")+"}":b)+"). If you meant to render a collection of children, use an array instead.");return h}
-function S(a,b,e){if(null==a)return a;var d=[],c=0;R(a,d,"","",function(a){return b.call(e,a,c++)});return d}function T(a){if(-1===a._status){var b=a._result;b=b();b.then(function(b){if(0===a._status||-1===a._status)a._status=1,a._result=b;},function(b){if(0===a._status||-1===a._status)a._status=2,a._result=b;});-1===a._status&&(a._status=0,a._result=b);}if(1===a._status)return a._result.default;throw a._result;}
-var U={current:null},V={transition:null},W={ReactCurrentDispatcher:U,ReactCurrentBatchConfig:V,ReactCurrentOwner:K};react_production_min.Children={map:S,forEach:function(a,b,e){S(a,function(){b.apply(this,arguments);},e);},count:function(a){var b=0;S(a,function(){b++;});return b},toArray:function(a){return S(a,function(a){return a})||[]},only:function(a){if(!O(a))throw Error("React.Children.only expected to receive a single React element child.");return a}};react_production_min.Component=E;react_production_min.Fragment=p;
-react_production_min.Profiler=r;react_production_min.PureComponent=G;react_production_min.StrictMode=q;react_production_min.Suspense=w;react_production_min.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=W;
-react_production_min.cloneElement=function(a,b,e){if(null===a||void 0===a)throw Error("React.cloneElement(...): The argument must be a React element, but you passed "+a+".");var d=C({},a.props),c=a.key,k=a.ref,h=a._owner;if(null!=b){void 0!==b.ref&&(k=b.ref,h=K.current);void 0!==b.key&&(c=""+b.key);if(a.type&&a.type.defaultProps)var g=a.type.defaultProps;for(f in b)J.call(b,f)&&!L.hasOwnProperty(f)&&(d[f]=void 0===b[f]&&void 0!==g?g[f]:b[f]);}var f=arguments.length-2;if(1===f)d.children=e;else if(1<f){g=Array(f);
-for(var m=0;m<f;m++)g[m]=arguments[m+2];d.children=g;}return {$$typeof:l,type:a.type,key:c,ref:k,props:d,_owner:h}};react_production_min.createContext=function(a){a={$$typeof:u,_currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null,_defaultValue:null,_globalName:null};a.Provider={$$typeof:t,_context:a};return a.Consumer=a};react_production_min.createElement=M;react_production_min.createFactory=function(a){var b=M.bind(null,a);b.type=a;return b};react_production_min.createRef=function(){return {current:null}};
-react_production_min.forwardRef=function(a){return {$$typeof:v,render:a}};react_production_min.isValidElement=O;react_production_min.lazy=function(a){return {$$typeof:y,_payload:{_status:-1,_result:a},_init:T}};react_production_min.memo=function(a,b){return {$$typeof:x,type:a,compare:void 0===b?null:b}};react_production_min.startTransition=function(a){var b=V.transition;V.transition={};try{a();}finally{V.transition=b;}};react_production_min.unstable_act=function(){throw Error("act(...) is not supported in production builds of React.");};
-react_production_min.useCallback=function(a,b){return U.current.useCallback(a,b)};react_production_min.useContext=function(a){return U.current.useContext(a)};react_production_min.useDebugValue=function(){};react_production_min.useDeferredValue=function(a){return U.current.useDeferredValue(a)};react_production_min.useEffect=function(a,b){return U.current.useEffect(a,b)};react_production_min.useId=function(){return U.current.useId()};react_production_min.useImperativeHandle=function(a,b,e){return U.current.useImperativeHandle(a,b,e)};
-react_production_min.useInsertionEffect=function(a,b){return U.current.useInsertionEffect(a,b)};react_production_min.useLayoutEffect=function(a,b){return U.current.useLayoutEffect(a,b)};react_production_min.useMemo=function(a,b){return U.current.useMemo(a,b)};react_production_min.useReducer=function(a,b,e){return U.current.useReducer(a,b,e)};react_production_min.useRef=function(a){return U.current.useRef(a)};react_production_min.useState=function(a){return U.current.useState(a)};react_production_min.useSyncExternalStore=function(a,b,e){return U.current.useSyncExternalStore(a,b,e)};
-react_production_min.useTransition=function(){return U.current.useTransition()};react_production_min.version="18.0.0-fc46dba67-20220329";
-
-{
-  react.exports = react_production_min;
-}
-
-const Airplane = react.exports.memo((props) => {
+const Airplane = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-airplane",
     viewBox: "0 0 65.313 65.313",
@@ -44,7 +11,7 @@ const Airplane = react.exports.memo((props) => {
   }));
 });
 
-const Alert = react.exports.memo((props) => {
+const Alert = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-alert",
     version: "1.1",
@@ -62,7 +29,7 @@ const Alert = react.exports.memo((props) => {
   })));
 });
 
-const AlertQuestion = react.exports.memo((props) => {
+const AlertQuestion = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-alert-question",
     enableBackground: "new 0 0 512 512",
@@ -76,7 +43,7 @@ const AlertQuestion = react.exports.memo((props) => {
   }));
 });
 
-const AnimalFootprint = react.exports.memo((props) => {
+const AnimalFootprint = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-animal-foot-print",
     viewBox: "0 -32 512.00011 512",
@@ -95,7 +62,7 @@ const AnimalFootprint = react.exports.memo((props) => {
   }));
 });
 
-const AppStore = react.exports.memo((props) => {
+const AppStore = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-app-store",
     x: "0px",
@@ -110,7 +77,7 @@ const AppStore = react.exports.memo((props) => {
   }));
 });
 
-const AppSubscription = react.exports.memo((props) => {
+const AppSubscription = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-app-subscription",
     height: "464pt",
@@ -147,7 +114,7 @@ const AppSubscription = react.exports.memo((props) => {
   }));
 });
 
-const Bill = react.exports.memo((props) => {
+const Bill = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-bill",
     viewBox: "0 0 512 512",
@@ -160,7 +127,7 @@ const Bill = react.exports.memo((props) => {
   }))));
 });
 
-const BillEnvelope = react.exports.memo((props) => {
+const BillEnvelope = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-bill-envelope",
     height: "469pt",
@@ -179,7 +146,7 @@ const BillEnvelope = react.exports.memo((props) => {
   }));
 });
 
-const Books = react.exports.memo((props) => {
+const Books = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-books",
     viewBox: "0 0 480.00958 480",
@@ -216,7 +183,7 @@ const Books = react.exports.memo((props) => {
   }));
 });
 
-const Bowling = react.exports.memo((props) => {
+const Bowling = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-bowling",
     version: "1.1",
@@ -241,7 +208,7 @@ const Bowling = react.exports.memo((props) => {
   }))));
 });
 
-const Briefcase$1 = react.exports.memo((props) => {
+const Briefcase$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-briefcase",
     viewBox: "0 -31 512 512",
@@ -256,7 +223,7 @@ const Briefcase$1 = react.exports.memo((props) => {
   }));
 });
 
-const Calendar$1 = react.exports.memo((props) => {
+const Calendar$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-calendar",
     enableBackground: "new 0 0 24 24",
@@ -272,7 +239,7 @@ const Calendar$1 = react.exports.memo((props) => {
   })));
 });
 
-const Car = react.exports.memo((props) => {
+const Car = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-car",
     viewBox: "0 0 512 512",
@@ -299,7 +266,7 @@ const Car = react.exports.memo((props) => {
   }))));
 });
 
-const CardsView = react.exports.memo((props) => {
+const CardsView = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-icon-cards-view",
     viewBox: "0 0 512 512",
@@ -316,7 +283,7 @@ const CardsView = react.exports.memo((props) => {
   }));
 });
 
-const CaretDownArrow = react.exports.memo((props) => {
+const CaretDownArrow = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     viewBox: "0 0 292.362 292.362",
     width: "100%",
@@ -327,7 +294,7 @@ const CaretDownArrow = react.exports.memo((props) => {
   }));
 });
 
-const Checkmark = react.exports.memo((props) => {
+const Checkmark = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-checkmark",
     version: "1.1",
@@ -346,7 +313,7 @@ const Checkmark = react.exports.memo((props) => {
   })));
 });
 
-const Checkmark2 = react.exports.memo((props) => {
+const Checkmark2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     viewBox: "0 0 442.533 442.533",
     width: "100%",
@@ -357,7 +324,7 @@ const Checkmark2 = react.exports.memo((props) => {
   }));
 });
 
-const ChevronRight$1 = react.exports.memo((props) => {
+const ChevronRight$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-chevron-right",
     xmlns: "http://www.w3.org/2000/svg",
@@ -369,7 +336,7 @@ const ChevronRight$1 = react.exports.memo((props) => {
   }));
 });
 
-const ChevronRight2 = react.exports.memo((props) => {
+const ChevronRight2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-chevron-right-2",
     viewBox: "0 0 492.004 492.004",
@@ -380,7 +347,7 @@ const ChevronRight2 = react.exports.memo((props) => {
   }));
 });
 
-const CircusTent = react.exports.memo((props) => {
+const CircusTent = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-circus-tent",
     viewBox: "0 0 512.021 512.021",
@@ -403,7 +370,7 @@ const CircusTent = react.exports.memo((props) => {
   }))));
 });
 
-const Close$1 = react.exports.memo((props) => {
+const Close$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-close",
     enableBackground: "new 0 0 492 492",
@@ -418,7 +385,7 @@ const Close$1 = react.exports.memo((props) => {
   }));
 });
 
-const CreditCard = react.exports.memo((props) => {
+const CreditCard = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-credit-card",
     viewBox: "0 0 512 512",
@@ -431,7 +398,7 @@ const CreditCard = react.exports.memo((props) => {
   }))));
 });
 
-const CreditCardCheck = react.exports.memo((props) => {
+const CreditCardCheck = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-credit-card-check",
     viewBox: "0 0 512 512",
@@ -449,7 +416,7 @@ const CreditCardCheck = react.exports.memo((props) => {
   }));
 });
 
-const CreditCards = react.exports.memo((props) => {
+const CreditCards = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-credit-cards",
     viewBox: "0 0 512 512.00025",
@@ -462,7 +429,7 @@ const CreditCards = react.exports.memo((props) => {
   }));
 });
 
-const CupOfTea = react.exports.memo((props) => {
+const CupOfTea = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-cup-of-tea",
     viewBox: "0 0 512.009 512.009",
@@ -479,7 +446,7 @@ const CupOfTea = react.exports.memo((props) => {
   }))));
 });
 
-const Dashboard$1 = react.exports.memo((props) => {
+const Dashboard$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dashboard",
     viewBox: "0 0 512 512",
@@ -496,7 +463,7 @@ const Dashboard$1 = react.exports.memo((props) => {
   }));
 });
 
-const DollarInHand = react.exports.memo((props) => {
+const DollarInHand = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dollar-in-hand",
     viewBox: "0 0 192 192",
@@ -509,7 +476,7 @@ const DollarInHand = react.exports.memo((props) => {
   }));
 });
 
-const DollarRecurring = react.exports.memo((props) => {
+const DollarRecurring = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dollar-recurring",
     version: "1.1",
@@ -530,7 +497,7 @@ const DollarRecurring = react.exports.memo((props) => {
   })))));
 });
 
-const DollarRecurring2 = react.exports.memo((props) => {
+const DollarRecurring2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dollar-recurring-2",
     viewBox: "0 0 426.667 426.667",
@@ -547,7 +514,7 @@ const DollarRecurring2 = react.exports.memo((props) => {
   })))));
 });
 
-const DollarRecurring3 = react.exports.memo((props) => {
+const DollarRecurring3 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dollar-recurring-3",
     viewBox: "0 0 512 512",
@@ -558,7 +525,7 @@ const DollarRecurring3 = react.exports.memo((props) => {
   }));
 });
 
-const DollarRecurring4 = react.exports.memo((props) => {
+const DollarRecurring4 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dollar-recurring-4",
     viewBox: "0 0 512 512",
@@ -569,7 +536,7 @@ const DollarRecurring4 = react.exports.memo((props) => {
   }));
 });
 
-const DollarTransfer = react.exports.memo((props) => {
+const DollarTransfer = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-dollar-transfer",
     height: "512pt",
@@ -586,7 +553,7 @@ const DollarTransfer = react.exports.memo((props) => {
   }));
 });
 
-const DramaArts = react.exports.memo((props) => {
+const DramaArts = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-drama-arts",
     viewBox: "0 -39 512.00029 512",
@@ -599,7 +566,7 @@ const DramaArts = react.exports.memo((props) => {
   }));
 });
 
-const EatingUtensils = react.exports.memo((props) => {
+const EatingUtensils = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-eating-utensils",
     viewBox: "0 0 511.999 511.999",
@@ -614,7 +581,7 @@ const EatingUtensils = react.exports.memo((props) => {
   }));
 });
 
-const EventTicket = react.exports.memo((props) => {
+const EventTicket = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-event-ticket",
     viewBox: "0 0 494.336 494.336",
@@ -627,7 +594,7 @@ const EventTicket = react.exports.memo((props) => {
   }))));
 });
 
-const Exit = react.exports.memo((props) => {
+const Exit = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     viewBox: "0 0 512 512",
     width: "100%",
@@ -640,7 +607,7 @@ const Exit = react.exports.memo((props) => {
   }));
 });
 
-const FileUpload = react.exports.memo((props) => {
+const FileUpload = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     viewBox: "-64 0 512 512",
     xmlns: "http://www.w3.org/2000/svg",
@@ -650,7 +617,7 @@ const FileUpload = react.exports.memo((props) => {
   }));
 });
 
-const Flame = react.exports.memo((props) => {
+const Flame = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-flame",
     enableBackground: "new 0 0 64 64",
@@ -663,7 +630,7 @@ const Flame = react.exports.memo((props) => {
   }));
 });
 
-const FuelPump = react.exports.memo((props) => {
+const FuelPump = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-fuel-pump",
     x: "0px",
@@ -678,7 +645,7 @@ const FuelPump = react.exports.memo((props) => {
   }));
 });
 
-const GearCog = react.exports.memo((props) => {
+const GearCog = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     viewBox: "0 0 512 512",
     width: "100%",
@@ -689,7 +656,7 @@ const GearCog = react.exports.memo((props) => {
   }));
 });
 
-const Gift$1 = react.exports.memo((props) => {
+const Gift$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     version: "1.1",
     xmlns: "http://www.w3.org/2000/svg",
@@ -706,7 +673,7 @@ const Gift$1 = react.exports.memo((props) => {
   }));
 });
 
-const Golf = react.exports.memo((props) => {
+const Golf = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-golf",
     height: "512",
@@ -725,7 +692,7 @@ const Golf = react.exports.memo((props) => {
   })));
 });
 
-const GraduationCap = react.exports.memo((props) => {
+const GraduationCap = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-graduation-cap",
     x: "0px",
@@ -744,7 +711,7 @@ const GraduationCap = react.exports.memo((props) => {
   }));
 });
 
-const HamburgerMenu = react.exports.memo((props) => {
+const HamburgerMenu = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-hamburger-menu",
     version: "1.1",
@@ -765,7 +732,7 @@ const HamburgerMenu = react.exports.memo((props) => {
   })));
 });
 
-const HandHoldingHeart = react.exports.memo((props) => {
+const HandHoldingHeart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-hand-holding-heart-coin",
     viewBox: "0 0 490 490",
@@ -790,7 +757,7 @@ const HandHoldingHeart = react.exports.memo((props) => {
   }));
 });
 
-const HandHoldingHeart2 = react.exports.memo((props) => {
+const HandHoldingHeart2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-hand-holding-heart",
     viewBox: "-91 0 432 432",
@@ -809,7 +776,7 @@ const HandHoldingHeart2 = react.exports.memo((props) => {
   }));
 });
 
-const HandshakeHeart = react.exports.memo((props) => {
+const HandshakeHeart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     enableBackground: "new 0 0 512 512",
     id: "applab-icon-basic-handshake-heart",
@@ -831,7 +798,7 @@ const HandshakeHeart = react.exports.memo((props) => {
   })));
 });
 
-const HealthCross = react.exports.memo((props) => {
+const HealthCross = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-health-cross",
     viewBox: "0 0 469.333 469.333",
@@ -842,7 +809,7 @@ const HealthCross = react.exports.memo((props) => {
   }));
 });
 
-const HeartHealth = react.exports.memo((props) => {
+const HeartHealth = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-heart-health",
     viewBox: "0 0 512 512",
@@ -859,7 +826,7 @@ const HeartHealth = react.exports.memo((props) => {
   }))));
 });
 
-const HeartHealth2 = react.exports.memo((props) => {
+const HeartHealth2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-heart-health-2",
     viewBox: "0 0 192 192",
@@ -870,7 +837,7 @@ const HeartHealth2 = react.exports.memo((props) => {
   }));
 });
 
-const HelpBubble = react.exports.memo((props) => {
+const HelpBubble = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-help-bubble",
     version: "1.1",
@@ -891,7 +858,7 @@ const HelpBubble = react.exports.memo((props) => {
   })))));
 });
 
-const Home$1 = react.exports.memo((props) => {
+const Home$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     enableBackground: "new 0 0 49.794 49.794",
     id: "applab-icon-basic-home",
@@ -905,7 +872,7 @@ const Home$1 = react.exports.memo((props) => {
   }));
 });
 
-const Institution = react.exports.memo((props) => {
+const Institution = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-institution",
     viewBox: "0 0 512 512",
@@ -920,7 +887,7 @@ const Institution = react.exports.memo((props) => {
   }))));
 });
 
-const Investment = react.exports.memo((props) => {
+const Investment = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-investment",
     viewBox: "0 1 511 511.99994",
@@ -931,7 +898,7 @@ const Investment = react.exports.memo((props) => {
   }));
 });
 
-const Island = react.exports.memo((props) => {
+const Island = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-island",
     viewBox: "0 0 512 512",
@@ -942,7 +909,7 @@ const Island = react.exports.memo((props) => {
   }));
 });
 
-const LightbulbElectricity = react.exports.memo((props) => {
+const LightbulbElectricity = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-lightbulb-electricity",
     x: "0px",
@@ -957,7 +924,7 @@ const LightbulbElectricity = react.exports.memo((props) => {
   }));
 });
 
-const MoneyBag = react.exports.memo((props) => {
+const MoneyBag = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-money-bag",
     viewBox: "0 0 512 512",
@@ -970,7 +937,7 @@ const MoneyBag = react.exports.memo((props) => {
   }))));
 });
 
-const MoneyBag2 = react.exports.memo((props) => {
+const MoneyBag2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-money-bag-2",
     viewBox: "-43 0 512 512.00017",
@@ -985,7 +952,7 @@ const MoneyBag2 = react.exports.memo((props) => {
   }));
 });
 
-const MoneyBallAndChain = react.exports.memo((props) => {
+const MoneyBallAndChain = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-money-ball-and-chain",
     height: "512pt",
@@ -998,7 +965,7 @@ const MoneyBallAndChain = react.exports.memo((props) => {
   }));
 });
 
-const MoreButton = react.exports.memo((props) => {
+const MoreButton = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-more-button",
     viewBox: "0 0 990.9 990.9",
@@ -1013,7 +980,7 @@ const MoreButton = react.exports.memo((props) => {
   }));
 });
 
-const New$1 = react.exports.memo((props) => {
+const New$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-new",
     enableBackground: "new 0 0 512 512",
@@ -1025,7 +992,7 @@ const New$1 = react.exports.memo((props) => {
   }));
 });
 
-const OnlineShopping = react.exports.memo((props) => {
+const OnlineShopping = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-online-shopping",
     xmlns: "http://www.w3.org/2000/svg",
@@ -1043,7 +1010,7 @@ const OnlineShopping = react.exports.memo((props) => {
   }))));
 });
 
-const PaidBill = react.exports.memo((props) => {
+const PaidBill = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-paid-bill",
     enableBackground: "new 0 0 512.014 512.014",
@@ -1063,7 +1030,7 @@ const PaidBill = react.exports.memo((props) => {
   })));
 });
 
-const PeopleLiftWorld = react.exports.memo((props) => {
+const PeopleLiftWorld = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     enableBackground: "new 0 0 512 512",
     id: "applab-icon-basic-people-lift-world",
@@ -1093,7 +1060,7 @@ const PeopleLiftWorld = react.exports.memo((props) => {
   })));
 });
 
-const PersonalCare = react.exports.memo((props) => {
+const PersonalCare = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-personal-care",
     height: "512",
@@ -1116,7 +1083,7 @@ const PersonalCare = react.exports.memo((props) => {
   }));
 });
 
-const PieChart$1 = react.exports.memo((props) => {
+const PieChart$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-pie-chart",
     viewBox: "0 0 512 512",
@@ -1127,7 +1094,7 @@ const PieChart$1 = react.exports.memo((props) => {
   }));
 });
 
-const PieChart2 = react.exports.memo((props) => {
+const PieChart2 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-pie-chart-2",
     viewBox: "0 0 512 512",
@@ -1138,7 +1105,7 @@ const PieChart2 = react.exports.memo((props) => {
   }));
 });
 
-const PiggyBank = react.exports.memo((props) => {
+const PiggyBank = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-piggy-bank",
     viewBox: "0 0 512 512",
@@ -1153,7 +1120,7 @@ const PiggyBank = react.exports.memo((props) => {
   }))));
 });
 
-const Pizza = react.exports.memo((props) => {
+const Pizza = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-pizza",
     viewBox: "0 0 512 512",
@@ -1166,7 +1133,7 @@ const Pizza = react.exports.memo((props) => {
   }))));
 });
 
-const PlayStore = react.exports.memo((props) => {
+const PlayStore = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-play-store",
     x: "0px",
@@ -1187,7 +1154,7 @@ const PlayStore = react.exports.memo((props) => {
   }))));
 });
 
-const RightArrow = react.exports.memo((props) => {
+const RightArrow = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-right-arrow",
     viewBox: "0 0 464 464",
@@ -1198,7 +1165,7 @@ const RightArrow = react.exports.memo((props) => {
   }));
 });
 
-const Safe = react.exports.memo((props) => {
+const Safe = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-safe",
     viewBox: "0 0 512 512",
@@ -1209,7 +1176,7 @@ const Safe = react.exports.memo((props) => {
   }));
 });
 
-const Search$1 = react.exports.memo((props) => {
+const Search$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     viewBox: "0 0 30.239 30.239",
     width: "100%",
@@ -1220,7 +1187,7 @@ const Search$1 = react.exports.memo((props) => {
   }));
 });
 
-const SearchMagnifyingGlass = react.exports.memo((props) => {
+const SearchMagnifyingGlass = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-search-magnifying-glass",
     enableBackground: "new 0 0 512 512",
@@ -1238,7 +1205,7 @@ const SearchMagnifyingGlass = react.exports.memo((props) => {
   })));
 });
 
-const ServiceVan = react.exports.memo((props) => {
+const ServiceVan = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-service-van",
     version: "1.1",
@@ -1255,7 +1222,7 @@ const ServiceVan = react.exports.memo((props) => {
   }));
 });
 
-const Shirt = react.exports.memo((props) => {
+const Shirt = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-shirt",
     x: "0px",
@@ -1272,7 +1239,7 @@ const Shirt = react.exports.memo((props) => {
   }))));
 });
 
-const ShoppingBags = react.exports.memo((props) => {
+const ShoppingBags = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-shopping-bags",
     viewBox: "0 0 512 512",
@@ -1285,7 +1252,7 @@ const ShoppingBags = react.exports.memo((props) => {
   }))));
 });
 
-const ShoppingBasket = react.exports.memo((props) => {
+const ShoppingBasket = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-shopping-basket",
     xmlns: "http://www.w3.org/2000/svg",
@@ -1313,7 +1280,7 @@ const ShoppingBasket = react.exports.memo((props) => {
   })));
 });
 
-const SmartPhone = react.exports.memo((props) => {
+const SmartPhone = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-smart-phone",
     x: "0px",
@@ -1328,7 +1295,7 @@ const SmartPhone = react.exports.memo((props) => {
   }));
 });
 
-const SortNumberAsc = react.exports.memo((props) => {
+const SortNumberAsc = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-sort-number-asc",
     version: "1.1",
@@ -1351,7 +1318,7 @@ const SortNumberAsc = react.exports.memo((props) => {
   }))));
 });
 
-const SortNumberDesc = react.exports.memo((props) => {
+const SortNumberDesc = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-sort-number-desc",
     version: "1.1",
@@ -1374,7 +1341,7 @@ const SortNumberDesc = react.exports.memo((props) => {
   }))));
 });
 
-const SortStringAsc = react.exports.memo((props) => {
+const SortStringAsc = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-sort-string-asc",
     version: "1.1",
@@ -1397,7 +1364,7 @@ const SortStringAsc = react.exports.memo((props) => {
   }))));
 });
 
-const SortStringDesc = react.exports.memo((props) => {
+const SortStringDesc = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-sort-string-desc",
     version: "1.1",
@@ -1420,7 +1387,7 @@ const SortStringDesc = react.exports.memo((props) => {
   }))));
 });
 
-const SortUpDown = react.exports.memo((props) => {
+const SortUpDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-sort-up-down",
     version: "1.1",
@@ -1439,7 +1406,7 @@ const SortUpDown = react.exports.memo((props) => {
   }))));
 });
 
-const SpaFacial = react.exports.memo((props) => {
+const SpaFacial = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-spa-facial",
     version: "1.1",
@@ -1462,7 +1429,7 @@ const SpaFacial = react.exports.memo((props) => {
   })));
 });
 
-const SpaFingernailPolish = react.exports.memo((props) => {
+const SpaFingernailPolish = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-spa-fingernail-polish",
     enableBackground: "new 0 0 512 512",
@@ -1482,7 +1449,7 @@ const SpaFingernailPolish = react.exports.memo((props) => {
   }));
 });
 
-const StoreFront = react.exports.memo((props) => {
+const StoreFront = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-store-front",
     enableBackground: "new 0 0 19.955 19.955",
@@ -1494,7 +1461,7 @@ const StoreFront = react.exports.memo((props) => {
   }));
 });
 
-const Swimming = react.exports.memo((props) => {
+const Swimming = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-swimming",
     enableBackground: "new 0 0 511.851 511.851",
@@ -1520,7 +1487,7 @@ const Swimming = react.exports.memo((props) => {
   })));
 });
 
-const Target$1 = react.exports.memo((props) => {
+const Target$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-target",
     viewBox: "0 0 512 512",
@@ -1531,7 +1498,7 @@ const Target$1 = react.exports.memo((props) => {
   }));
 });
 
-const TrashCan = react.exports.memo((props) => {
+const TrashCan = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-trash-can",
     xmlns: "http://www.w3.org/2000/svg",
@@ -1543,7 +1510,7 @@ const TrashCan = react.exports.memo((props) => {
   }));
 });
 
-const UmbrellaCheck = react.exports.memo((props) => {
+const UmbrellaCheck = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-umbrella-check",
     viewBox: "0 -15 449.26509 449",
@@ -1556,7 +1523,7 @@ const UmbrellaCheck = react.exports.memo((props) => {
   }));
 });
 
-const Upload$1 = react.exports.memo((props) => {
+const Upload$1 = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     version: "1.1",
     id: "Capa_1",
@@ -1575,7 +1542,7 @@ const Upload$1 = react.exports.memo((props) => {
   })));
 });
 
-const WaterSpigot = react.exports.memo((props) => {
+const WaterSpigot = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-water-spigot",
     viewBox: "0 0 512 512",
@@ -1591,7 +1558,7 @@ const WaterSpigot = react.exports.memo((props) => {
   }));
 });
 
-const WeatherStorm = react.exports.memo((props) => {
+const WeatherStorm = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-weather-storm",
     viewBox: "0 0 509.86719 509",
@@ -1606,7 +1573,7 @@ const WeatherStorm = react.exports.memo((props) => {
   }));
 });
 
-const WineGlasses = react.exports.memo((props) => {
+const WineGlasses = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-wine-glasses",
     viewBox: "0 0 511.999 511.999",
@@ -1619,7 +1586,7 @@ const WineGlasses = react.exports.memo((props) => {
   }))));
 });
 
-const WorldWideWeb = react.exports.memo((props) => {
+const WorldWideWeb = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     id: "applab-icon-basic-world-wide-web",
     viewBox: "0 0 490.667 490.667",
@@ -1847,7 +1814,7 @@ var Basic = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   WorldWideWeb: WorldWideWeb
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const Activity = react.exports.memo((props) => {
+const Activity = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -1874,7 +1841,7 @@ const Activity = react.exports.memo((props) => {
   }))));
 });
 
-const AddCircle = react.exports.memo((props) => {
+const AddCircle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     height: "100%",
     width: "100%",
@@ -1919,7 +1886,7 @@ const AddCircle = react.exports.memo((props) => {
   }))));
 });
 
-const Add = react.exports.memo((props) => {
+const Add = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -1963,7 +1930,7 @@ const Add = react.exports.memo((props) => {
   }))));
 });
 
-const Alarm = react.exports.memo((props) => {
+const Alarm = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2038,7 +2005,7 @@ const Alarm = react.exports.memo((props) => {
   }))));
 });
 
-const AlertCircle = react.exports.memo((props) => {
+const AlertCircle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2100,7 +2067,7 @@ const AlertCircle = react.exports.memo((props) => {
   }))));
 });
 
-const Anchor = react.exports.memo((props) => {
+const Anchor = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2144,7 +2111,7 @@ const Anchor = react.exports.memo((props) => {
   }))));
 });
 
-const Android = react.exports.memo((props) => {
+const Android = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2234,7 +2201,7 @@ const Android = react.exports.memo((props) => {
   }))));
 });
 
-const Apple = react.exports.memo((props) => {
+const Apple = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2275,7 +2242,7 @@ const Apple = react.exports.memo((props) => {
   }))));
 });
 
-const Archive = react.exports.memo((props) => {
+const Archive = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2331,7 +2298,7 @@ const Archive = react.exports.memo((props) => {
   }))));
 });
 
-const ArrowLeft = react.exports.memo((props) => {
+const ArrowLeft = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2376,7 +2343,7 @@ const ArrowLeft = react.exports.memo((props) => {
   }))));
 });
 
-const ArrowDown = react.exports.memo((props) => {
+const ArrowDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2421,7 +2388,7 @@ const ArrowDown = react.exports.memo((props) => {
   }))));
 });
 
-const ArrowRight = react.exports.memo((props) => {
+const ArrowRight = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2466,7 +2433,7 @@ const ArrowRight = react.exports.memo((props) => {
   }))));
 });
 
-const ArrowUpDown = react.exports.memo((props) => {
+const ArrowUpDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2507,7 +2474,7 @@ const ArrowUpDown = react.exports.memo((props) => {
   }))));
 });
 
-const ArrowUp = react.exports.memo((props) => {
+const ArrowUp = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2552,7 +2519,7 @@ const ArrowUp = react.exports.memo((props) => {
   }))));
 });
 
-const AtSign = react.exports.memo((props) => {
+const AtSign = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2580,7 +2547,7 @@ const AtSign = react.exports.memo((props) => {
   }))));
 });
 
-const Attachment = react.exports.memo((props) => {
+const Attachment = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2608,7 +2575,7 @@ const Attachment = react.exports.memo((props) => {
   }))));
 });
 
-const Badge = react.exports.memo((props) => {
+const Badge = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2666,7 +2633,7 @@ const Badge = react.exports.memo((props) => {
   }))));
 });
 
-const Bank = react.exports.memo((props) => {
+const Bank = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2760,7 +2727,7 @@ const Bank = react.exports.memo((props) => {
   }))));
 });
 
-const BarChart = react.exports.memo((props) => {
+const BarChart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2856,7 +2823,7 @@ const BarChart = react.exports.memo((props) => {
   }))));
 });
 
-const Basket = react.exports.memo((props) => {
+const Basket = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -2950,7 +2917,7 @@ const Basket = react.exports.memo((props) => {
   }))));
 });
 
-const BatteryCharging = react.exports.memo((props) => {
+const BatteryCharging = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3014,7 +2981,7 @@ const BatteryCharging = react.exports.memo((props) => {
   }))));
 });
 
-const BatteryFull = react.exports.memo((props) => {
+const BatteryFull = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3129,7 +3096,7 @@ const BatteryFull = react.exports.memo((props) => {
   }))));
 });
 
-const BatteryHalf = react.exports.memo((props) => {
+const BatteryHalf = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3210,7 +3177,7 @@ const BatteryHalf = react.exports.memo((props) => {
   }))));
 });
 
-const BatteryLow = react.exports.memo((props) => {
+const BatteryLow = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3274,7 +3241,7 @@ const BatteryLow = react.exports.memo((props) => {
   }))));
 });
 
-const Battery = react.exports.memo((props) => {
+const Battery = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3321,7 +3288,7 @@ const Battery = react.exports.memo((props) => {
   }))));
 });
 
-const BluetoothOff = react.exports.memo((props) => {
+const BluetoothOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3381,7 +3348,7 @@ const BluetoothOff = react.exports.memo((props) => {
   }))));
 });
 
-const Bluetooth = react.exports.memo((props) => {
+const Bluetooth = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3409,7 +3376,7 @@ const Bluetooth = react.exports.memo((props) => {
   }))));
 });
 
-const Bold = react.exports.memo((props) => {
+const Bold = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3437,7 +3404,7 @@ const Bold = react.exports.memo((props) => {
   }))));
 });
 
-const Book = react.exports.memo((props) => {
+const Book = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3482,7 +3449,7 @@ const Book = react.exports.memo((props) => {
   }))));
 });
 
-const Bookmark = react.exports.memo((props) => {
+const Bookmark = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3525,7 +3492,7 @@ const Bookmark = react.exports.memo((props) => {
   }))));
 });
 
-const Box = react.exports.memo((props) => {
+const Box = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3583,7 +3550,7 @@ const Box = react.exports.memo((props) => {
   }))));
 });
 
-const Briefcase = react.exports.memo((props) => {
+const Briefcase = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3649,7 +3616,7 @@ const Briefcase = react.exports.memo((props) => {
   }))));
 });
 
-const Brush = react.exports.memo((props) => {
+const Brush = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3692,7 +3659,7 @@ const Brush = react.exports.memo((props) => {
   }))));
 });
 
-const Building = react.exports.memo((props) => {
+const Building = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3800,7 +3767,7 @@ const Building = react.exports.memo((props) => {
   }))));
 });
 
-const Bulb = react.exports.memo((props) => {
+const Bulb = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3845,7 +3812,7 @@ const Bulb = react.exports.memo((props) => {
   }))));
 });
 
-const Calendar = react.exports.memo((props) => {
+const Calendar = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3924,7 +3891,7 @@ const Calendar = react.exports.memo((props) => {
   }))));
 });
 
-const Camera = react.exports.memo((props) => {
+const Camera = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -3984,7 +3951,7 @@ const Camera = react.exports.memo((props) => {
   }))));
 });
 
-const Cart = react.exports.memo((props) => {
+const Cart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4046,7 +4013,7 @@ const Cart = react.exports.memo((props) => {
   }))));
 });
 
-const Cast = react.exports.memo((props) => {
+const Cast = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4127,7 +4094,7 @@ const Cast = react.exports.memo((props) => {
   }))));
 });
 
-const Category = react.exports.memo((props) => {
+const Category = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4214,7 +4181,7 @@ const Category = react.exports.memo((props) => {
   }))));
 });
 
-const CenterAlign = react.exports.memo((props) => {
+const CenterAlign = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4293,7 +4260,7 @@ const CenterAlign = react.exports.memo((props) => {
   }))));
 });
 
-const CheckAll = react.exports.memo((props) => {
+const CheckAll = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4338,7 +4305,7 @@ const CheckAll = react.exports.memo((props) => {
   }))));
 });
 
-const CheckCircle = react.exports.memo((props) => {
+const CheckCircle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4381,7 +4348,7 @@ const CheckCircle = react.exports.memo((props) => {
   }))));
 });
 
-const Check = react.exports.memo((props) => {
+const Check = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4409,7 +4376,7 @@ const Check = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronLeft = react.exports.memo((props) => {
+const ChevronLeft = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4437,7 +4404,7 @@ const ChevronLeft = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronDoubleLeft = react.exports.memo((props) => {
+const ChevronDoubleLeft = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4482,7 +4449,7 @@ const ChevronDoubleLeft = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronDoubleRight = react.exports.memo((props) => {
+const ChevronDoubleRight = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4526,7 +4493,7 @@ const ChevronDoubleRight = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronDoubleDown = react.exports.memo((props) => {
+const ChevronDoubleDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4571,7 +4538,7 @@ const ChevronDoubleDown = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronDoubleUp = react.exports.memo((props) => {
+const ChevronDoubleUp = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4616,7 +4583,7 @@ const ChevronDoubleUp = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronDown = react.exports.memo((props) => {
+const ChevronDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4644,7 +4611,7 @@ const ChevronDown = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronRight = react.exports.memo((props) => {
+const ChevronRight = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4672,7 +4639,7 @@ const ChevronRight = react.exports.memo((props) => {
   }))));
 });
 
-const ChevronUp = react.exports.memo((props) => {
+const ChevronUp = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4700,7 +4667,7 @@ const ChevronUp = react.exports.memo((props) => {
   }))));
 });
 
-const Chip = react.exports.memo((props) => {
+const Chip = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -4934,7 +4901,7 @@ const Chip = react.exports.memo((props) => {
   }))));
 });
 
-const Chrome = react.exports.memo((props) => {
+const Chrome = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5007,7 +4974,7 @@ const Chrome = react.exports.memo((props) => {
   }))));
 });
 
-const Clipboard = react.exports.memo((props) => {
+const Clipboard = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5086,7 +5053,7 @@ const Clipboard = react.exports.memo((props) => {
   }))));
 });
 
-const Clock = react.exports.memo((props) => {
+const Clock = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5131,7 +5098,7 @@ const Clock = react.exports.memo((props) => {
   }))));
 });
 
-const CloseCircle = react.exports.memo((props) => {
+const CloseCircle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5176,7 +5143,7 @@ const CloseCircle = react.exports.memo((props) => {
   }))));
 });
 
-const Close = react.exports.memo((props) => {
+const Close = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5221,7 +5188,7 @@ const Close = react.exports.memo((props) => {
   }))));
 });
 
-const CloudDownload = react.exports.memo((props) => {
+const CloudDownload = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5264,7 +5231,7 @@ const CloudDownload = react.exports.memo((props) => {
   }))));
 });
 
-const CloudOff = react.exports.memo((props) => {
+const CloudOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5322,7 +5289,7 @@ const CloudOff = react.exports.memo((props) => {
   }))));
 });
 
-const CloudUpload = react.exports.memo((props) => {
+const CloudUpload = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5365,7 +5332,7 @@ const CloudUpload = react.exports.memo((props) => {
   }))));
 });
 
-const Cloud = react.exports.memo((props) => {
+const Cloud = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5393,7 +5360,7 @@ const Cloud = react.exports.memo((props) => {
   }))));
 });
 
-const Code = react.exports.memo((props) => {
+const Code = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5455,7 +5422,7 @@ const Code = react.exports.memo((props) => {
   }))));
 });
 
-const Coffee = react.exports.memo((props) => {
+const Coffee = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5500,7 +5467,7 @@ const Coffee = react.exports.memo((props) => {
   }))));
 });
 
-const Collapse = react.exports.memo((props) => {
+const Collapse = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5579,7 +5546,7 @@ const Collapse = react.exports.memo((props) => {
   }))));
 });
 
-const ColorPalette = react.exports.memo((props) => {
+const ColorPalette = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5675,7 +5642,7 @@ const ColorPalette = react.exports.memo((props) => {
   }))));
 });
 
-const Command = react.exports.memo((props) => {
+const Command = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5703,7 +5670,7 @@ const Command = react.exports.memo((props) => {
   }))));
 });
 
-const Compass = react.exports.memo((props) => {
+const Compass = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5746,7 +5713,7 @@ const Compass = react.exports.memo((props) => {
   }))));
 });
 
-const Crop = react.exports.memo((props) => {
+const Crop = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5804,7 +5771,7 @@ const Crop = react.exports.memo((props) => {
   }))));
 });
 
-const Crosshairs = react.exports.memo((props) => {
+const Crosshairs = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5849,7 +5816,7 @@ const Crosshairs = react.exports.memo((props) => {
   }))));
 });
 
-const Cursor = react.exports.memo((props) => {
+const Cursor = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5892,7 +5859,7 @@ const Cursor = react.exports.memo((props) => {
   }))));
 });
 
-const Dashboard = react.exports.memo((props) => {
+const Dashboard = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5932,7 +5899,7 @@ const Dashboard = react.exports.memo((props) => {
   }))));
 });
 
-const Database = react.exports.memo((props) => {
+const Database = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -5990,7 +5957,7 @@ const Database = react.exports.memo((props) => {
   }))));
 });
 
-const Design = react.exports.memo((props) => {
+const Design = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6031,7 +5998,7 @@ const Design = react.exports.memo((props) => {
   }))));
 });
 
-const Diamond = react.exports.memo((props) => {
+const Diamond = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6072,7 +6039,7 @@ const Diamond = react.exports.memo((props) => {
   }))));
 });
 
-const Document = react.exports.memo((props) => {
+const Document = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6146,7 +6113,7 @@ const Document = react.exports.memo((props) => {
   }))));
 });
 
-const Dollar = react.exports.memo((props) => {
+const Dollar = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6208,7 +6175,7 @@ const Dollar = react.exports.memo((props) => {
   }))));
 });
 
-const DonutChart = react.exports.memo((props) => {
+const DonutChart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6249,7 +6216,7 @@ const DonutChart = react.exports.memo((props) => {
   }))));
 });
 
-const Download = react.exports.memo((props) => {
+const Download = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6292,7 +6259,7 @@ const Download = react.exports.memo((props) => {
   }))));
 });
 
-const Drop = react.exports.memo((props) => {
+const Drop = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6335,7 +6302,7 @@ const Drop = react.exports.memo((props) => {
   }))));
 });
 
-const Edit = react.exports.memo((props) => {
+const Edit = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6376,7 +6343,7 @@ const Edit = react.exports.memo((props) => {
   }))));
 });
 
-const EventAdd = react.exports.memo((props) => {
+const EventAdd = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6455,7 +6422,7 @@ const EventAdd = react.exports.memo((props) => {
   }))));
 });
 
-const EventScheduled = react.exports.memo((props) => {
+const EventScheduled = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6536,7 +6503,7 @@ const EventScheduled = react.exports.memo((props) => {
   }))));
 });
 
-const Expand = react.exports.memo((props) => {
+const Expand = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6615,7 +6582,7 @@ const Expand = react.exports.memo((props) => {
   }))));
 });
 
-const Facebook = react.exports.memo((props) => {
+const Facebook = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6643,7 +6610,7 @@ const Facebook = react.exports.memo((props) => {
   }))));
 });
 
-const FastLeft = react.exports.memo((props) => {
+const FastLeft = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6684,7 +6651,7 @@ const FastLeft = react.exports.memo((props) => {
   }))));
 });
 
-const FastRight = react.exports.memo((props) => {
+const FastRight = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6725,7 +6692,7 @@ const FastRight = react.exports.memo((props) => {
   }))));
 });
 
-const Figma = react.exports.memo((props) => {
+const Figma = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6813,7 +6780,7 @@ const Figma = react.exports.memo((props) => {
   }))));
 });
 
-const FileAdd = react.exports.memo((props) => {
+const FileAdd = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6869,7 +6836,7 @@ const FileAdd = react.exports.memo((props) => {
   }))));
 });
 
-const File = react.exports.memo((props) => {
+const File = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6910,7 +6877,7 @@ const File = react.exports.memo((props) => {
   }))));
 });
 
-const Files = react.exports.memo((props) => {
+const Files = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -6966,7 +6933,7 @@ const Files = react.exports.memo((props) => {
   }))));
 });
 
-const Film = react.exports.memo((props) => {
+const Film = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7030,7 +6997,7 @@ const Film = react.exports.memo((props) => {
   }))));
 });
 
-const Filter = react.exports.memo((props) => {
+const Filter = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7056,7 +7023,7 @@ const Filter = react.exports.memo((props) => {
   }))));
 });
 
-const Fire = react.exports.memo((props) => {
+const Fire = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7097,7 +7064,7 @@ const Fire = react.exports.memo((props) => {
   }))));
 });
 
-const Flag = react.exports.memo((props) => {
+const Flag = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7140,7 +7107,7 @@ const Flag = react.exports.memo((props) => {
   }))));
 });
 
-const Flashlight = react.exports.memo((props) => {
+const Flashlight = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7234,7 +7201,7 @@ const Flashlight = react.exports.memo((props) => {
   }))));
 });
 
-const Flight = react.exports.memo((props) => {
+const Flight = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7275,7 +7242,7 @@ const Flight = react.exports.memo((props) => {
   }))));
 });
 
-const FolderAdd = react.exports.memo((props) => {
+const FolderAdd = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7316,7 +7283,7 @@ const FolderAdd = react.exports.memo((props) => {
   }))));
 });
 
-const Folder = react.exports.memo((props) => {
+const Folder = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7361,7 +7328,7 @@ const Folder = react.exports.memo((props) => {
   }))));
 });
 
-const Frown = react.exports.memo((props) => {
+const Frown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7440,7 +7407,7 @@ const Frown = react.exports.memo((props) => {
   }))));
 });
 
-const Fuel = react.exports.memo((props) => {
+const Fuel = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7515,7 +7482,7 @@ const Fuel = react.exports.memo((props) => {
   }))));
 });
 
-const Gamepad = react.exports.memo((props) => {
+const Gamepad = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7596,7 +7563,7 @@ const Gamepad = react.exports.memo((props) => {
   }))));
 });
 
-const Gift = react.exports.memo((props) => {
+const Gift = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7653,7 +7620,7 @@ const Gift = react.exports.memo((props) => {
   }))));
 });
 
-const Grid = react.exports.memo((props) => {
+const Grid = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7698,7 +7665,7 @@ const Grid = react.exports.memo((props) => {
   }))));
 });
 
-const Group = react.exports.memo((props) => {
+const Group = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7772,7 +7739,7 @@ const Group = react.exports.memo((props) => {
   }))));
 });
 
-const Growth = react.exports.memo((props) => {
+const Growth = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7814,7 +7781,7 @@ const Growth = react.exports.memo((props) => {
   }))));
 });
 
-const HandCursor = react.exports.memo((props) => {
+const HandCursor = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7840,7 +7807,7 @@ const HandCursor = react.exports.memo((props) => {
   }))));
 });
 
-const Headphone = react.exports.memo((props) => {
+const Headphone = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7898,7 +7865,7 @@ const Headphone = react.exports.memo((props) => {
   }))));
 });
 
-const Heart = react.exports.memo((props) => {
+const Heart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -7941,7 +7908,7 @@ const Heart = react.exports.memo((props) => {
   }))));
 });
 
-const Help = react.exports.memo((props) => {
+const Help = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8003,7 +7970,7 @@ const Help = react.exports.memo((props) => {
   }))));
 });
 
-const Hide = react.exports.memo((props) => {
+const Hide = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8076,7 +8043,7 @@ const Hide = react.exports.memo((props) => {
   }))));
 });
 
-const Home = react.exports.memo((props) => {
+const Home = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8118,7 +8085,7 @@ const Home = react.exports.memo((props) => {
   }))));
 });
 
-const Hourglass = react.exports.memo((props) => {
+const Hourglass = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8176,7 +8143,7 @@ const Hourglass = react.exports.memo((props) => {
   }))));
 });
 
-const Image = react.exports.memo((props) => {
+const Image = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8238,7 +8205,7 @@ const Image = react.exports.memo((props) => {
   }))));
 });
 
-const Inbox = react.exports.memo((props) => {
+const Inbox = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8279,7 +8246,7 @@ const Inbox = react.exports.memo((props) => {
   }))));
 });
 
-const Info = react.exports.memo((props) => {
+const Info = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8341,7 +8308,7 @@ const Info = react.exports.memo((props) => {
   }))));
 });
 
-const Instagram = react.exports.memo((props) => {
+const Instagram = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8403,7 +8370,7 @@ const Instagram = react.exports.memo((props) => {
   }))));
 });
 
-const Internet = react.exports.memo((props) => {
+const Internet = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8448,7 +8415,7 @@ const Internet = react.exports.memo((props) => {
   }))));
 });
 
-const Italics = react.exports.memo((props) => {
+const Italics = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8538,7 +8505,7 @@ const Italics = react.exports.memo((props) => {
   }))));
 });
 
-const Justify = react.exports.memo((props) => {
+const Justify = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8617,7 +8584,7 @@ const Justify = react.exports.memo((props) => {
   }))));
 });
 
-const Key = react.exports.memo((props) => {
+const Key = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8660,7 +8627,7 @@ const Key = react.exports.memo((props) => {
   }))));
 });
 
-const Laptop = react.exports.memo((props) => {
+const Laptop = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8707,7 +8674,7 @@ const Laptop = react.exports.memo((props) => {
   }))));
 });
 
-const Laugh = react.exports.memo((props) => {
+const Laugh = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8784,7 +8751,7 @@ const Laugh = react.exports.memo((props) => {
   }))));
 });
 
-const Layers = react.exports.memo((props) => {
+const Layers = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8844,7 +8811,7 @@ const Layers = react.exports.memo((props) => {
   }))));
 });
 
-const Layout = react.exports.memo((props) => {
+const Layout = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8900,7 +8867,7 @@ const Layout = react.exports.memo((props) => {
   }))));
 });
 
-const Leaderboard = react.exports.memo((props) => {
+const Leaderboard = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -8956,7 +8923,7 @@ const Leaderboard = react.exports.memo((props) => {
   }))));
 });
 
-const LeftAlign = react.exports.memo((props) => {
+const LeftAlign = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9035,7 +9002,7 @@ const LeftAlign = react.exports.memo((props) => {
   }))));
 });
 
-const LineChart = react.exports.memo((props) => {
+const LineChart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9080,7 +9047,7 @@ const LineChart = react.exports.memo((props) => {
   }))));
 });
 
-const Link = react.exports.memo((props) => {
+const Link = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9142,7 +9109,7 @@ const Link = react.exports.memo((props) => {
   }))));
 });
 
-const LinkedIn = react.exports.memo((props) => {
+const LinkedIn = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9202,7 +9169,7 @@ const LinkedIn = react.exports.memo((props) => {
   }))));
 });
 
-const List = react.exports.memo((props) => {
+const List = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9315,7 +9282,7 @@ const List = react.exports.memo((props) => {
   }))));
 });
 
-const Live = react.exports.memo((props) => {
+const Live = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9411,7 +9378,7 @@ const Live = react.exports.memo((props) => {
   }))));
 });
 
-const Loader = react.exports.memo((props) => {
+const Loader = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9558,7 +9525,7 @@ const Loader = react.exports.memo((props) => {
   }))));
 });
 
-const Location = react.exports.memo((props) => {
+const Location = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9601,7 +9568,7 @@ const Location = react.exports.memo((props) => {
   }))));
 });
 
-const Lock = react.exports.memo((props) => {
+const Lock = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9644,7 +9611,7 @@ const Lock = react.exports.memo((props) => {
   }))));
 });
 
-const Login = react.exports.memo((props) => {
+const Login = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9685,7 +9652,7 @@ const Login = react.exports.memo((props) => {
   }))));
 });
 
-const Logout = react.exports.memo((props) => {
+const Logout = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9726,7 +9693,7 @@ const Logout = react.exports.memo((props) => {
   }))));
 });
 
-const Mail = react.exports.memo((props) => {
+const Mail = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9771,7 +9738,7 @@ const Mail = react.exports.memo((props) => {
   }))));
 });
 
-const Map = react.exports.memo((props) => {
+const Map = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9812,7 +9779,7 @@ const Map = react.exports.memo((props) => {
   }))));
 });
 
-const Meh = react.exports.memo((props) => {
+const Meh = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9891,7 +9858,7 @@ const Meh = react.exports.memo((props) => {
   }))));
 });
 
-const Menu = react.exports.memo((props) => {
+const Menu = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9936,7 +9903,7 @@ const Menu = react.exports.memo((props) => {
   }))));
 });
 
-const Message = react.exports.memo((props) => {
+const Message = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -9995,7 +9962,7 @@ const Message = react.exports.memo((props) => {
   }))));
 });
 
-const Messages = react.exports.memo((props) => {
+const Messages = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10053,7 +10020,7 @@ const Messages = react.exports.memo((props) => {
   }))));
 });
 
-const MicOff = react.exports.memo((props) => {
+const MicOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10115,7 +10082,7 @@ const MicOff = react.exports.memo((props) => {
   }))));
 });
 
-const Mic = react.exports.memo((props) => {
+const Mic = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10160,7 +10127,7 @@ const Mic = react.exports.memo((props) => {
   }))));
 });
 
-const Mobile = react.exports.memo((props) => {
+const Mobile = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10201,7 +10168,7 @@ const Mobile = react.exports.memo((props) => {
   }))));
 });
 
-const Moon = react.exports.memo((props) => {
+const Moon = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10229,7 +10196,7 @@ const Moon = react.exports.memo((props) => {
   }))));
 });
 
-const MoreHorizontal = react.exports.memo((props) => {
+const MoreHorizontal = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10291,7 +10258,7 @@ const MoreHorizontal = react.exports.memo((props) => {
   }))));
 });
 
-const MoreVertical = react.exports.memo((props) => {
+const MoreVertical = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10353,7 +10320,7 @@ const MoreVertical = react.exports.memo((props) => {
   }))));
 });
 
-const Mouse = react.exports.memo((props) => {
+const Mouse = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10400,7 +10367,7 @@ const Mouse = react.exports.memo((props) => {
   }))));
 });
 
-const Music = react.exports.memo((props) => {
+const Music = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10441,7 +10408,7 @@ const Music = react.exports.memo((props) => {
   }))));
 });
 
-const New = react.exports.memo((props) => {
+const New = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10467,7 +10434,7 @@ const New = react.exports.memo((props) => {
   }))));
 });
 
-const Next = react.exports.memo((props) => {
+const Next = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10510,7 +10477,7 @@ const Next = react.exports.memo((props) => {
   }))));
 });
 
-const Note = react.exports.memo((props) => {
+const Note = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10568,7 +10535,7 @@ const Note = react.exports.memo((props) => {
   }))));
 });
 
-const Notes = react.exports.memo((props) => {
+const Notes = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10668,7 +10635,7 @@ const Notes = react.exports.memo((props) => {
   }))));
 });
 
-const NotificationOff = react.exports.memo((props) => {
+const NotificationOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10726,7 +10693,7 @@ const NotificationOff = react.exports.memo((props) => {
   }))));
 });
 
-const Notification = react.exports.memo((props) => {
+const Notification = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10769,7 +10736,7 @@ const Notification = react.exports.memo((props) => {
   }))));
 });
 
-const Open = react.exports.memo((props) => {
+const Open = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10812,7 +10779,7 @@ const Open = react.exports.memo((props) => {
   }))));
 });
 
-const PaintRoller = react.exports.memo((props) => {
+const PaintRoller = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10875,7 +10842,7 @@ const PaintRoller = react.exports.memo((props) => {
   }))));
 });
 
-const Pause = react.exports.memo((props) => {
+const Pause = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10920,7 +10887,7 @@ const Pause = react.exports.memo((props) => {
   }))));
 });
 
-const Payment = react.exports.memo((props) => {
+const Payment = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -10984,7 +10951,7 @@ const Payment = react.exports.memo((props) => {
   }))));
 });
 
-const Pen = react.exports.memo((props) => {
+const Pen = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11046,7 +11013,7 @@ const Pen = react.exports.memo((props) => {
   }))));
 });
 
-const Percent = react.exports.memo((props) => {
+const Percent = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11108,7 +11075,7 @@ const Percent = react.exports.memo((props) => {
   }))));
 });
 
-const Person = react.exports.memo((props) => {
+const Person = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11151,7 +11118,7 @@ const Person = react.exports.memo((props) => {
   }))));
 });
 
-const PhoneCallIncoming = react.exports.memo((props) => {
+const PhoneCallIncoming = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11200,7 +11167,7 @@ const PhoneCallIncoming = react.exports.memo((props) => {
   }))));
 });
 
-const PhoneCallOutgoing = react.exports.memo((props) => {
+const PhoneCallOutgoing = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11249,7 +11216,7 @@ const PhoneCallOutgoing = react.exports.memo((props) => {
   }))));
 });
 
-const PhoneCallRejected = react.exports.memo((props) => {
+const PhoneCallRejected = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11298,7 +11265,7 @@ const PhoneCallRejected = react.exports.memo((props) => {
   }))));
 });
 
-const Phone = react.exports.memo((props) => {
+const Phone = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11332,7 +11299,7 @@ const Phone = react.exports.memo((props) => {
   }))));
 });
 
-const Photos = react.exports.memo((props) => {
+const Photos = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11413,7 +11380,7 @@ const Photos = react.exports.memo((props) => {
   }))));
 });
 
-const PieChart = react.exports.memo((props) => {
+const PieChart = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11456,7 +11423,7 @@ const PieChart = react.exports.memo((props) => {
   }))));
 });
 
-const Pin = react.exports.memo((props) => {
+const Pin = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11499,7 +11466,7 @@ const Pin = react.exports.memo((props) => {
   }))));
 });
 
-const Pinterest = react.exports.memo((props) => {
+const Pinterest = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11527,7 +11494,7 @@ const Pinterest = react.exports.memo((props) => {
   }))));
 });
 
-const PlayCircle = react.exports.memo((props) => {
+const PlayCircle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11570,7 +11537,7 @@ const PlayCircle = react.exports.memo((props) => {
   }))));
 });
 
-const Play = react.exports.memo((props) => {
+const Play = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11596,7 +11563,7 @@ const Play = react.exports.memo((props) => {
   }))));
 });
 
-const Playlist = react.exports.memo((props) => {
+const Playlist = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11673,7 +11640,7 @@ const Playlist = react.exports.memo((props) => {
   }))));
 });
 
-const Power = react.exports.memo((props) => {
+const Power = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11716,7 +11683,7 @@ const Power = react.exports.memo((props) => {
   }))));
 });
 
-const Presentation = react.exports.memo((props) => {
+const Presentation = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11825,7 +11792,7 @@ const Presentation = react.exports.memo((props) => {
   }))));
 });
 
-const Previous = react.exports.memo((props) => {
+const Previous = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11868,7 +11835,7 @@ const Previous = react.exports.memo((props) => {
   }))));
 });
 
-const Printer = react.exports.memo((props) => {
+const Printer = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -11943,7 +11910,7 @@ const Printer = react.exports.memo((props) => {
   }))));
 });
 
-const ProfileCircle = react.exports.memo((props) => {
+const ProfileCircle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12003,7 +11970,7 @@ const ProfileCircle = react.exports.memo((props) => {
   }))));
 });
 
-const Promotion = react.exports.memo((props) => {
+const Promotion = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12080,7 +12047,7 @@ const Promotion = react.exports.memo((props) => {
   }))));
 });
 
-const Rain = react.exports.memo((props) => {
+const Rain = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12159,7 +12126,7 @@ const Rain = react.exports.memo((props) => {
   }))));
 });
 
-const Receipt = react.exports.memo((props) => {
+const Receipt = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12219,7 +12186,7 @@ const Receipt = react.exports.memo((props) => {
   }))));
 });
 
-const Reload = react.exports.memo((props) => {
+const Reload = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12264,7 +12231,7 @@ const Reload = react.exports.memo((props) => {
   }))));
 });
 
-const Remove = react.exports.memo((props) => {
+const Remove = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12292,7 +12259,7 @@ const Remove = react.exports.memo((props) => {
   }))));
 });
 
-const Repeat = react.exports.memo((props) => {
+const Repeat = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12333,7 +12300,7 @@ const Repeat = react.exports.memo((props) => {
   }))));
 });
 
-const RightAlign = react.exports.memo((props) => {
+const RightAlign = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12412,7 +12379,7 @@ const RightAlign = react.exports.memo((props) => {
   }))));
 });
 
-const Rocket = react.exports.memo((props) => {
+const Rocket = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12500,7 +12467,7 @@ const Rocket = react.exports.memo((props) => {
   }))));
 });
 
-const Ruler = react.exports.memo((props) => {
+const Ruler = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12594,7 +12561,7 @@ const Ruler = react.exports.memo((props) => {
   }))));
 });
 
-const Sad = react.exports.memo((props) => {
+const Sad = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12673,7 +12640,7 @@ const Sad = react.exports.memo((props) => {
   }))));
 });
 
-const Save = react.exports.memo((props) => {
+const Save = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12729,7 +12696,7 @@ const Save = react.exports.memo((props) => {
   }))));
 });
 
-const Scan = react.exports.memo((props) => {
+const Scan = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12855,7 +12822,7 @@ const Scan = react.exports.memo((props) => {
   }))));
 });
 
-const Schedule = react.exports.memo((props) => {
+const Schedule = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -12953,7 +12920,7 @@ const Schedule = react.exports.memo((props) => {
   }))));
 });
 
-const Scissors = react.exports.memo((props) => {
+const Scissors = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13032,7 +12999,7 @@ const Scissors = react.exports.memo((props) => {
   }))));
 });
 
-const Search = react.exports.memo((props) => {
+const Search = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13077,7 +13044,7 @@ const Search = react.exports.memo((props) => {
   }))));
 });
 
-const Send = react.exports.memo((props) => {
+const Send = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13128,7 +13095,7 @@ const Send = react.exports.memo((props) => {
   }))));
 });
 
-const Settings = react.exports.memo((props) => {
+const Settings = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13170,7 +13137,7 @@ const Settings = react.exports.memo((props) => {
   }))));
 });
 
-const Share = react.exports.memo((props) => {
+const Share = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13266,7 +13233,7 @@ const Share = react.exports.memo((props) => {
   }))));
 });
 
-const ShieldCheck = react.exports.memo((props) => {
+const ShieldCheck = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13311,7 +13278,7 @@ const ShieldCheck = react.exports.memo((props) => {
   }))));
 });
 
-const Shield = react.exports.memo((props) => {
+const Shield = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13354,7 +13321,7 @@ const Shield = react.exports.memo((props) => {
   }))));
 });
 
-const Ship = react.exports.memo((props) => {
+const Ship = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13429,7 +13396,7 @@ const Ship = react.exports.memo((props) => {
   }))));
 });
 
-const ShoppingBag = react.exports.memo((props) => {
+const ShoppingBag = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13472,7 +13439,7 @@ const ShoppingBag = react.exports.memo((props) => {
   }))));
 });
 
-const Show = react.exports.memo((props) => {
+const Show = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13517,7 +13484,7 @@ const Show = react.exports.memo((props) => {
   }))));
 });
 
-const Shuffle = react.exports.memo((props) => {
+const Shuffle = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13558,7 +13525,7 @@ const Shuffle = react.exports.memo((props) => {
   }))));
 });
 
-const Size = react.exports.memo((props) => {
+const Size = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13618,7 +13585,7 @@ const Size = react.exports.memo((props) => {
   }))));
 });
 
-const Slack = react.exports.memo((props) => {
+const Slack = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13800,7 +13767,7 @@ const Slack = react.exports.memo((props) => {
   }))));
 });
 
-const Smile = react.exports.memo((props) => {
+const Smile = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13879,7 +13846,7 @@ const Smile = react.exports.memo((props) => {
   }))));
 });
 
-const Snapchat = react.exports.memo((props) => {
+const Snapchat = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13905,7 +13872,7 @@ const Snapchat = react.exports.memo((props) => {
   }))));
 });
 
-const Snowflake = react.exports.memo((props) => {
+const Snowflake = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -13950,7 +13917,7 @@ const Snowflake = react.exports.memo((props) => {
   }))));
 });
 
-const Sort = react.exports.memo((props) => {
+const Sort = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14012,7 +13979,7 @@ const Sort = react.exports.memo((props) => {
   }))));
 });
 
-const Spotify = react.exports.memo((props) => {
+const Spotify = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14091,7 +14058,7 @@ const Spotify = react.exports.memo((props) => {
   }))));
 });
 
-const Star = react.exports.memo((props) => {
+const Star = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14125,7 +14092,7 @@ const Star = react.exports.memo((props) => {
   }))));
 });
 
-const Stop = react.exports.memo((props) => {
+const Stop = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14170,7 +14137,7 @@ const Stop = react.exports.memo((props) => {
   }))));
 });
 
-const Store = react.exports.memo((props) => {
+const Store = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14226,7 +14193,7 @@ const Store = react.exports.memo((props) => {
   }))));
 });
 
-const Sun = react.exports.memo((props) => {
+const Sun = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14390,7 +14357,7 @@ const Sun = react.exports.memo((props) => {
   }))));
 });
 
-const Sync = react.exports.memo((props) => {
+const Sync = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14431,7 +14398,7 @@ const Sync = react.exports.memo((props) => {
   }))));
 });
 
-const Tablet = react.exports.memo((props) => {
+const Tablet = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14478,7 +14445,7 @@ const Tablet = react.exports.memo((props) => {
   }))));
 });
 
-const Tag = react.exports.memo((props) => {
+const Tag = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14536,7 +14503,7 @@ const Tag = react.exports.memo((props) => {
   }))));
 });
 
-const Target = react.exports.memo((props) => {
+const Target = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14613,7 +14580,7 @@ const Target = react.exports.memo((props) => {
   }))));
 });
 
-const Thermometer = react.exports.memo((props) => {
+const Thermometer = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14656,7 +14623,7 @@ const Thermometer = react.exports.memo((props) => {
   }))));
 });
 
-const ThumbsDown = react.exports.memo((props) => {
+const ThumbsDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14697,7 +14664,7 @@ const ThumbsDown = react.exports.memo((props) => {
   }))));
 });
 
-const ThumbsUp = react.exports.memo((props) => {
+const ThumbsUp = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14738,7 +14705,7 @@ const ThumbsUp = react.exports.memo((props) => {
   }))));
 });
 
-const Ticket = react.exports.memo((props) => {
+const Ticket = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14781,7 +14748,7 @@ const Ticket = react.exports.memo((props) => {
   }))));
 });
 
-const Timer = react.exports.memo((props) => {
+const Timer = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14854,7 +14821,7 @@ const Timer = react.exports.memo((props) => {
   }))));
 });
 
-const ToggleOff = react.exports.memo((props) => {
+const ToggleOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14895,7 +14862,7 @@ const ToggleOff = react.exports.memo((props) => {
   }))));
 });
 
-const ToggleOn = react.exports.memo((props) => {
+const ToggleOn = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14936,7 +14903,7 @@ const ToggleOn = react.exports.memo((props) => {
   }))));
 });
 
-const Tool = react.exports.memo((props) => {
+const Tool = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -14976,7 +14943,7 @@ const Tool = react.exports.memo((props) => {
   }))));
 });
 
-const Train = react.exports.memo((props) => {
+const Train = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15068,7 +15035,7 @@ const Train = react.exports.memo((props) => {
   }))));
 });
 
-const Trash = react.exports.memo((props) => {
+const Trash = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15145,7 +15112,7 @@ const Trash = react.exports.memo((props) => {
   }))));
 });
 
-const TrendingDown = react.exports.memo((props) => {
+const TrendingDown = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15190,7 +15157,7 @@ const TrendingDown = react.exports.memo((props) => {
   }))));
 });
 
-const TrendingUp = react.exports.memo((props) => {
+const TrendingUp = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15235,7 +15202,7 @@ const TrendingUp = react.exports.memo((props) => {
   }))));
 });
 
-const Trophy = react.exports.memo((props) => {
+const Trophy = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15312,7 +15279,7 @@ const Trophy = react.exports.memo((props) => {
   }))));
 });
 
-const Truck = react.exports.memo((props) => {
+const Truck = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15389,7 +15356,7 @@ const Truck = react.exports.memo((props) => {
   }))));
 });
 
-const TV = react.exports.memo((props) => {
+const TV = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15436,7 +15403,7 @@ const TV = react.exports.memo((props) => {
   }))));
 });
 
-const Twitch = react.exports.memo((props) => {
+const Twitch = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15496,7 +15463,7 @@ const Twitch = react.exports.memo((props) => {
   }))));
 });
 
-const Twitter = react.exports.memo((props) => {
+const Twitter = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15522,7 +15489,7 @@ const Twitter = react.exports.memo((props) => {
   }))));
 });
 
-const Umbrella = react.exports.memo((props) => {
+const Umbrella = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15582,7 +15549,7 @@ const Umbrella = react.exports.memo((props) => {
   }))));
 });
 
-const Underline = react.exports.memo((props) => {
+const Underline = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15627,7 +15594,7 @@ const Underline = react.exports.memo((props) => {
   }))));
 });
 
-const Unlock = react.exports.memo((props) => {
+const Unlock = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15670,7 +15637,7 @@ const Unlock = react.exports.memo((props) => {
   }))));
 });
 
-const Update = react.exports.memo((props) => {
+const Update = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15713,7 +15680,7 @@ const Update = react.exports.memo((props) => {
   }))));
 });
 
-const Upload = react.exports.memo((props) => {
+const Upload = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15756,7 +15723,7 @@ const Upload = react.exports.memo((props) => {
   }))));
 });
 
-const Utensils = react.exports.memo((props) => {
+const Utensils = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15797,7 +15764,7 @@ const Utensils = react.exports.memo((props) => {
   }))));
 });
 
-const VideoOff = react.exports.memo((props) => {
+const VideoOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15870,7 +15837,7 @@ const VideoOff = react.exports.memo((props) => {
   }))));
 });
 
-const VideoRecorder = react.exports.memo((props) => {
+const VideoRecorder = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15915,7 +15882,7 @@ const VideoRecorder = react.exports.memo((props) => {
   }))));
 });
 
-const VolumeHigh = react.exports.memo((props) => {
+const VolumeHigh = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -15971,7 +15938,7 @@ const VolumeHigh = react.exports.memo((props) => {
   }))));
 });
 
-const VolumeOff = react.exports.memo((props) => {
+const VolumeOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16029,7 +15996,7 @@ const VolumeOff = react.exports.memo((props) => {
   }))));
 });
 
-const Volume = react.exports.memo((props) => {
+const Volume = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16077,7 +16044,7 @@ const Volume = react.exports.memo((props) => {
   }))));
 });
 
-const Wallet = react.exports.memo((props) => {
+const Wallet = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16133,7 +16100,7 @@ const Wallet = react.exports.memo((props) => {
   }))));
 });
 
-const Warning = react.exports.memo((props) => {
+const Warning = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16192,7 +16159,7 @@ const Warning = react.exports.memo((props) => {
   }))));
 });
 
-const Watch = react.exports.memo((props) => {
+const Watch = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16290,7 +16257,7 @@ const Watch = react.exports.memo((props) => {
   }))));
 });
 
-const WifiOff = react.exports.memo((props) => {
+const WifiOff = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16386,7 +16353,7 @@ const WifiOff = react.exports.memo((props) => {
   }))));
 });
 
-const Wifi = react.exports.memo((props) => {
+const Wifi = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16465,7 +16432,7 @@ const Wifi = react.exports.memo((props) => {
   }))));
 });
 
-const Wind = react.exports.memo((props) => {
+const Wind = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16527,7 +16494,7 @@ const Wind = react.exports.memo((props) => {
   }))));
 });
 
-const Window = react.exports.memo((props) => {
+const Window = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16623,7 +16590,7 @@ const Window = react.exports.memo((props) => {
   }))));
 });
 
-const YouTube = react.exports.memo((props) => {
+const YouTube = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16664,7 +16631,7 @@ const YouTube = react.exports.memo((props) => {
   }))));
 });
 
-const Zap = react.exports.memo((props) => {
+const Zap = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16690,7 +16657,7 @@ const Zap = react.exports.memo((props) => {
   }))));
 });
 
-const ZoomIn = react.exports.memo((props) => {
+const ZoomIn = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",
@@ -16733,7 +16700,7 @@ const ZoomIn = react.exports.memo((props) => {
   }))));
 });
 
-const ZoomOut = react.exports.memo((props) => {
+const ZoomOut = memo((props) => {
   return /* @__PURE__ */ React.createElement("svg", {
     width: "100%",
     height: "100%",

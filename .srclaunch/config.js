@@ -13,6 +13,9 @@ export default {
   description: 'React icon components',
   type: ProjectType.Library,
   build: {
+    bundle: {
+      exclude: ['react', 'react-dom'],
+    },
     formats: [BuildFormat.ESM, BuildFormat.UMD],
     input: {
       directory: 'src',
