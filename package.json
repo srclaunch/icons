@@ -34,21 +34,16 @@
     "test:coverage": "yarn srclaunch test --coverage",
     "yui": "yarn upgrade-interactive"
   },
-  "peerDependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  },
   "devDependencies": {
-    "@srclaunch/cli": "^0.1.301",
+    "@srclaunch/cli": "^0.1.327",
     "@srclaunch/dx": "^0.1.44",
-    "@srclaunch/themes": "^0.1.19",
-    "@srclaunch/types": "^0.1.99",
-    "@srclaunch/ui": "^0.1.197",
-    "@srclaunch/web-application-state": "^0.1.54",
+    "@srclaunch/themes": "^0.1.29",
+    "@srclaunch/types": "^0.1.114",
+    "@srclaunch/ui": "^0.1.202",
+    "@srclaunch/web-application-state": "^0.1.69",
     "@types/jest": "^27.4.1",
     "@types/luxon": "^2.3.1",
     "@types/node": "^17.0.29",
-    "@types/react": "^18.0.8",
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
@@ -77,9 +72,7 @@
     "eslint-plugin-unicorn": "^42.0.0",
     "jest-dom": "^4.0.0",
     "prettier": "^2.6.2",
-    "prettier-eslint": "^14.0.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "prettier-eslint": "^14.0.2",
     "standard-version": "^9.3.2",
     "styled-components": "^5.3.5",
     "stylelint": "^14.8.0",
@@ -91,5 +84,8 @@
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3",
     "vite": "^2.9.6"
+  },
+  "dependencies": {
+    "reat": "^0.0.1-security"
   }
 }
