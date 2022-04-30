@@ -14,7 +14,7 @@ export default {
   type: ProjectType.Library,
   build: {
     bundle: {
-      exclude: ['react', 'react-dom'],
+      exclude: ['react', 'react-dom', './src/docs'],
       globals: {
         react: 'React',
         'react-dom': 'ReactDOM',
