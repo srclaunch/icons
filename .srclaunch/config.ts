@@ -13,40 +13,29 @@ import {
   StaticTypingTool,
   TestReporter,
   TestTool,
-} from '@srclaunch/types';
+} from "@srclaunch/types";
 
-const config: Project =  {
-  name: '@srclaunch/icons',
-  description: 'React icon components',
+const config: Project = {
+  name: "@srclaunch/icons",
+  description: "React icon components",
   type: ProjectType.Library,
   build: {
     bundle: {
-      exclude: ['react', './src/docs'],
-      globals: {
-        react: 'React',
-      },
-    },
-    formats: [BuildFormat.ESM, BuildFormat.UMD],
-    input: {
-      directory: 'src',
-      file: 'index.tsx',
-    },
-    platform: BuildPlatform.Browser,
-    target: BuildTarget.ESNext,
-    tool: BuildTool.Vite,
-  },
-  build: {
-    bundle: {
-      exclude: ["react"],
+      exclude: ["react", "./src/docs"],
       globals: {
         react: "React",
       },
     },
     formats: [BuildFormat.ESM, BuildFormat.UMD],
-    platform: BuildPlatform.Node,
+    input: {
+      directory: "src",
+      file: "index.tsx",
+    },
+    platform: BuildPlatform.Browser,
     target: BuildTarget.ESNext,
     tool: BuildTool.Vite,
   },
+
   environments: {
     development: {
       formatters: [CodeFormatterTool.Prettier],
